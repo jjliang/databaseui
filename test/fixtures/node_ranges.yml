@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  citation_id: 1
+  node_id: 1
+  location_n_id: 1
+  location_s_id: 1
+  comment: MyText
+  datum: MyString
+  user_id: 1
+
+two:
+  citation_id: 1
+  node_id: 1
+  location_n_id: 1
+  location_s_id: 1
+  comment: MyText
+  datum: MyString
+  user_id: 1
