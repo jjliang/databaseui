@@ -71951,3 +71951,226 @@ Served asset /bootstrap.js - 304 Not Modified (1ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-20 12:14:31 -0400
 Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (8.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (9.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to DeviseCreateUsers (20130306045411)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.0ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130306045411')[0m
+  [1m[35m (10.0ms)[0m  commit transaction
+Migrating to RolifyCreateRoles (20130306045615)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "resource_id" integer, "resource_type" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "users_roles" ("user_id" integer, "role_id" integer) [0m
+  [1m[35m (0.0ms)[0m  CREATE INDEX "index_roles_on_name" ON "roles" ("name")
+  [1m[36m (0.0ms)[0m  [1mCREATE INDEX "index_roles_on_name_and_resource_type_and_resource_id" ON "roles" ("name", "resource_type", "resource_id")[0m
+  [1m[35m (0.0ms)[0m  CREATE INDEX "index_users_roles_on_user_id_and_role_id" ON "users_roles" ("user_id", "role_id")
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130306045615')[0m
+  [1m[35m (10.0ms)[0m  commit transaction
+Migrating to CreateAuthors (20130321004941)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321004941')[0m
+  [1m[35m (9.0ms)[0m  commit transaction
+Migrating to CreateAuthorCites (20130321005348)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "author_cites" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "author_id" integer, "citation_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321005348')[0m
+  [1m[35m (10.0ms)[0m  commit transaction
+Migrating to CreateCitations (20130321010943)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "document" varchar(255), "year" integer, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321010943')[0m
+  [1m[35m (10.0ms)[0m  commit transaction
+Migrating to CreateCompetitionInteractions (20130321011138)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "competition_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321011138')[0m
+  [1m[35m (8.0ms)[0m  commit transaction
+Migrating to CreateCompetitionInteractionObservations (20130321011540)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "competition_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "comptetition_interaction_id" integer, "location_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321011540')[0m
+  [1m[35m (10.0ms)[0m  commit transaction
+Migrating to CreateFacilitationInteractions (20130321011716)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "facilitation_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321011716')[0m
+  [1m[35m (10.0ms)[0m  commit transaction
+Migrating to CreateFacilitationInteractionObservations (20130321012046)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "facilitation_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "facilitation_interaction_id" integer, "location_id" integer, "comment" text, "datum" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321012046')[0m
+  [1m[35m (14.0ms)[0m  commit transaction
+Migrating to CreateFunctionalGroups (20130321012317)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "functional_groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321012317')[0m
+  [1m[35m (11.0ms)[0m  commit transaction
+Migrating to CreateLocationData (20130321013002)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "location_data" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "location_id" integer, "lat" float, "lon" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321013002')[0m
+  [1m[35m (11.0ms)[0m  commit transaction
+Migrating to CreateNodes (20130321014713)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "itis_id" integer, "non_itis_id" integer, "working_name" varchar(255), "functional_group_id" integer, "is_assemblage" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321014713')[0m
+  [1m[35m (7.0ms)[0m  commit transaction
+Migrating to CreateNodeRanges (20130321015117)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "node_ranges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "node_id" integer, "location_n_id" integer, "location_s_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321015117')[0m
+  [1m[35m (10.0ms)[0m  commit transaction
+Migrating to CreateNonItis (20130321015536)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "non_itis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "latin_name" varchar(255), "parent_id_is_itis" boolean, "info" text, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321015536')[0m
+  [1m[35m (11.0ms)[0m  commit transaction
+Migrating to CreateParasiticInteractions (20130321194943)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "parasitic_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321194943')[0m
+  [1m[35m (14.0ms)[0m  commit transaction
+Migrating to CreateParasiticInteractionObservations (20130321195205)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "parasitic_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "parasitic_interaction_id" integer, "location_id" integer, "prevalence" float, "intensity" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321195205')[0m
+  [1m[35m (14.0ms)[0m  commit transaction
+Migrating to CreateStages (20130321195308)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "node_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321195308')[0m
+  [1m[35m (14.0ms)[0m  commit transaction
+Migrating to CreateStageBiomassChanges (20130321195442)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_biomass_changes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "biomass_change" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321195442')[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateStageBiomassDensities (20130321195624)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_biomass_densities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "biomass_density" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321195624')[0m
+  [1m[35m (14.0ms)[0m  commit transaction
+Migrating to CreateStageConsumerStrategies (20130321195813)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "stage_consumer_strategies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321195813')[0m
+  [1m[35m (15.0ms)[0m  commit transaction
+Migrating to CreateStageConsumBiomassRatios (20130321195952)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_consum_biomass_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "consum_biomass_ratio" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321195952')[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateStageDrymasses (20130321200119)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_drymasses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "drymass" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (9.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321200119')[0m
+  [1m[35m (8.0ms)[0m  commit transaction
+Migrating to CreateStageDurations (20130321200242)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_durations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "duration" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321200242')[0m
+  [1m[35m (17.0ms)[0m  commit transaction
+Migrating to CreateStageFecundities (20130321200405)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_fecundities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "fecundity" varchar(255), "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321200405')[0m
+  [1m[35m (15.0ms)[0m  commit transaction
+Migrating to CreateStageHabitats (20130321200520)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_habitats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321200520')[0m
+  [1m[35m (14.0ms)[0m  commit transaction
+Migrating to CreateStageLengths (20130321200638)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  CREATE TABLE "stage_lengths" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "length" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321200638')[0m
+  [1m[35m (20.0ms)[0m  commit transaction
+Migrating to CreateStageLengthFecundities (20130321200801)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_length_fecundities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "a" float, "b" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321200801')[0m
+  [1m[35m (18.0ms)[0m  commit transaction
+Migrating to CreateStageLengthWeights (20130321201045)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_length_weights" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "a" float, "b" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321201045')[0m
+  [1m[35m (10.0ms)[0m  commit transaction
+Migrating to CreateStageLifestyles (20130321204106)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_lifestyles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (20.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321204106')[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateStageMasses (20130321204236)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_masses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "mass" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321204236')[0m
+  [1m[35m (12.0ms)[0m  commit transaction
+Migrating to CreateStageMaxDepths (20130321204353)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_max_depths" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "max_depth" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321204353')[0m
+  [1m[35m (23.0ms)[0m  commit transaction
+Migrating to CreateStageMobilities (20130321204504)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_mobilities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321204504')[0m
+  [1m[35m (27.0ms)[0m  commit transaction
+Migrating to CreateStagePopulations (20130321204627)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_populations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "population" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321204627')[0m
+  [1m[35m (16.0ms)[0m  commit transaction
+Migrating to CreateStageProdBiomassRatios (20130321204742)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_prod_biomass_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "prod_biomass_ratio" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321204742')[0m
+  [1m[35m (24.0ms)[0m  commit transaction
+Migrating to CreateStageProdConsumRatios (20130321204926)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_prod_consum_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "prod_consum_ratio" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321204926')[0m
+  [1m[35m (11.0ms)[0m  commit transaction
+Migrating to CreateStageReproductiveStrategies (20130321205058)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_reproductive_strategies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321205058')[0m
+  [1m[35m (15.0ms)[0m  commit transaction
+Migrating to CreateStageResidencies (20130321205229)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_residencies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321205229')[0m
+  [1m[35m (15.0ms)[0m  commit transaction
+Migrating to CreateStageResidencyTimes (20130321205404)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_residency_times" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "residency_time" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321205404')[0m
+  [1m[35m (12.0ms)[0m  commit transaction
+Migrating to CreateStageUnassimilatedConsumRatios (20130321205536)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_unassimilated_consum_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "unassimilated_consum_ratio" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321205536')[0m
+  [1m[35m (18.0ms)[0m  commit transaction
+Migrating to CreateTrophicInteractions (20130321205704)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "trophic_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321205704')[0m
+  [1m[35m (17.0ms)[0m  commit transaction
+Migrating to CreateTrophicInteractionObservations (20130321205936)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "trophic_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "trophic_interaction_id" integer, "location_id" integer, "percentage_consumed" float, "percentage_diet" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321205936')[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateNodeMaxAges (20130325155752)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "node_max_ages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "node_id" integer, "max_age" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130325155752')[0m
+  [1m[35m (21.0ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
