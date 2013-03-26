@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  document: MyString
+  year: 1
+  abstract: MyText
+  format_title: MyString
+  publisher: MyString
+  number: 1
+  volume: 1
+  pages: MyString
+  closed: false
+  user_id: 1
+
+two:
+  title: MyString
+  document: MyString
+  year: 1
+  abstract: MyText
+  format_title: MyString
+  publisher: MyString
+  number: 1
+  volume: 1
+  pages: MyString
+  closed: false
+  user_id: 1
