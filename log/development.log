@@ -72220,3 +72220,1657 @@ Migrating to CreateTrophicInteractionObservations (20130321205936)
 Migrating to CreateNodeMaxAges (20130325155752)
   [1m[35m (0.0ms)[0m  select sqlite_version(*)
   [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20130306045411)
+Migrating to RolifyCreateRoles (20130306045615)
+Migrating to CreateAuthors (20130321004941)
+Migrating to CreateAuthorCites (20130321005348)
+Migrating to CreateCitations (20130321010943)
+Migrating to CreateCompetitionInteractions (20130321011138)
+Migrating to CreateCompetitionInteractionObservations (20130321011540)
+Migrating to CreateFacilitationInteractions (20130321011716)
+Migrating to CreateFacilitationInteractionObservations (20130321012046)
+Migrating to CreateFunctionalGroups (20130321012317)
+Migrating to CreateLocationData (20130321013002)
+Migrating to CreateNodes (20130321014713)
+Migrating to CreateNodeRanges (20130321015117)
+Migrating to CreateNonItis (20130321015536)
+Migrating to CreateParasiticInteractions (20130321194943)
+Migrating to CreateParasiticInteractionObservations (20130321195205)
+Migrating to CreateStages (20130321195308)
+Migrating to CreateStageBiomassChanges (20130321195442)
+Migrating to CreateStageBiomassDensities (20130321195624)
+Migrating to CreateStageConsumerStrategies (20130321195813)
+Migrating to CreateStageConsumBiomassRatios (20130321195952)
+Migrating to CreateStageDrymasses (20130321200119)
+Migrating to CreateStageDurations (20130321200242)
+Migrating to CreateStageFecundities (20130321200405)
+Migrating to CreateStageHabitats (20130321200520)
+Migrating to CreateStageLengths (20130321200638)
+Migrating to CreateStageLengthFecundities (20130321200801)
+Migrating to CreateStageLengthWeights (20130321201045)
+Migrating to CreateStageLifestyles (20130321204106)
+Migrating to CreateStageMasses (20130321204236)
+Migrating to CreateStageMaxDepths (20130321204353)
+Migrating to CreateStageMobilities (20130321204504)
+Migrating to CreateStagePopulations (20130321204627)
+Migrating to CreateStageProdBiomassRatios (20130321204742)
+Migrating to CreateStageProdConsumRatios (20130321204926)
+Migrating to CreateStageReproductiveStrategies (20130321205058)
+Migrating to CreateStageResidencies (20130321205229)
+Migrating to CreateStageResidencyTimes (20130321205404)
+Migrating to CreateStageUnassimilatedConsumRatios (20130321205536)
+Migrating to CreateTrophicInteractions (20130321205704)
+Migrating to CreateTrophicInteractionObservations (20130321205936)
+Migrating to CreateNodeMaxAges (20130325155752)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20130306045411)
+Migrating to RolifyCreateRoles (20130306045615)
+Migrating to CreateAuthors (20130321004941)
+Migrating to CreateAuthorCites (20130321005348)
+Migrating to CreateCitations (20130321010943)
+Migrating to CreateCompetitionInteractions (20130321011138)
+Migrating to CreateCompetitionInteractionObservations (20130321011540)
+Migrating to CreateFacilitationInteractions (20130321011716)
+Migrating to CreateFacilitationInteractionObservations (20130321012046)
+Migrating to CreateFunctionalGroups (20130321012317)
+Migrating to CreateLocationData (20130321013002)
+Migrating to CreateNodes (20130321014713)
+Migrating to CreateNodeRanges (20130321015117)
+Migrating to CreateNonItis (20130321015536)
+Migrating to CreateParasiticInteractions (20130321194943)
+Migrating to CreateParasiticInteractionObservations (20130321195205)
+Migrating to CreateStages (20130321195308)
+Migrating to CreateStageBiomassChanges (20130321195442)
+Migrating to CreateStageBiomassDensities (20130321195624)
+Migrating to CreateStageConsumerStrategies (20130321195813)
+Migrating to CreateStageConsumBiomassRatios (20130321195952)
+Migrating to CreateStageDrymasses (20130321200119)
+Migrating to CreateStageDurations (20130321200242)
+Migrating to CreateStageFecundities (20130321200405)
+Migrating to CreateStageHabitats (20130321200520)
+Migrating to CreateStageLengths (20130321200638)
+Migrating to CreateStageLengthFecundities (20130321200801)
+Migrating to CreateStageLengthWeights (20130321201045)
+Migrating to CreateStageLifestyles (20130321204106)
+Migrating to CreateStageMasses (20130321204236)
+Migrating to CreateStageMaxDepths (20130321204353)
+Migrating to CreateStageMobilities (20130321204504)
+Migrating to CreateStagePopulations (20130321204627)
+Migrating to CreateStageProdBiomassRatios (20130321204742)
+Migrating to CreateStageProdConsumRatios (20130321204926)
+Migrating to CreateStageReproductiveStrategies (20130321205058)
+Migrating to CreateStageResidencies (20130321205229)
+Migrating to CreateStageResidencyTimes (20130321205404)
+Migrating to CreateStageUnassimilatedConsumRatios (20130321205536)
+Migrating to CreateTrophicInteractions (20130321205704)
+Migrating to CreateTrophicInteractionObservations (20130321205936)
+Migrating to CreateNodeMaxAges (20130325155752)
+Migrating to DefaultsAndNils (20130326033515)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "authors"[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "authors"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" first_name, "last_name" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_authors"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_authors"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130326033515')
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20130306045411)
+Migrating to RolifyCreateRoles (20130306045615)
+Migrating to CreateAuthors (20130321004941)
+Migrating to CreateAuthorCites (20130321005348)
+Migrating to CreateCitations (20130321010943)
+Migrating to CreateCompetitionInteractions (20130321011138)
+Migrating to CreateCompetitionInteractionObservations (20130321011540)
+Migrating to CreateFacilitationInteractions (20130321011716)
+Migrating to CreateFacilitationInteractionObservations (20130321012046)
+Migrating to CreateFunctionalGroups (20130321012317)
+Migrating to CreateLocationData (20130321013002)
+Migrating to CreateNodes (20130321014713)
+Migrating to CreateNodeRanges (20130321015117)
+Migrating to CreateNonItis (20130321015536)
+Migrating to CreateParasiticInteractions (20130321194943)
+Migrating to CreateParasiticInteractionObservations (20130321195205)
+Migrating to CreateStages (20130321195308)
+Migrating to CreateStageBiomassChanges (20130321195442)
+Migrating to CreateStageBiomassDensities (20130321195624)
+Migrating to CreateStageConsumerStrategies (20130321195813)
+Migrating to CreateStageConsumBiomassRatios (20130321195952)
+Migrating to CreateStageDrymasses (20130321200119)
+Migrating to CreateStageDurations (20130321200242)
+Migrating to CreateStageFecundities (20130321200405)
+Migrating to CreateStageHabitats (20130321200520)
+Migrating to CreateStageLengths (20130321200638)
+Migrating to CreateStageLengthFecundities (20130321200801)
+Migrating to CreateStageLengthWeights (20130321201045)
+Migrating to CreateStageLifestyles (20130321204106)
+Migrating to CreateStageMasses (20130321204236)
+Migrating to CreateStageMaxDepths (20130321204353)
+Migrating to CreateStageMobilities (20130321204504)
+Migrating to CreateStagePopulations (20130321204627)
+Migrating to CreateStageProdBiomassRatios (20130321204742)
+Migrating to CreateStageProdConsumRatios (20130321204926)
+Migrating to CreateStageReproductiveStrategies (20130321205058)
+Migrating to CreateStageResidencies (20130321205229)
+Migrating to CreateStageResidencyTimes (20130321205404)
+Migrating to CreateStageUnassimilatedConsumRatios (20130321205536)
+Migrating to CreateTrophicInteractions (20130321205704)
+Migrating to CreateTrophicInteractionObservations (20130321205936)
+Migrating to CreateNodeMaxAges (20130325155752)
+Migrating to DefaultsAndNils (20130326033515)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to DefaultsAndNils (20130326033515)
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130326033515'[0m
+  [1m[35m (48.0ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20130306045411)
+Migrating to RolifyCreateRoles (20130306045615)
+Migrating to CreateAuthors (20130321004941)
+Migrating to CreateAuthorCites (20130321005348)
+Migrating to CreateCitations (20130321010943)
+Migrating to CreateCompetitionInteractions (20130321011138)
+Migrating to CreateCompetitionInteractionObservations (20130321011540)
+Migrating to CreateFacilitationInteractions (20130321011716)
+Migrating to CreateFacilitationInteractionObservations (20130321012046)
+Migrating to CreateFunctionalGroups (20130321012317)
+Migrating to CreateLocationData (20130321013002)
+Migrating to CreateNodes (20130321014713)
+Migrating to CreateNodeRanges (20130321015117)
+Migrating to CreateNonItis (20130321015536)
+Migrating to CreateParasiticInteractions (20130321194943)
+Migrating to CreateParasiticInteractionObservations (20130321195205)
+Migrating to CreateStages (20130321195308)
+Migrating to CreateStageBiomassChanges (20130321195442)
+Migrating to CreateStageBiomassDensities (20130321195624)
+Migrating to CreateStageConsumerStrategies (20130321195813)
+Migrating to CreateStageConsumBiomassRatios (20130321195952)
+Migrating to CreateStageDrymasses (20130321200119)
+Migrating to CreateStageDurations (20130321200242)
+Migrating to CreateStageFecundities (20130321200405)
+Migrating to CreateStageHabitats (20130321200520)
+Migrating to CreateStageLengths (20130321200638)
+Migrating to CreateStageLengthFecundities (20130321200801)
+Migrating to CreateStageLengthWeights (20130321201045)
+Migrating to CreateStageLifestyles (20130321204106)
+Migrating to CreateStageMasses (20130321204236)
+Migrating to CreateStageMaxDepths (20130321204353)
+Migrating to CreateStageMobilities (20130321204504)
+Migrating to CreateStagePopulations (20130321204627)
+Migrating to CreateStageProdBiomassRatios (20130321204742)
+Migrating to CreateStageProdConsumRatios (20130321204926)
+Migrating to CreateStageReproductiveStrategies (20130321205058)
+Migrating to CreateStageResidencies (20130321205229)
+Migrating to CreateStageResidencyTimes (20130321205404)
+Migrating to CreateStageUnassimilatedConsumRatios (20130321205536)
+Migrating to CreateTrophicInteractions (20130321205704)
+Migrating to CreateTrophicInteractionObservations (20130321205936)
+Migrating to CreateNodeMaxAges (20130325155752)
+Migrating to DefaultsAndNils (20130326033515)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20130306045411)
+Migrating to RolifyCreateRoles (20130306045615)
+Migrating to CreateAuthors (20130321004941)
+Migrating to CreateAuthorCites (20130321005348)
+Migrating to CreateCitations (20130321010943)
+Migrating to CreateCompetitionInteractions (20130321011138)
+Migrating to CreateCompetitionInteractionObservations (20130321011540)
+Migrating to CreateFacilitationInteractions (20130321011716)
+Migrating to CreateFacilitationInteractionObservations (20130321012046)
+Migrating to CreateFunctionalGroups (20130321012317)
+Migrating to CreateLocationData (20130321013002)
+Migrating to CreateNodes (20130321014713)
+Migrating to CreateNodeRanges (20130321015117)
+Migrating to CreateNonItis (20130321015536)
+Migrating to CreateParasiticInteractions (20130321194943)
+Migrating to CreateParasiticInteractionObservations (20130321195205)
+Migrating to CreateStages (20130321195308)
+Migrating to CreateStageBiomassChanges (20130321195442)
+Migrating to CreateStageBiomassDensities (20130321195624)
+Migrating to CreateStageConsumerStrategies (20130321195813)
+Migrating to CreateStageConsumBiomassRatios (20130321195952)
+Migrating to CreateStageDrymasses (20130321200119)
+Migrating to CreateStageDurations (20130321200242)
+Migrating to CreateStageFecundities (20130321200405)
+Migrating to CreateStageHabitats (20130321200520)
+Migrating to CreateStageLengths (20130321200638)
+Migrating to CreateStageLengthFecundities (20130321200801)
+Migrating to CreateStageLengthWeights (20130321201045)
+Migrating to CreateStageLifestyles (20130321204106)
+Migrating to CreateStageMasses (20130321204236)
+Migrating to CreateStageMaxDepths (20130321204353)
+Migrating to CreateStageMobilities (20130321204504)
+Migrating to CreateStagePopulations (20130321204627)
+Migrating to CreateStageProdBiomassRatios (20130321204742)
+Migrating to CreateStageProdConsumRatios (20130321204926)
+Migrating to CreateStageReproductiveStrategies (20130321205058)
+Migrating to CreateStageResidencies (20130321205229)
+Migrating to CreateStageResidencyTimes (20130321205404)
+Migrating to CreateStageUnassimilatedConsumRatios (20130321205536)
+Migrating to CreateTrophicInteractions (20130321205704)
+Migrating to CreateTrophicInteractionObservations (20130321205936)
+Migrating to CreateNodeMaxAges (20130325155752)
+Migrating to DefaultsAndNils (20130326033515)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20130306045411)
+Migrating to RolifyCreateRoles (20130306045615)
+Migrating to CreateAuthors (20130321004941)
+Migrating to CreateAuthorCites (20130321005348)
+Migrating to CreateCitations (20130321010943)
+Migrating to CreateCompetitionInteractions (20130321011138)
+Migrating to CreateCompetitionInteractionObservations (20130321011540)
+Migrating to CreateFacilitationInteractions (20130321011716)
+Migrating to CreateFacilitationInteractionObservations (20130321012046)
+Migrating to CreateFunctionalGroups (20130321012317)
+Migrating to CreateLocationData (20130321013002)
+Migrating to CreateNodes (20130321014713)
+Migrating to CreateNodeRanges (20130321015117)
+Migrating to CreateNonItis (20130321015536)
+Migrating to CreateParasiticInteractions (20130321194943)
+Migrating to CreateParasiticInteractionObservations (20130321195205)
+Migrating to CreateStages (20130321195308)
+Migrating to CreateStageBiomassChanges (20130321195442)
+Migrating to CreateStageBiomassDensities (20130321195624)
+Migrating to CreateStageConsumerStrategies (20130321195813)
+Migrating to CreateStageConsumBiomassRatios (20130321195952)
+Migrating to CreateStageDrymasses (20130321200119)
+Migrating to CreateStageDurations (20130321200242)
+Migrating to CreateStageFecundities (20130321200405)
+Migrating to CreateStageHabitats (20130321200520)
+Migrating to CreateStageLengths (20130321200638)
+Migrating to CreateStageLengthFecundities (20130321200801)
+Migrating to CreateStageLengthWeights (20130321201045)
+Migrating to CreateStageLifestyles (20130321204106)
+Migrating to CreateStageMasses (20130321204236)
+Migrating to CreateStageMaxDepths (20130321204353)
+Migrating to CreateStageMobilities (20130321204504)
+Migrating to CreateStagePopulations (20130321204627)
+Migrating to CreateStageProdBiomassRatios (20130321204742)
+Migrating to CreateStageProdConsumRatios (20130321204926)
+Migrating to CreateStageReproductiveStrategies (20130321205058)
+Migrating to CreateStageResidencies (20130321205229)
+Migrating to CreateStageResidencyTimes (20130321205404)
+Migrating to CreateStageUnassimilatedConsumRatios (20130321205536)
+Migrating to CreateTrophicInteractions (20130321205704)
+Migrating to CreateTrophicInteractionObservations (20130321205936)
+Migrating to CreateNodeMaxAges (20130325155752)
+Migrating to DefaultsAndNils (20130326033515)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateNodeMaxAges (20130325155752)
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (2.0ms)[0m  [1mDROP TABLE "node_max_ages"[0m
+  [1m[35m (1.0ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130325155752'
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20130306045411)
+Migrating to RolifyCreateRoles (20130306045615)
+Migrating to CreateAuthors (20130321004941)
+Migrating to CreateAuthorCites (20130321005348)
+Migrating to CreateCitations (20130321010943)
+Migrating to CreateCompetitionInteractions (20130321011138)
+Migrating to CreateCompetitionInteractionObservations (20130321011540)
+Migrating to CreateFacilitationInteractions (20130321011716)
+Migrating to CreateFacilitationInteractionObservations (20130321012046)
+Migrating to CreateFunctionalGroups (20130321012317)
+Migrating to CreateLocationData (20130321013002)
+Migrating to CreateNodes (20130321014713)
+Migrating to CreateNodeRanges (20130321015117)
+Migrating to CreateNonItis (20130321015536)
+Migrating to CreateParasiticInteractions (20130321194943)
+Migrating to CreateParasiticInteractionObservations (20130321195205)
+Migrating to CreateStages (20130321195308)
+Migrating to CreateStageBiomassChanges (20130321195442)
+Migrating to CreateStageBiomassDensities (20130321195624)
+Migrating to CreateStageConsumerStrategies (20130321195813)
+Migrating to CreateStageConsumBiomassRatios (20130321195952)
+Migrating to CreateStageDrymasses (20130321200119)
+Migrating to CreateStageDurations (20130321200242)
+Migrating to CreateStageFecundities (20130321200405)
+Migrating to CreateStageHabitats (20130321200520)
+Migrating to CreateStageLengths (20130321200638)
+Migrating to CreateStageLengthFecundities (20130321200801)
+Migrating to CreateStageLengthWeights (20130321201045)
+Migrating to CreateStageLifestyles (20130321204106)
+Migrating to CreateStageMasses (20130321204236)
+Migrating to CreateStageMaxDepths (20130321204353)
+Migrating to CreateStageMobilities (20130321204504)
+Migrating to CreateStagePopulations (20130321204627)
+Migrating to CreateStageProdBiomassRatios (20130321204742)
+Migrating to CreateStageProdConsumRatios (20130321204926)
+Migrating to CreateStageReproductiveStrategies (20130321205058)
+Migrating to CreateStageResidencies (20130321205229)
+Migrating to CreateStageResidencyTimes (20130321205404)
+Migrating to CreateStageUnassimilatedConsumRatios (20130321205536)
+Migrating to CreateTrophicInteractions (20130321205704)
+Migrating to CreateTrophicInteractionObservations (20130321205936)
+Migrating to CreateNodeMaxAges (20130325155752)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "node_max_ages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "node_id" integer, "max_age" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130325155752')[0m
+  [1m[35m (8.0ms)[0m  commit transaction
+Migrating to DefaultsAndNils (20130326033515)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20130306045411)
+Migrating to RolifyCreateRoles (20130306045615)
+Migrating to CreateAuthors (20130321004941)
+Migrating to CreateAuthorCites (20130321005348)
+Migrating to CreateCitations (20130321010943)
+Migrating to CreateCompetitionInteractions (20130321011138)
+Migrating to CreateCompetitionInteractionObservations (20130321011540)
+Migrating to CreateFacilitationInteractions (20130321011716)
+Migrating to CreateFacilitationInteractionObservations (20130321012046)
+Migrating to CreateFunctionalGroups (20130321012317)
+Migrating to CreateLocationData (20130321013002)
+Migrating to CreateNodes (20130321014713)
+Migrating to CreateNodeRanges (20130321015117)
+Migrating to CreateNonItis (20130321015536)
+Migrating to CreateParasiticInteractions (20130321194943)
+Migrating to CreateParasiticInteractionObservations (20130321195205)
+Migrating to CreateStages (20130321195308)
+Migrating to CreateStageBiomassChanges (20130321195442)
+Migrating to CreateStageBiomassDensities (20130321195624)
+Migrating to CreateStageConsumerStrategies (20130321195813)
+Migrating to CreateStageConsumBiomassRatios (20130321195952)
+Migrating to CreateStageDrymasses (20130321200119)
+Migrating to CreateStageDurations (20130321200242)
+Migrating to CreateStageFecundities (20130321200405)
+Migrating to CreateStageHabitats (20130321200520)
+Migrating to CreateStageLengths (20130321200638)
+Migrating to CreateStageLengthFecundities (20130321200801)
+Migrating to CreateStageLengthWeights (20130321201045)
+Migrating to CreateStageLifestyles (20130321204106)
+Migrating to CreateStageMasses (20130321204236)
+Migrating to CreateStageMaxDepths (20130321204353)
+Migrating to CreateStageMobilities (20130321204504)
+Migrating to CreateStagePopulations (20130321204627)
+Migrating to CreateStageProdBiomassRatios (20130321204742)
+Migrating to CreateStageProdConsumRatios (20130321204926)
+Migrating to CreateStageReproductiveStrategies (20130321205058)
+Migrating to CreateStageResidencies (20130321205229)
+Migrating to CreateStageResidencyTimes (20130321205404)
+Migrating to CreateStageUnassimilatedConsumRatios (20130321205536)
+Migrating to CreateTrophicInteractions (20130321205704)
+Migrating to CreateTrophicInteractionObservations (20130321205936)
+Migrating to CreateNodeMaxAges (20130325155752)
+Migrating to DefaultsAndNils (20130326033515)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (1.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20130306045411)
+Migrating to RolifyCreateRoles (20130306045615)
+Migrating to CreateAuthors (20130321004941)
+Migrating to CreateAuthorCites (20130321005348)
+Migrating to CreateCitations (20130321010943)
+Migrating to CreateCompetitionInteractions (20130321011138)
+Migrating to CreateCompetitionInteractionObservations (20130321011540)
+Migrating to CreateFacilitationInteractions (20130321011716)
+Migrating to CreateFacilitationInteractionObservations (20130321012046)
+Migrating to CreateFunctionalGroups (20130321012317)
+Migrating to CreateLocationData (20130321013002)
+Migrating to CreateNodes (20130321014713)
+Migrating to CreateNodeRanges (20130321015117)
+Migrating to CreateNonItis (20130321015536)
+Migrating to CreateParasiticInteractions (20130321194943)
+Migrating to CreateParasiticInteractionObservations (20130321195205)
+Migrating to CreateStages (20130321195308)
+Migrating to CreateStageBiomassChanges (20130321195442)
+Migrating to CreateStageBiomassDensities (20130321195624)
+Migrating to CreateStageConsumerStrategies (20130321195813)
+Migrating to CreateStageConsumBiomassRatios (20130321195952)
+Migrating to CreateStageDrymasses (20130321200119)
+Migrating to CreateStageDurations (20130321200242)
+Migrating to CreateStageFecundities (20130321200405)
+Migrating to CreateStageHabitats (20130321200520)
+Migrating to CreateStageLengths (20130321200638)
+Migrating to CreateStageLengthFecundities (20130321200801)
+Migrating to CreateStageLengthWeights (20130321201045)
+Migrating to CreateStageLifestyles (20130321204106)
+Migrating to CreateStageMasses (20130321204236)
+Migrating to CreateStageMaxDepths (20130321204353)
+Migrating to CreateStageMobilities (20130321204504)
+Migrating to CreateStagePopulations (20130321204627)
+Migrating to CreateStageProdBiomassRatios (20130321204742)
+Migrating to CreateStageProdConsumRatios (20130321204926)
+Migrating to CreateStageReproductiveStrategies (20130321205058)
+Migrating to CreateStageResidencies (20130321205229)
+Migrating to CreateStageResidencyTimes (20130321205404)
+Migrating to CreateStageUnassimilatedConsumRatios (20130321205536)
+Migrating to CreateTrophicInteractions (20130321205704)
+Migrating to CreateTrophicInteractionObservations (20130321205936)
+Migrating to CreateNodeMaxAges (20130325155752)
+Migrating to DefaultsAndNils (20130326033515)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20130306045411)
+Migrating to RolifyCreateRoles (20130306045615)
+Migrating to CreateAuthors (20130321004941)
+Migrating to CreateAuthorCites (20130321005348)
+Migrating to CreateCitations (20130321010943)
+Migrating to CreateCompetitionInteractions (20130321011138)
+Migrating to CreateCompetitionInteractionObservations (20130321011540)
+Migrating to CreateFacilitationInteractions (20130321011716)
+Migrating to CreateFacilitationInteractionObservations (20130321012046)
+Migrating to CreateFunctionalGroups (20130321012317)
+Migrating to CreateLocationData (20130321013002)
+Migrating to CreateNodes (20130321014713)
+Migrating to CreateNodeRanges (20130321015117)
+Migrating to CreateNonItis (20130321015536)
+Migrating to CreateParasiticInteractions (20130321194943)
+Migrating to CreateParasiticInteractionObservations (20130321195205)
+Migrating to CreateStages (20130321195308)
+Migrating to CreateStageBiomassChanges (20130321195442)
+Migrating to CreateStageBiomassDensities (20130321195624)
+Migrating to CreateStageConsumerStrategies (20130321195813)
+Migrating to CreateStageConsumBiomassRatios (20130321195952)
+Migrating to CreateStageDrymasses (20130321200119)
+Migrating to CreateStageDurations (20130321200242)
+Migrating to CreateStageFecundities (20130321200405)
+Migrating to CreateStageHabitats (20130321200520)
+Migrating to CreateStageLengths (20130321200638)
+Migrating to CreateStageLengthFecundities (20130321200801)
+Migrating to CreateStageLengthWeights (20130321201045)
+Migrating to CreateStageLifestyles (20130321204106)
+Migrating to CreateStageMasses (20130321204236)
+Migrating to CreateStageMaxDepths (20130321204353)
+Migrating to CreateStageMobilities (20130321204504)
+Migrating to CreateStagePopulations (20130321204627)
+Migrating to CreateStageProdBiomassRatios (20130321204742)
+Migrating to CreateStageProdConsumRatios (20130321204926)
+Migrating to CreateStageReproductiveStrategies (20130321205058)
+Migrating to CreateStageResidencies (20130321205229)
+Migrating to CreateStageResidencyTimes (20130321205404)
+Migrating to CreateStageUnassimilatedConsumRatios (20130321205536)
+Migrating to CreateTrophicInteractions (20130321205704)
+Migrating to CreateTrophicInteractionObservations (20130321205936)
+Migrating to CreateNodeMaxAges (20130325155752)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateNodeMaxAges (20130325155752)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "node_max_ages"
+  [1m[36m (1.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130325155752'[0m
+  [1m[35m (49.0ms)[0m  commit transaction
+Migrating to CreateTrophicInteractionObservations (20130321205936)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "trophic_interaction_observations"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321205936'[0m
+  [1m[35m (11.0ms)[0m  commit transaction
+Migrating to CreateTrophicInteractions (20130321205704)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "trophic_interactions"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321205704'[0m
+  [1m[35m (10.0ms)[0m  commit transaction
+Migrating to CreateStageUnassimilatedConsumRatios (20130321205536)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_unassimilated_consum_ratios"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321205536'[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateStageResidencyTimes (20130321205404)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_residency_times"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321205404'[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateStageResidencies (20130321205229)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_residencies"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321205229'[0m
+  [1m[35m (17.0ms)[0m  commit transaction
+Migrating to CreateStageReproductiveStrategies (20130321205058)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_reproductive_strategies"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321205058'[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateStageProdConsumRatios (20130321204926)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_prod_consum_ratios"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321204926'[0m
+  [1m[35m (11.0ms)[0m  commit transaction
+Migrating to CreateStageProdBiomassRatios (20130321204742)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_prod_biomass_ratios"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321204742'[0m
+  [1m[35m (12.0ms)[0m  commit transaction
+Migrating to CreateStagePopulations (20130321204627)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_populations"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321204627'[0m
+  [1m[35m (31.0ms)[0m  commit transaction
+Migrating to CreateStageMobilities (20130321204504)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_mobilities"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321204504'[0m
+  [1m[35m (14.0ms)[0m  commit transaction
+Migrating to CreateStageMaxDepths (20130321204353)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  DROP TABLE "stage_max_depths"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321204353'[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateStageMasses (20130321204236)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_masses"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321204236'[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateStageLifestyles (20130321204106)
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  DROP TABLE "stage_lifestyles"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321204106'[0m
+  [1m[35m (16.0ms)[0m  commit transaction
+Migrating to CreateStageLengthWeights (20130321201045)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_length_weights"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321201045'[0m
+  [1m[35m (12.0ms)[0m  commit transaction
+Migrating to CreateStageLengthFecundities (20130321200801)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_length_fecundities"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321200801'[0m
+  [1m[35m (21.0ms)[0m  commit transaction
+Migrating to CreateStageLengths (20130321200638)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  DROP TABLE "stage_lengths"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321200638'[0m
+  [1m[35m (15.0ms)[0m  commit transaction
+Migrating to CreateStageHabitats (20130321200520)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  DROP TABLE "stage_habitats"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321200520'[0m
+  [1m[35m (32.0ms)[0m  commit transaction
+Migrating to CreateStageFecundities (20130321200405)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_fecundities"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321200405'[0m
+  [1m[35m (22.0ms)[0m  commit transaction
+Migrating to CreateStageDurations (20130321200242)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_durations"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321200242'[0m
+  [1m[35m (15.0ms)[0m  commit transaction
+Migrating to CreateStageDrymasses (20130321200119)
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_drymasses"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321200119'[0m
+  [1m[35m (14.0ms)[0m  commit transaction
+Migrating to CreateStageConsumBiomassRatios (20130321195952)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_consum_biomass_ratios"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321195952'[0m
+  [1m[35m (38.0ms)[0m  commit transaction
+Migrating to CreateStageConsumerStrategies (20130321195813)
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  DROP TABLE "stage_consumer_strategies"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321195813'[0m
+  [1m[35m (20.0ms)[0m  commit transaction
+Migrating to CreateStageBiomassDensities (20130321195624)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_biomass_densities"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321195624'[0m
+  [1m[35m (14.0ms)[0m  commit transaction
+Migrating to CreateStageBiomassChanges (20130321195442)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  DROP TABLE "stage_biomass_changes"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321195442'[0m
+  [1m[35m (17.0ms)[0m  commit transaction
+Migrating to CreateStages (20130321195308)
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stages"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321195308'[0m
+  [1m[35m (16.0ms)[0m  commit transaction
+Migrating to CreateParasiticInteractionObservations (20130321195205)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "parasitic_interaction_observations"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321195205'[0m
+  [1m[35m (31.0ms)[0m  commit transaction
+Migrating to CreateParasiticInteractions (20130321194943)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  DROP TABLE "parasitic_interactions"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321194943'[0m
+  [1m[35m (27.0ms)[0m  commit transaction
+Migrating to CreateNonItis (20130321015536)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "non_itis"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321015536'[0m
+  [1m[35m (23.0ms)[0m  commit transaction
+Migrating to CreateNodeRanges (20130321015117)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  DROP TABLE "node_ranges"
+  [1m[36m (1.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321015117'[0m
+  [1m[35m (31.0ms)[0m  commit transaction
+Migrating to CreateNodes (20130321014713)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "nodes"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321014713'[0m
+  [1m[35m (22.0ms)[0m  commit transaction
+Migrating to CreateLocationData (20130321013002)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  DROP TABLE "location_data"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321013002'[0m
+  [1m[35m (24.0ms)[0m  commit transaction
+Migrating to CreateFunctionalGroups (20130321012317)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  DROP TABLE "functional_groups"
+  [1m[36m (1.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321012317'[0m
+  [1m[35m (24.0ms)[0m  commit transaction
+Migrating to CreateFacilitationInteractionObservations (20130321012046)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  DROP TABLE "facilitation_interaction_observations"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321012046'[0m
+  [1m[35m (15.0ms)[0m  commit transaction
+Migrating to CreateFacilitationInteractions (20130321011716)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "facilitation_interactions"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321011716'[0m
+  [1m[35m (14.0ms)[0m  commit transaction
+Migrating to CreateCompetitionInteractionObservations (20130321011540)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "competition_interaction_observations"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321011540'[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateCompetitionInteractions (20130321011138)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "competition_interactions"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321011138'[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateCitations (20130321010943)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "citations"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321010943'[0m
+  [1m[35m (14.0ms)[0m  commit transaction
+Migrating to CreateAuthorCites (20130321005348)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "author_cites"
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321005348'[0m
+  [1m[35m (15.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateAuthors (20130321004941)
+  [1m[36m (1.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "authors"[0m
+  [1m[35m (0.0ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130321004941'
+  [1m[36m (13.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20130306045411)
+Migrating to RolifyCreateRoles (20130306045615)
+Migrating to CreateAuthors (20130321004941)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321004941')[0m
+  [1m[35m (47.0ms)[0m  commit transaction
+Migrating to CreateAuthorCites (20130321005348)
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "author_cites" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "author_id" integer, "citation_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321005348')[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateCitations (20130321010943)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "document" varchar(255), "year" integer, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321010943')[0m
+  [1m[35m (12.0ms)[0m  commit transaction
+Migrating to CreateCompetitionInteractions (20130321011138)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "competition_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321011138')[0m
+  [1m[35m (9.0ms)[0m  commit transaction
+Migrating to CreateCompetitionInteractionObservations (20130321011540)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "competition_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "comptetition_interaction_id" integer, "location_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321011540')[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateFacilitationInteractions (20130321011716)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "facilitation_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321011716')[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateFacilitationInteractionObservations (20130321012046)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "facilitation_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "facilitation_interaction_id" integer, "location_id" integer, "comment" text, "datum" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321012046')[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateFunctionalGroups (20130321012317)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "functional_groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321012317')[0m
+  [1m[35m (11.0ms)[0m  commit transaction
+Migrating to CreateLocationData (20130321013002)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "location_data" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "location_id" integer, "lat" float, "lon" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321013002')[0m
+  [1m[35m (14.0ms)[0m  commit transaction
+Migrating to CreateNodes (20130321014713)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "itis_id" integer, "non_itis_id" integer, "working_name" varchar(255), "functional_group_id" integer, "is_assemblage" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321014713')[0m
+  [1m[35m (11.0ms)[0m  commit transaction
+Migrating to CreateNodeRanges (20130321015117)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "node_ranges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "node_id" integer, "location_n_id" integer, "location_s_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321015117')[0m
+  [1m[35m (10.0ms)[0m  commit transaction
+Migrating to CreateNonItis (20130321015536)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "non_itis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "latin_name" varchar(255), "parent_id_is_itis" boolean, "info" text, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321015536')[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateParasiticInteractions (20130321194943)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "parasitic_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321194943')[0m
+  [1m[35m (10.0ms)[0m  commit transaction
+Migrating to CreateParasiticInteractionObservations (20130321195205)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "parasitic_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "parasitic_interaction_id" integer, "location_id" integer, "prevalence" float, "intensity" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321195205')[0m
+  [1m[35m (16.0ms)[0m  commit transaction
+Migrating to CreateStages (20130321195308)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "node_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321195308')[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateStageBiomassChanges (20130321195442)
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_biomass_changes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "biomass_change" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321195442')[0m
+  [1m[35m (11.0ms)[0m  commit transaction
+Migrating to CreateStageBiomassDensities (20130321195624)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_biomass_densities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "biomass_density" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321195624')[0m
+  [1m[35m (14.0ms)[0m  commit transaction
+Migrating to CreateStageConsumerStrategies (20130321195813)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  CREATE TABLE "stage_consumer_strategies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321195813')[0m
+  [1m[35m (11.0ms)[0m  commit transaction
+Migrating to CreateStageConsumBiomassRatios (20130321195952)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "stage_consum_biomass_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "consum_biomass_ratio" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321195952')[0m
+  [1m[35m (11.0ms)[0m  commit transaction
+Migrating to CreateStageDrymasses (20130321200119)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_drymasses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "drymass" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321200119')[0m
+  [1m[35m (11.0ms)[0m  commit transaction
+Migrating to CreateStageDurations (20130321200242)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_durations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "duration" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321200242')[0m
+  [1m[35m (12.0ms)[0m  commit transaction
+Migrating to CreateStageFecundities (20130321200405)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_fecundities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "fecundity" varchar(255), "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321200405')[0m
+  [1m[35m (11.0ms)[0m  commit transaction
+Migrating to CreateStageHabitats (20130321200520)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  CREATE TABLE "stage_habitats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321200520')[0m
+  [1m[35m (10.0ms)[0m  commit transaction
+Migrating to CreateStageLengths (20130321200638)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_lengths" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "length" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321200638')[0m
+  [1m[35m (14.0ms)[0m  commit transaction
+Migrating to CreateStageLengthFecundities (20130321200801)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_length_fecundities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "a" float, "b" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321200801')[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateStageLengthWeights (20130321201045)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_length_weights" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "a" float, "b" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321201045')[0m
+  [1m[35m (9.0ms)[0m  commit transaction
+Migrating to CreateStageLifestyles (20130321204106)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_lifestyles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321204106')[0m
+  [1m[35m (12.0ms)[0m  commit transaction
+Migrating to CreateStageMasses (20130321204236)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_masses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "mass" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321204236')[0m
+  [1m[35m (9.0ms)[0m  commit transaction
+Migrating to CreateStageMaxDepths (20130321204353)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_max_depths" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "max_depth" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321204353')[0m
+  [1m[35m (12.0ms)[0m  commit transaction
+Migrating to CreateStageMobilities (20130321204504)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_mobilities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321204504')[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateStagePopulations (20130321204627)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_populations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "population" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321204627')[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateStageProdBiomassRatios (20130321204742)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_prod_biomass_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "prod_biomass_ratio" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321204742')[0m
+  [1m[35m (11.0ms)[0m  commit transaction
+Migrating to CreateStageProdConsumRatios (20130321204926)
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_prod_consum_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "prod_consum_ratio" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321204926')[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+Migrating to CreateStageReproductiveStrategies (20130321205058)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_reproductive_strategies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321205058')[0m
+  [1m[35m (11.0ms)[0m  commit transaction
+Migrating to CreateStageResidencies (20130321205229)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "stage_residencies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321205229')[0m
+  [1m[35m (10.0ms)[0m  commit transaction
+Migrating to CreateStageResidencyTimes (20130321205404)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_residency_times" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "residency_time" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321205404')[0m
+  [1m[35m (10.0ms)[0m  commit transaction
+Migrating to CreateStageUnassimilatedConsumRatios (20130321205536)
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "stage_unassimilated_consum_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "unassimilated_consum_ratio" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321205536')[0m
+  [1m[35m (14.0ms)[0m  commit transaction
+Migrating to CreateTrophicInteractions (20130321205704)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "trophic_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321205704')[0m
+  [1m[35m (19.0ms)[0m  commit transaction
+Migrating to CreateTrophicInteractionObservations (20130321205936)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "trophic_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "trophic_interaction_id" integer, "location_id" integer, "percentage_consumed" float, "percentage_diet" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321205936')[0m
+  [1m[35m (11.0ms)[0m  commit transaction
+Migrating to CreateNodeMaxAges (20130325155752)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "node_max_ages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "node_id" integer, "max_age" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130325155752')[0m
+  [1m[35m (14.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20130306045411)
+Migrating to RolifyCreateRoles (20130306045615)
+Migrating to CreateAuthors (20130321004941)
+Migrating to CreateAuthorCites (20130321005348)
+Migrating to CreateCitations (20130321010943)
+Migrating to CreateCompetitionInteractions (20130321011138)
+Migrating to CreateCompetitionInteractionObservations (20130321011540)
+Migrating to CreateFacilitationInteractions (20130321011716)
+Migrating to CreateFacilitationInteractionObservations (20130321012046)
+Migrating to CreateFunctionalGroups (20130321012317)
+Migrating to CreateLocationData (20130321013002)
+Migrating to CreateNodes (20130321014713)
+Migrating to CreateNodeRanges (20130321015117)
+Migrating to CreateNonItis (20130321015536)
+Migrating to CreateParasiticInteractions (20130321194943)
+Migrating to CreateParasiticInteractionObservations (20130321195205)
+Migrating to CreateStages (20130321195308)
+Migrating to CreateStageBiomassChanges (20130321195442)
+Migrating to CreateStageBiomassDensities (20130321195624)
+Migrating to CreateStageConsumerStrategies (20130321195813)
+Migrating to CreateStageConsumBiomassRatios (20130321195952)
+Migrating to CreateStageDrymasses (20130321200119)
+Migrating to CreateStageDurations (20130321200242)
+Migrating to CreateStageFecundities (20130321200405)
+Migrating to CreateStageHabitats (20130321200520)
+Migrating to CreateStageLengths (20130321200638)
+Migrating to CreateStageLengthFecundities (20130321200801)
+Migrating to CreateStageLengthWeights (20130321201045)
+Migrating to CreateStageLifestyles (20130321204106)
+Migrating to CreateStageMasses (20130321204236)
+Migrating to CreateStageMaxDepths (20130321204353)
+Migrating to CreateStageMobilities (20130321204504)
+Migrating to CreateStagePopulations (20130321204627)
+Migrating to CreateStageProdBiomassRatios (20130321204742)
+Migrating to CreateStageProdConsumRatios (20130321204926)
+Migrating to CreateStageReproductiveStrategies (20130321205058)
+Migrating to CreateStageResidencies (20130321205229)
+Migrating to CreateStageResidencyTimes (20130321205404)
+Migrating to CreateStageUnassimilatedConsumRatios (20130321205536)
+Migrating to CreateTrophicInteractions (20130321205704)
+Migrating to CreateTrophicInteractionObservations (20130321205936)
+Migrating to CreateNodeMaxAges (20130325155752)
+Migrating to DefaultsAndNils (20130326042522)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TEMPORARY TABLE "altered_authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "authors"[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "authors"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255) NOT NULL, "last_name" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_authors"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_authors"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130326042522')
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to DefaultsAndNils (20130326042522)
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130326042522'[0m
+  [1m[35m (43.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20130306045411)
+Migrating to RolifyCreateRoles (20130306045615)
+Migrating to CreateAuthors (20130321004941)
+Migrating to CreateAuthorCites (20130321005348)
+Migrating to CreateCitations (20130321010943)
+Migrating to CreateCompetitionInteractions (20130321011138)
+Migrating to CreateCompetitionInteractionObservations (20130321011540)
+Migrating to CreateFacilitationInteractions (20130321011716)
+Migrating to CreateFacilitationInteractionObservations (20130321012046)
+Migrating to CreateFunctionalGroups (20130321012317)
+Migrating to CreateLocationData (20130321013002)
+Migrating to CreateNodes (20130321014713)
+Migrating to CreateNodeRanges (20130321015117)
+Migrating to CreateNonItis (20130321015536)
+Migrating to CreateParasiticInteractions (20130321194943)
+Migrating to CreateParasiticInteractionObservations (20130321195205)
+Migrating to CreateStages (20130321195308)
+Migrating to CreateStageBiomassChanges (20130321195442)
+Migrating to CreateStageBiomassDensities (20130321195624)
+Migrating to CreateStageConsumerStrategies (20130321195813)
+Migrating to CreateStageConsumBiomassRatios (20130321195952)
+Migrating to CreateStageDrymasses (20130321200119)
+Migrating to CreateStageDurations (20130321200242)
+Migrating to CreateStageFecundities (20130321200405)
+Migrating to CreateStageHabitats (20130321200520)
+Migrating to CreateStageLengths (20130321200638)
+Migrating to CreateStageLengthFecundities (20130321200801)
+Migrating to CreateStageLengthWeights (20130321201045)
+Migrating to CreateStageLifestyles (20130321204106)
+Migrating to CreateStageMasses (20130321204236)
+Migrating to CreateStageMaxDepths (20130321204353)
+Migrating to CreateStageMobilities (20130321204504)
+Migrating to CreateStagePopulations (20130321204627)
+Migrating to CreateStageProdBiomassRatios (20130321204742)
+Migrating to CreateStageProdConsumRatios (20130321204926)
+Migrating to CreateStageReproductiveStrategies (20130321205058)
+Migrating to CreateStageResidencies (20130321205229)
+Migrating to CreateStageResidencyTimes (20130321205404)
+Migrating to CreateStageUnassimilatedConsumRatios (20130321205536)
+Migrating to CreateTrophicInteractions (20130321205704)
+Migrating to CreateTrophicInteractionObservations (20130321205936)
+Migrating to CreateNodeMaxAges (20130325155752)
+Migrating to DefaultsAndNils (20130326042522)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (21.0ms)[0m  CREATE TEMPORARY TABLE "altered_authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255) NOT NULL, "last_name" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "authors"[0m
+  [1m[35m (4.0ms)[0m  DROP TABLE "authors"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255) NOT NULL, "last_name" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_authors"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_authors"[0m
+  [1m[35m (1.0ms)[0m  CREATE TEMPORARY TABLE "altered_authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255) NOT NULL, "last_name" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "authors"[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "authors"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255) NOT NULL, "last_name" varchar(255) NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_authors"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_authors"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "document" varchar(255), "year" integer, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "citations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "citations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_citations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_citations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "citations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "citations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_citations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_citations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "citations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "citations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_citations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_citations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "citations"[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "citations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_citations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_citations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "citations"[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "citations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_citations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_citations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "citations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "citations"
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_citations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_citations"[0m
+  [1m[35m (1.0ms)[0m  CREATE TEMPORARY TABLE "altered_citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "citations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "citations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_citations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_citations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "citations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "citations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_citations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_citations"[0m
+  [1m[35m (1.0ms)[0m  CREATE TEMPORARY TABLE "altered_citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "citations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "citations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean DEFAULT '0' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_citations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_citations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_competition_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "competition_interactions"[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "competition_interactions"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "competition_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer NOT NULL, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_competition_interactions"
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "altered_competition_interactions"[0m
+  [1m[35m (1.0ms)[0m  CREATE TEMPORARY TABLE "altered_competition_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer NOT NULL, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "competition_interactions"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "competition_interactions"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "competition_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer NOT NULL, "stage_2_id" integer NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_competition_interactions"
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "altered_competition_interactions"[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20130306045411)
+Migrating to RolifyCreateRoles (20130306045615)
+Migrating to CreateAuthors (20130321004941)
+Migrating to CreateAuthorCites (20130321005348)
+Migrating to CreateCitations (20130321010943)
+Migrating to CreateCompetitionInteractions (20130321011138)
+Migrating to CreateCompetitionInteractionObservations (20130321011540)
+Migrating to CreateFacilitationInteractions (20130321011716)
+Migrating to CreateFacilitationInteractionObservations (20130321012046)
+Migrating to CreateFunctionalGroups (20130321012317)
+Migrating to CreateLocationData (20130321013002)
+Migrating to CreateNodes (20130321014713)
+Migrating to CreateNodeRanges (20130321015117)
+Migrating to CreateNonItis (20130321015536)
+Migrating to CreateParasiticInteractions (20130321194943)
+Migrating to CreateParasiticInteractionObservations (20130321195205)
+Migrating to CreateStages (20130321195308)
+Migrating to CreateStageBiomassChanges (20130321195442)
+Migrating to CreateStageBiomassDensities (20130321195624)
+Migrating to CreateStageConsumerStrategies (20130321195813)
+Migrating to CreateStageConsumBiomassRatios (20130321195952)
+Migrating to CreateStageDrymasses (20130321200119)
+Migrating to CreateStageDurations (20130321200242)
+Migrating to CreateStageFecundities (20130321200405)
+Migrating to CreateStageHabitats (20130321200520)
+Migrating to CreateStageLengths (20130321200638)
+Migrating to CreateStageLengthFecundities (20130321200801)
+Migrating to CreateStageLengthWeights (20130321201045)
+Migrating to CreateStageLifestyles (20130321204106)
+Migrating to CreateStageMasses (20130321204236)
+Migrating to CreateStageMaxDepths (20130321204353)
+Migrating to CreateStageMobilities (20130321204504)
+Migrating to CreateStagePopulations (20130321204627)
+Migrating to CreateStageProdBiomassRatios (20130321204742)
+Migrating to CreateStageProdConsumRatios (20130321204926)
+Migrating to CreateStageReproductiveStrategies (20130321205058)
+Migrating to CreateStageResidencies (20130321205229)
+Migrating to CreateStageResidencyTimes (20130321205404)
+Migrating to CreateStageUnassimilatedConsumRatios (20130321205536)
+Migrating to CreateTrophicInteractions (20130321205704)
+Migrating to CreateTrophicInteractionObservations (20130321205936)
+Migrating to CreateNodeMaxAges (20130325155752)
+Migrating to DefaultsAndNils (20130326042522)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TEMPORARY TABLE "altered_authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255) NOT NULL, "last_name" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "authors"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "authors"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255) NOT NULL, "last_name" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_authors"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_authors"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255) NOT NULL, "last_name" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "authors"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "authors"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255) NOT NULL, "last_name" varchar(255) NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_authors"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_authors"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "document" varchar(255), "year" integer, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mSELECT * FROM "citations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "citations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_citations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_citations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mSELECT * FROM "citations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "citations"
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_citations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_citations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "citations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "citations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_citations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_citations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "citations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "citations"
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_citations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_citations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "citations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "citations"
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_citations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_citations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "citations"[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "citations"
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_citations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_citations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "citations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "citations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_citations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_citations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mSELECT * FROM "citations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "citations"
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_citations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_citations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "citations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "citations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "citations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) NOT NULL, "document" varchar(255), "year" integer NOT NULL, "abstract" text, "format_title" varchar(255), "publisher" varchar(255), "number" integer, "volume" integer, "pages" varchar(255), "closed" boolean DEFAULT '0' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_citations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_citations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_competition_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "competition_interactions"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "competition_interactions"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "competition_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer NOT NULL, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_competition_interactions"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_competition_interactions"[0m
+  [1m[35m (1.0ms)[0m  CREATE TEMPORARY TABLE "altered_competition_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer NOT NULL, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "competition_interactions"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "competition_interactions"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "competition_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer NOT NULL, "stage_2_id" integer NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_competition_interactions"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_competition_interactions"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_competition_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "comptetition_interaction_id" integer, "location_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mSELECT * FROM "competition_interaction_observations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "competition_interaction_observations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "competition_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "comptetition_interaction_id" integer, "location_id" integer, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_competition_interaction_observations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_competition_interaction_observations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_facilitation_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "facilitation_interactions"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "facilitation_interactions"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "facilitation_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer NOT NULL, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_facilitation_interactions"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_facilitation_interactions"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_facilitation_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer NOT NULL, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "facilitation_interactions"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "facilitation_interactions"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "facilitation_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer NOT NULL, "stage_2_id" integer NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_facilitation_interactions"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_facilitation_interactions"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_facilitation_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "facilitation_interaction_id" integer, "location_id" integer, "comment" text, "datum" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "facilitation_interaction_observations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "facilitation_interaction_observations"
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "facilitation_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "facilitation_interaction_id" integer, "location_id" integer, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_facilitation_interaction_observations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_facilitation_interaction_observations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_functional_groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "functional_groups"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "functional_groups"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "functional_groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_functional_groups"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_functional_groups"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_location_data" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "location_id" integer, "lat" float, "lon" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "location_data"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "location_data"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "location_data" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "location_id" integer, "lat" float NOT NULL, "lon" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_location_data"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_location_data"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_location_data" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "location_id" integer, "lat" float NOT NULL, "lon" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "location_data"[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "location_data"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "location_data" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "location_id" integer, "lat" float NOT NULL, "lon" float NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_location_data"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_location_data"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "itis_id" integer, "non_itis_id" integer, "working_name" varchar(255), "functional_group_id" integer, "is_assemblage" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "nodes"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "nodes"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "itis_id" integer, "non_itis_id" integer, "working_name" varchar(255) NOT NULL, "functional_group_id" integer, "is_assemblage" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_nodes"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_nodes"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "itis_id" integer, "non_itis_id" integer, "working_name" varchar(255) NOT NULL, "functional_group_id" integer, "is_assemblage" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "nodes"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "nodes"
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "itis_id" integer, "non_itis_id" integer, "working_name" varchar(255) NOT NULL, "functional_group_id" integer, "is_assemblage" boolean NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_nodes"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_nodes"[0m
+  [1m[35m (1.0ms)[0m  CREATE TEMPORARY TABLE "altered_node_max_ages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "node_id" integer, "max_age" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "node_max_ages"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "node_max_ages"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "node_max_ages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "node_id" integer, "max_age" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_node_max_ages"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_node_max_ages"[0m
+  [1m[35m (1.0ms)[0m  CREATE TEMPORARY TABLE "altered_node_max_ages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "node_id" integer, "max_age" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "node_max_ages"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "node_max_ages"
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "node_max_ages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "node_id" integer, "max_age" float NOT NULL, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_node_max_ages"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_node_max_ages"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_node_ranges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "node_id" integer, "location_n_id" integer, "location_s_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "node_ranges"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "node_ranges"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "node_ranges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "node_id" integer, "location_n_id" integer NOT NULL, "location_s_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_node_ranges"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_node_ranges"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_node_ranges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "node_id" integer, "location_n_id" integer NOT NULL, "location_s_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "node_ranges"[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "node_ranges"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "node_ranges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "node_id" integer, "location_n_id" integer NOT NULL, "location_s_id" integer NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_node_ranges"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_node_ranges"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_node_ranges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "node_id" integer, "location_n_id" integer NOT NULL, "location_s_id" integer NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "node_ranges"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "node_ranges"
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "node_ranges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "node_id" integer, "location_n_id" integer NOT NULL, "location_s_id" integer NOT NULL, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_node_ranges"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_node_ranges"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_non_itis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "latin_name" varchar(255), "parent_id_is_itis" boolean, "info" text, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "non_itis"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "non_itis"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "non_itis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer NOT NULL, "latin_name" varchar(255), "parent_id_is_itis" boolean, "info" text, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_non_itis"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_non_itis"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_non_itis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer NOT NULL, "latin_name" varchar(255), "parent_id_is_itis" boolean, "info" text, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "non_itis"[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "non_itis"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "non_itis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer NOT NULL, "latin_name" varchar(255) NOT NULL, "parent_id_is_itis" boolean, "info" text, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_non_itis"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_non_itis"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_non_itis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer NOT NULL, "latin_name" varchar(255) NOT NULL, "parent_id_is_itis" boolean, "info" text, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mSELECT * FROM "non_itis"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "non_itis"
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "non_itis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer NOT NULL, "latin_name" varchar(255) NOT NULL, "parent_id_is_itis" boolean NOT NULL, "info" text, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_non_itis"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_non_itis"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_parasitic_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "parasitic_interactions"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "parasitic_interactions"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "parasitic_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer NOT NULL, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  SELECT * FROM "altered_parasitic_interactions"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_parasitic_interactions"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_parasitic_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer NOT NULL, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "parasitic_interactions"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "parasitic_interactions"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "parasitic_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer NOT NULL, "stage_2_id" integer NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_parasitic_interactions"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_parasitic_interactions"[0m
+  [1m[35m (1.0ms)[0m  CREATE TEMPORARY TABLE "altered_parasitic_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "parasitic_interaction_id" integer, "location_id" integer, "prevalence" float, "intensity" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "parasitic_interaction_observations"[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "parasitic_interaction_observations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "parasitic_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "parasitic_interaction_id" integer, "location_id" integer, "prevalence" float, "intensity" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_parasitic_interaction_observations"
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "altered_parasitic_interaction_observations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_parasitic_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "parasitic_interaction_id" integer, "location_id" integer, "prevalence" float, "intensity" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "parasitic_interaction_observations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "parasitic_interaction_observations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "parasitic_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "parasitic_interaction_id" integer, "location_id" integer, "prevalence" float, "intensity" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_parasitic_interaction_observations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_parasitic_interaction_observations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_parasitic_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "parasitic_interaction_id" integer, "location_id" integer, "prevalence" float, "intensity" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "parasitic_interaction_observations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "parasitic_interaction_observations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "parasitic_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "parasitic_interaction_id" integer, "location_id" integer, "prevalence" float, "intensity" float, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_parasitic_interaction_observations"
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "altered_parasitic_interaction_observations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_biomass_changes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "biomass_change" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_biomass_changes"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_biomass_changes"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_biomass_changes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "biomass_change" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_biomass_changes"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_biomass_changes"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_biomass_changes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "biomass_change" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_biomass_changes"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_biomass_changes"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_biomass_changes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "biomass_change" float NOT NULL, "comment" text, "datum" varchar(255) NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_biomass_changes"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_biomass_changes"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_biomass_densities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "biomass_density" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_biomass_densities"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_biomass_densities"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_biomass_densities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "biomass_density" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_biomass_densities"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_biomass_densities"[0m
+  [1m[35m (1.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_biomass_densities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "biomass_density" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_biomass_densities"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_biomass_densities"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_biomass_densities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "biomass_density" float NOT NULL, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  SELECT * FROM "altered_stage_biomass_densities"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_biomass_densities"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_consumer_strategies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_consumer_strategies"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_consumer_strategies"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_consumer_strategies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_consumer_strategies"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_consumer_strategies"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_consum_biomass_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "consum_biomass_ratio" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_consum_biomass_ratios"[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_consum_biomass_ratios"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_consum_biomass_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "consum_biomass_ratio" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_consum_biomass_ratios"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_consum_biomass_ratios"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_consum_biomass_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "consum_biomass_ratio" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_consum_biomass_ratios"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_consum_biomass_ratios"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_consum_biomass_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "consum_biomass_ratio" float NOT NULL, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_consum_biomass_ratios"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_consum_biomass_ratios"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_drymasses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "drymass" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_drymasses"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_drymasses"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_drymasses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "drymass" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_drymasses"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_drymasses"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_drymasses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "drymass" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_drymasses"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_drymasses"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_drymasses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "drymass" float NOT NULL, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_drymasses"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_drymasses"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_durations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "duration" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_durations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_durations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_durations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "duration" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_durations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_durations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_durations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "duration" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_durations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_durations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_durations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "duration" float NOT NULL, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_durations"
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "altered_stage_durations"[0m
+  [1m[35m (1.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_fecundities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "fecundity" varchar(255), "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_fecundities"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_fecundities"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_fecundities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "fecundity" varchar(255) NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_fecundities"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_fecundities"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_fecundities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "fecundity" varchar(255) NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_fecundities"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_fecundities"
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "stage_fecundities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "fecundity" varchar(255) NOT NULL, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_fecundities"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_fecundities"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_habitats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_habitats"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_habitats"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_habitats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_habitats"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_habitats"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_lengths" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "length" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_lengths"[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_lengths"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_lengths" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "length" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_lengths"
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "altered_stage_lengths"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_lengths" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "length" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_lengths"[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_lengths"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_lengths" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "length" float NOT NULL, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_lengths"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_lengths"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_length_fecundities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "a" float, "b" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_length_fecundities"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_length_fecundities"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_length_fecundities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "a" float DEFAULT 0 NOT NULL, "b" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_length_fecundities"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_length_fecundities"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_length_fecundities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "a" float DEFAULT 0.0 NOT NULL, "b" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_length_fecundities"[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_length_fecundities"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_length_fecundities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "a" float DEFAULT 0.0 NOT NULL, "b" float DEFAULT 0 NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_length_fecundities"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_length_fecundities"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_length_fecundities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "a" float DEFAULT 0.0 NOT NULL, "b" float DEFAULT 0.0 NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_length_fecundities"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_length_fecundities"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_length_fecundities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "a" float DEFAULT 0.0 NOT NULL, "b" float DEFAULT 0.0 NOT NULL, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_length_fecundities"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_length_fecundities"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_length_weights" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "a" float, "b" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_length_weights"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_length_weights"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_length_weights" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "a" float DEFAULT 0 NOT NULL, "b" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_length_weights"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_length_weights"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_length_weights" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "a" float DEFAULT 0.0 NOT NULL, "b" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_length_weights"[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_length_weights"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_length_weights" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "a" float DEFAULT 0.0 NOT NULL, "b" float DEFAULT 0 NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_length_weights"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_length_weights"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_length_weights" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "a" float DEFAULT 0.0 NOT NULL, "b" float DEFAULT 0.0 NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_length_weights"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_length_weights"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_length_weights" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "a" float DEFAULT 0.0 NOT NULL, "b" float DEFAULT 0.0 NOT NULL, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_length_weights"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_length_weights"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_lifestyles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_lifestyles"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_lifestyles"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_lifestyles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_lifestyles"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_lifestyles"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_masses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "mass" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_masses"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_masses"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_masses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "mass" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  SELECT * FROM "altered_stage_masses"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_masses"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_masses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "mass" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_masses"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_masses"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_masses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "mass" float NOT NULL, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_masses"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_masses"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_max_depths" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "max_depth" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_max_depths"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_max_depths"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_max_depths" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "max_depth" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_max_depths"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_max_depths"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_max_depths" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "max_depth" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_max_depths"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_max_depths"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_max_depths" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "max_depth" float NOT NULL, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_max_depths"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_max_depths"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_mobilities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_mobilities"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_mobilities"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_mobilities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_mobilities"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_mobilities"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_populations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "population" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_populations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_populations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_populations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "population" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_populations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_populations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_populations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "population" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_populations"[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_populations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_populations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "population" float NOT NULL, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_populations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_populations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_prod_biomass_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "prod_biomass_ratio" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_prod_biomass_ratios"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_prod_biomass_ratios"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_prod_biomass_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "prod_biomass_ratio" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_prod_biomass_ratios"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_prod_biomass_ratios"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_prod_biomass_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "prod_biomass_ratio" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_prod_biomass_ratios"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_prod_biomass_ratios"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_prod_biomass_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "prod_biomass_ratio" float NOT NULL, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_prod_biomass_ratios"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_prod_biomass_ratios"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_prod_consum_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "prod_consum_ratio" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_prod_consum_ratios"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_prod_consum_ratios"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_prod_consum_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "prod_consum_ratio" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_prod_consum_ratios"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_prod_consum_ratios"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_prod_consum_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "prod_consum_ratio" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_prod_consum_ratios"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_prod_consum_ratios"
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "stage_prod_consum_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "prod_consum_ratio" float NOT NULL, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_prod_consum_ratios"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_prod_consum_ratios"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_reproductive_strategies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_reproductive_strategies"[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "stage_reproductive_strategies"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_reproductive_strategies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_reproductive_strategies"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_reproductive_strategies"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_residencies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_residencies"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_residencies"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_residencies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_residencies"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_residencies"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_residency_times" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "residency_time" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_residency_times"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_residency_times"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_residency_times" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "residency_time" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_residency_times"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_residency_times"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_residency_times" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "residency_time" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_residency_times"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_residency_times"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_residency_times" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "residency_time" float NOT NULL, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_residency_times"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_residency_times"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_unassimilated_consum_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "unassimilated_consum_ratio" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_unassimilated_consum_ratios"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_unassimilated_consum_ratios"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_unassimilated_consum_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "unassimilated_consum_ratio" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_unassimilated_consum_ratios"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_unassimilated_consum_ratios"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_stage_unassimilated_consum_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "unassimilated_consum_ratio" float NOT NULL, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "stage_unassimilated_consum_ratios"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "stage_unassimilated_consum_ratios"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "stage_unassimilated_consum_ratios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "stage_id" integer, "unassimilated_consum_ratio" float NOT NULL, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_stage_unassimilated_consum_ratios"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_stage_unassimilated_consum_ratios"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_trophic_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "trophic_interactions"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "trophic_interactions"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "trophic_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer NOT NULL, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_trophic_interactions"
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "altered_trophic_interactions"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_trophic_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer NOT NULL, "stage_2_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "trophic_interactions"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "trophic_interactions"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "trophic_interactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stage_1_id" integer NOT NULL, "stage_2_id" integer NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_trophic_interactions"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_trophic_interactions"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_trophic_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "trophic_interaction_id" integer, "location_id" integer, "percentage_consumed" float, "percentage_diet" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "trophic_interaction_observations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "trophic_interaction_observations"
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "trophic_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "trophic_interaction_id" integer, "location_id" integer, "percentage_consumed" float, "percentage_diet" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_trophic_interaction_observations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_trophic_interaction_observations"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_trophic_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "trophic_interaction_id" integer, "location_id" integer, "percentage_consumed" float, "percentage_diet" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "trophic_interaction_observations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "trophic_interaction_observations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "trophic_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "trophic_interaction_id" integer, "location_id" integer, "percentage_consumed" float, "percentage_diet" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_trophic_interaction_observations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_trophic_interaction_observations"[0m
+  [1m[35m (1.0ms)[0m  CREATE TEMPORARY TABLE "altered_trophic_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "trophic_interaction_id" integer, "location_id" integer, "percentage_consumed" float, "percentage_diet" float, "comment" text, "datum" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "trophic_interaction_observations"[0m
+  [1m[35m (0.0ms)[0m  DROP TABLE "trophic_interaction_observations"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "trophic_interaction_observations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "citation_id" integer, "trophic_interaction_id" integer, "location_id" integer, "percentage_consumed" float, "percentage_diet" float, "comment" text, "datum" varchar(255) DEFAULT '' NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_trophic_interaction_observations"
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_trophic_interaction_observations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130326042522')
+  [1m[36m (10.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
