@@ -4,3 +4,7 @@
 # ignoring certain binary files
 
 tmp/**/*
+
+# ignore the development log
+
+log/*
