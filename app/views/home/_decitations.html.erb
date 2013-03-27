@@ -1,0 +1,153 @@
+<ul class="nav nav-pills">
+    <li class="active">
+        <a href="#citehome" data-toggle="tab">Home</a>
+    </li>
+    <li>
+        <a href="#newauthor" data-toggle="tab">New Author</a>
+    </li>
+    <li>
+        <a href="#newcite" data-toggle="tab">New Citation</a>
+    </li>
+    <li>
+        <a href="#citelist" data-toggle="tab">List Citations</a>
+    </li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="citehome">
+        <p>
+            Above you will find tabs for entering a new author into a
+            database, creating news citation, and for listing all citations
+            currently in a database.
+        </p>
+    </div>
+    <div class="tab-pane" id="newauthor">
+        <div class="well">
+            <h3>Instructions
+            <button type="button" data-toggle="collapse" data-target="#newauthorinfo" class="btn btn-info btn-mini">
+                Collapse/Expand
+            </button></h3>
+            <div id="newauthorinfo" class="collapse">
+                <p>
+                    Enter a new author, first name and last, into the database.
+                    Once entered authors can be searched and cited on the
+                    <em>New Citation</em> page.
+                </p>
+            </div>
+        </div>
+        <fieldset>
+            <legend>
+                Add New Author
+            </legend>
+            <div class="row">
+                <div class="span4 offset1">
+                    <label>First Name: </label>
+                    <input type="text">
+                    <label>Last Name: </label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="button" class="btn btn-primary">
+                    Add Author
+                </button>
+                <button type="reset" class="btn">
+                    Reset
+                </button>
+            </div>
+        </fieldset>
+        </form>
+    </div>
+    <div class="tab-pane" id="newcite">
+        <div class="well">
+            <h3>Instructions
+            <button type="button" data-toggle="collapse" data-target="#newciteinfo" class="btn btn-info btn-mini">
+                Collapse/Expand
+            </button></h3>
+            <div id="newciteinfo" class="collapse">
+                <p>
+                    Enter a new citation. Please enter all necessary
+                    information. If the author you are citing is not listed
+                    please enter them into the database using the <em>New
+                    Authoer</em> tab above.
+                </p>
+                <p>
+                    Acceptable formats of publications are; Journal, Books,
+                    Book Sections, Reports, Thesis, Websites, Personal
+                    Observations, and Unpublished Data. There is also an
+                    <em>other</em> option for sources not listed.
+                </p>
+            </div>
+        </div>
+        <form>
+            <fieldset>
+                <legend>
+                    Add New Citation
+                </legend>
+                <div class="row">
+                    <div class="span4 offset1">
+                        <label>Author Search: </label>
+                        <input type="text">
+                        <label>Authors: </label>
+                        <input type="text" class="uneditable-input">
+                        <label>Title: </label>
+                        <input type="text">
+                        <label>Document: </label>
+                        <input type="text">
+                        <label>Year: </label>
+                        <input type="text">
+                        <label>Published Format: </label>
+                        <select>
+                            <option></option>
+                            <option>Journal</option>
+                            <option>Book</option>
+                            <option>Book Section</option>
+                            <option>Report</option>
+                            <option>Thesis</option>
+                            <option>Website</option>
+                            <option>Other</option>
+                            <option>Personal Observation</option>
+                            <option>Unpublished Data</option>
+                        </select>
+                    </div>
+                    <div class="span4 offset1">
+                        <label>Format Title: </label>
+                        <input type="text">
+                        <label>Publisher: </label>
+                        <input type="text">
+                        <label>Volume: </label>
+                        <input type="text">
+                        <label>Number: </label>
+                        <input type="text">
+                        <label>Pages: </label>
+                        <input type="text">
+                        <label>Abstract:</label>
+                        <textarea rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-primary">
+                        Add New Citation
+                    </button>
+                    <button type="reset" class="btn">
+                        Reset
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="tab-pane" id="citelist">
+        <div class="well">
+            <h3>Instructions
+            <button type="button" data-toggle="collapse" data-target="#citelistinfo" class="btn btn-info btn-mini">
+                Collapse/Expand
+            </button></h3>
+            <div id="citelistinfo" class="collapse">
+                <p>
+                    Below is (or soon will be) a list of all the citations
+                    currently in the database. Citations are listed
+                    alphabetically by author's last name.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

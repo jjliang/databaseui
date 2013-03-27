@@ -1,0 +1,36 @@
+<div class="page-header span10 offset1">
+    <h1>Data Entry</h1>
+</div>
+
+<div class="tabbable tabs-left span8 offset1">
+    <ul class="nav nav-tabs">
+        <li class="active">
+            <a href="#navhome" data-toggle="tab">Home</a>
+        </li>
+        <li>
+            <a href="#nodes" data-toggle="tab">Nodes</a>
+        </li>
+        <li>
+            <a href="#cits" data-toggle="tab">Citations</a>
+        </li>
+        <li>
+            <a href="#inters" data-toggle="tab">Interactions</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="navhome">
+            <p>
+                You are here!
+            </p>
+        </div>
+        <div class="tab-pane" id="nodes">
+            <%= render 'home/denode' %>
+        </div>
+        <div class="tab-pane" id="cits">
+            <%= render 'home/decitations' %>
+        </div>
+        <div class="tab-pane" id="inters">
+            <%= render 'home/deinteractions' %>
+        </div>
+    </div>
+</div>
