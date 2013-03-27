@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Food Web builder</title>
+        <%= stylesheet_link_tag    "application", media: "all" %>
+        <%= javascript_include_tag "application" %>
+        <%= csrf_meta_tags %>
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="row">
+            <div class="span10 offset1">
+                <h1 class="text-center">Welcome to Food Web Builder</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container">
+                <%= yield %>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class='span8 offset2'>
+                <p class="text-center">
+                    This is a place holder for an interactive map
+                </p>
+                <img src='assets/worldmap.jpg'>
+            </div>
+        </div>
+
+    </body>
+</html>
+

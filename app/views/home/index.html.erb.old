@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Food Web builder</title>
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="span6">
+	<div id="myCarousel" class="carousel slide">
+	  <div class="carousel-inner">
+	    <div class="item active">
+	      <img src="/img/412_1230.jpg">
+	    </div>
+	    <div clas="item">
+	      <img src="/img/barilotti_photography_017.jpg">
+	      </div>
+	    <div clas="item">
+	      <img src="/img/carr.jpg">
+	    </div>	   
+	    <div clas="item">
+	      <img src="/img/carr01.jpg">
+	    </div>
+	    <div clas="item">
+	      <img src="/img/figurski01.jpg">
+	    </div>
+	    <div clas="item">
+	      <img src="/img/figurski02.jpg">
+	    </div>
+	    <div clas="item">
+	      <img src="/img/fish.jpg">
+	    </div>
+	    <div clas="item">
+	      <img src="/img/fish1.jpg">
+	    </div>
+	    <div clas="item">
+	      <img src="img/kelp.jpg">
+	    </div>
+	    <div clas="item">
+	      <img src="img/otter.jpg">
+	    </div>
+	    <div clas="item">
+	      <img src="img/redurchin.jpg">
+	    </div>
+	    <div clas="item">
+	      <img src="img/scott_gabara_photography_007.jpg">
+	    </div> <!-- end carousel-inner -->
+	    <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+	    <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+	  </div> <!-- end carousel-slide -->
+	</div> <!-- end span6 -->
+      </div> <!-- end container -->
+	<script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+  </body>
+</html>

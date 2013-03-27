@@ -1,0 +1,71 @@
+.content {
+  background: #999999;
+	padding-top: 30px;
+	width: 400px;
+	margin: auto;
+}
+
+h1 {
+	background: #e3e3e3;
+	padding: 5px 20px;
+	margin-left: -20px;
+	margin-top: 0;
+	position: relative;
+	width: 70%;
+	
+	box-shadow: 1px 1px 3px #292929;
+	
+	color: #454545;
+	text-shadow: 0 1px 0 white;
+}
+
+.arrow {
+	width: 0;
+	height: 0;
+	line-height: 0;
+	border-left: 20px solid transparent;
+	border-top: 10px solid #c8c8c8;
+	top: 105%;
+	left: 0;
+	position: absolute;
+}
+
+input {
+	padding: 8px;
+	margin-left: 50px;
+	border: solid 1px #e5e5e5;
+	outline: 0;
+	font: normal 13px/100% Verdana, Tahoma, sans-serif;
+	width: 200px;
+	background: #ffffff;
+	
+	box-shadow: rgba(0,0,0,0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0,0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0,0.1) 0px 0px 8px;
+	
+	background: -webkit-gradient(linear, left top, left 25, from(#ffffff), color-stop(4%, #eeeeee), to(#ffffff));
+	background: -moz-linear-gradient(top, #ffffff, #eeeeee 1px, #ffffff 25px);
+}
+
+input:hover, input:focus {
+	border-color: #a7a7a7;
+	-webkit-box-shadow: rgba(0,0,0,0.15) 0px 0px 8px;
+}
+
+.form label {
+	margin-left: 10px;
+	color: #FFFFFF;
+}
+
+.submit input {
+	width: auto;
+	padding: 9px 15px;
+	margin-bottom: 20px;
+	background: #617798;
+	border: 0;
+	font-size: 14px;
+	color: #FFFFFF;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}

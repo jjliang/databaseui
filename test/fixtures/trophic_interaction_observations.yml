@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  citation_id: 1
+  trophic_interaction_id: 1
+  location_id: 1
+  percentage_consumed: 1.5
+  percentage_diet: 1.5
+  comment: MyText
+  datum: MyString
+  user_id: 1
+
+two:
+  citation_id: 1
+  trophic_interaction_id: 1
+  location_id: 1
+  percentage_consumed: 1.5
+  percentage_diet: 1.5
+  comment: MyText
+  datum: MyString
+  user_id: 1

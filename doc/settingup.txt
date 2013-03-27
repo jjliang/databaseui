@@ -1,0 +1,29 @@
+After setting up gem file and running bundle installs
+
+Installation
+First, create a bare new rails app. If you already have an existing app with Devise and Cancan set up and you just want to add rolify, just add rolify in your Gemfile, run bundle install and skip to step 6
+
+# rails new rolify_tutorial
+edit the Gemfile and add Devise, CanCan and rolify gems:
+gem 'devise'
+gem 'cancan'
+gem 'rolify'
+run bundle install to install all required gems
+
+Run Devise generator
+
+# rails generate devise:install
+Create the User model from Devise
+
+# rails generate devise User
+Create the Ability class from CanCan
+
+# rails generate cancan:ability
+Create the Role class from rolify
+
+# rails generate rolify:role
+Run migrations
+
+# rake db:migrate
+
+rails generate devise:views
