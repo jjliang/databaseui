@@ -1,0 +1,195 @@
+<div class="tab-pane active span10" id="nodes">
+    <div class="tabbable tabs-top">
+        <ul class="nav nav-pills">
+            <li>
+                <a href="#nodehome" data-toggle="tab">Home</a>
+            </li>
+            <li>
+                <a href="#newnode" data-toggle="tab">New Node</a>
+            </li>
+            <li class="active">
+                <a href="#nonitis" data-toggle="tab">New non-Itis Node</a>
+            </li>
+            <li>
+                <a href="#nodesearch" data-toggle="tab">Search Nodes</a>
+            </li>
+            <li>
+                <a href="#nodelist" data-toggle="tab">List Nodes</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane" id="nodehome">
+                <p>
+                    You are in the Node Home sub-pane
+                </p>
+            </div>
+            <!-- Begin NODE Pane -->
+            <div class="tab-pane" id="newnode">
+                <p>
+                    First search for a node by its latin or common name.
+                    Once you have selected an Itis node by latin or common name,
+                    click "Add Node" to fill out the rest of the necessary
+                    information.
+                </p>
+                <form>
+                    <fieldset>
+                        <legend>
+                            Add New Node
+                        </legend>
+                        <div class="row">
+                            <div class="span4 offset1">
+                                <label>ITIS Latin Name: </label>
+                                <input type="text">
+                                <label>ITIS Commen Name: </label>
+                                <input type="text">
+                                <label>ITIS ID: </label>
+                                <input type="number" class="input-mini uneditable-input">
+                            </div>
+                            <div class="span4 offset1">
+                                <label>Working Name: </label>
+                                <input type="text">
+                                <label>Functional Group: </label>
+                                <select>
+                                    <option></option>
+                                    <option>First</option>
+                                    <option>Second</option>
+                                    <option>Third</option>
+                                </select>
+                                <label>Native Status: </label>
+                                <select>
+                                    <option></option>
+                                    <option>Native</option>
+                                    <option>Non-native</option>
+                                    <option>Unknown</option>
+                                </select>
+                                <label class="checkbox">Is assemblage
+                                    <input type="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                        <!-- <span class="help-block">Example block-level help text here.</span> -->
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-primary">
+                                Add New Node
+                            </button>
+                            <button type="reset" class="btn">
+                                Reset
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <!-- End NODE Pane -->
+            <!-- Begin Non-ITIS Pane -->
+            <div class="tab-pane active" id="nonitis">
+                <div id="addinfo" class="collapse in">
+                    <p>
+                        Each node (i.e. species) that is not already in the ITIS
+                        database receives a Non-ITIS id with which is identified
+                        in our local database. Each Non-ITIS id must point to a
+                        valid ITIS id at some higher (parent) taxonomic level.
+                        If your new node's parent is already in ITIS, this will
+                        be a simple three-step process:
+                    </p>
+                    <ol>
+                        <li>
+                            Use the "Parent Search" field to search the ITIS
+                            database for the scientific name of the most
+                            specific taxonomic name you can identify your new
+                            node to.
+                        </li>
+                        <li>
+                            Manually enter the taxonomic level and the Latin
+                            name of your new node. Then
+                        <li>
+                            Specify
+                            <ol>
+                                <li>
+                                    a representative "working name" for the nod
+                                </li>
+                                <li>
+                                    select its functional group
+                                </li>
+                                <li>
+                                    check "is assemblage" if the entry does not
+                                    represent a node that is identified to the
+                                    species-specific level.
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                    <p>
+                        If you have multiple taxonomic levels that are not
+                        already in ITIS, you will need to repeat the above steps
+                        several times, starting with the level of the parent
+                        that is already in ITIS. From there, work your way down
+                        by using the "Parent Search" field to search for the
+                        either an ITIS node or Non-ITIS node that represents
+                        the next parent.
+                    </p>
+                </div>
+                <button type="button" data-toggle="collapse" data-target="#addinfo" class="btn btn-info btn-mini">
+                    Collapse/Expand
+                </button>
+                <form>
+                    <fieldset>
+                        <legend>
+                            Add New Non-ITIS Node
+                        </legend>
+                        <div class="row">
+                            <div class="span4 offset1">
+                                <label>ITIS Latin Name: </label>
+                                <input type="text">
+                                <label>ITIS Commen Name: </label>
+                                <input type="text">
+                                <label>ITIS ID: </label>
+                                <input type="number" class="input-mini uneditable-input">
+                            </div>
+                            <div class="span4 offset1">
+                                <label>Working Name: </label>
+                                <input type="text">
+                                <label>Functional Group: </label>
+                                <select>
+                                    <option></option>
+                                    <option>First</option>
+                                    <option>Second</option>
+                                    <option>Third</option>
+                                </select>
+                                <label>Native Status: </label>
+                                <select>
+                                    <option></option>
+                                    <option>Native</option>
+                                    <option>Non-native</option>
+                                    <option>Unknown</option>
+                                </select>
+                                <label class="checkbox">Is assemblage
+                                    <input type="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                        <!-- <span class="help-block">Example block-level help text here.</span> -->
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-primary">
+                                Add New Node
+                            </button>
+                            <button type="reset" class="btn">
+                                Reset
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <!-- End Non-ITIS Pane -->
+            <div class="tab-pane" id="nodesearch">
+                <p>
+                    You are in the Node Search sub-pane
+                </p>
+            </div>
+            <div class="tab-pane" id="nodelist">
+                <p>
+                    You are in the Node List sub-pane
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
