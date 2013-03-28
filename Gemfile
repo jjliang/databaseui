@@ -55,3 +55,6 @@ gem 'devise'
 gem 'rolify'
 # To use debugger
 # gem 'debugger'
+
+# For charts
+gem 'lazy_high_charts'
