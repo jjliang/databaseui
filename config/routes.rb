@@ -1,5 +1,10 @@
 FoodWebBuilder::Application.routes.draw do
 
+  resources :author_cites
+
+
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+
   resources :trophic_interaction_observations
 
 

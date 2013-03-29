@@ -18,7 +18,7 @@ class AuthorCitesControllerTest < ActionController::TestCase
 
   test "should create author_cite" do
     assert_difference('AuthorCite.count') do
-      post :create, author_cite: {  }
+      post :create, author_cite: { author_id: @author_cite.author_id, cite_id: @author_cite.cite_id, user_id: @author_cite.user_id }
     end
 
     assert_redirected_to author_cite_path(assigns(:author_cite))
@@ -35,7 +35,7 @@ class AuthorCitesControllerTest < ActionController::TestCase
   end
 
   test "should update author_cite" do
-    put :update, id: @author_cite, author_cite: {  }
+    put :update, id: @author_cite, author_cite: { author_id: @author_cite.author_id, cite_id: @author_cite.cite_id, user_id: @author_cite.user_id }
     assert_redirected_to author_cite_path(assigns(:author_cite))
   end
 
