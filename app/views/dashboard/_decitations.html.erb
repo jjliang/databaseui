@@ -82,7 +82,10 @@
 						alphabetically by author's last name.
 					</p>
 				</div>
+			
+
 			</div>
+<%= render :partial => 'listauthor', :authors => @authorlist %>
 		</div>
 	<% end %>
 
@@ -131,7 +134,9 @@
 				<div id="citelistinfo" class="collapse"
 				</div>
 			</div>
+		
 		</div>
+<%= render :partial => 'listcitation', :authors => @citationlist %>
 	<% end %>
 </div>
 </div>

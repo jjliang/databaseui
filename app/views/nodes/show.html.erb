@@ -1,5 +1,40 @@
 <p id="notice"><%= notice %></p>
 
+<p>
+  <b>Itis:</b>
+  <%= @node.itis_id %>
+</p>
+
+<p>
+  <b>Non itis:</b>
+  <%= @node.non_itis_id %>
+</p>
+
+<p>
+  <b>Working name:</b>
+  <%= @node.working_name %>
+</p>
+
+<p>
+  <b>Functional group:</b>
+  <%= @node.functional_group_id %>
+</p>
+
+<p>
+  <b>Native status:</b>
+  <%= @node.native_status %>
+</p>
+
+<p>
+  <b>Is assemblage:</b>
+  <%= @node.is_assemblage %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @node.user_id %>
+</p>
+
 
 <%= link_to 'Edit', edit_node_path(@node) %> |
 <%= link_to 'Back', nodes_path %>

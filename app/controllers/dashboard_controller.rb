@@ -8,6 +8,9 @@ class DashboardController < ApplicationController
   @authorlist = Author.all
   @citation = Citation.new
   @citationlist = Citation.all
+  @node = Node.new
+  @non_iti = Non_Iti.new
+  @nodelist = Node.all
   end
 
   

@@ -44,52 +44,17 @@
                 </p>
             </div>
         </div>
-        <form>
+        
             <fieldset>
                 <legend>
                     Add New Node
                 </legend>
-                <div class="row">
-                    <div class="span4 offset1">
-                        <label>ITIS Latin Name: </label>
-                        <input type="text">
-                        <label>ITIS Commen Name: </label>
-                        <input type="text">
-                        <label>ITIS ID: </label>
-                        <input type="number" class="input-mini uneditable-input">
-                    </div>
-                    <div class="span4 offset1">
-                        <label>Working Name: </label>
-                        <input type="text">
-                        <label>Functional Group: </label>
-                        <select>
-                            <option></option>
-                            <option>First</option>
-                            <option>Second</option>
-                            <option>Third</option>
-                        </select>
-                        <label>Native Status: </label>
-                        <select>
-                            <option></option>
-                            <option>Native</option>
-                            <option>Non-native</option>
-                            <option>Unknown</option>
-                        </select>
-                        <label class="checkbox">Is assemblage
-                            <input type="checkbox">
-                        </label>
-                    </div>
-                </div>
-                <div class="form-actions">
-                    <button type="button" class="btn btn-primary">
-                        Add New Node
-                    </button>
-                    <button type="reset" class="btn">
-                        Reset
-                    </button>
-                </div>
-            </fieldset>
-        </form>
+				<%= render :partial => 'node_form', :nodes => @node %>
+
+
+
+                               </fieldset>
+        
     </div>
     <!-- End NEW NODE Pane -->
     <!-- Begin NEW Non-ITIS Pane -->
@@ -144,56 +109,16 @@
                 </p>
             </div>
         </div>
-        <form>
+        <%= render :partial => 'non_itis_node_form', :non_itis => @non_itis_node %>
+
+
             <fieldset>
                 <legend>
                     Add New Non-ITIS Node
                 </legend>
-                <div class="row">
-                    <div class="span4 offset1">
-                        <label>Parent Search: </label>
-                        <input type="text">
-                        <label>Parent Info: </label>
-                        <input type="text" class="uneditable-input">
-                        <label>Latin Name: </label>
-                        <input type="text">
-                        <label>Working Name: </label>
-                        <input type="text">
-                        <label>Addition Information:</label>
-                        <textarea rows="5"></textarea>
-                    </div>
-                    <div class="span4 offset1">
-                        <label>Taxonomic Level: </label>
-                        <select></select>
-                        <label>Functional Group: </label>
-                        <select>
-                            <option></option>
-                            <option>First</option>
-                            <option>Second</option>
-                            <option>Third</option>
-                        </select>
-                        <label>Native Status: </label>
-                        <select>
-                            <option></option>
-                            <option>Native</option>
-                            <option>Non-native</option>
-                            <option>Unknown</option>
-                        </select>
-                        <label class="checkbox">Is assemblage
-                            <input type="checkbox">
-                        </label>
-                    </div>
-                </div>
-                <div class="form-actions">
-                    <button type="button" class="btn btn-primary">
-                        Add New Non-ITIS Node
-                    </button>
-                    <button type="reset" class="btn">
-                        Reset
-                    </button>
-                </div>
-            </fieldset>
-        </form>
+
+                         </fieldset>
+        
     </div>
     <!-- End NEW Non-ITIS Pane -->
     <!-- Begin Node Search Pane -->

@@ -11,7 +11,31 @@
     </div>
   <% end %>
 
-  <div class="actions">
+  <div class="field">
+    <%= f.label :itis_id %><br />
+    <%= f.number_field :itis_id %>
+  </div>
+  <div class="field">
+    <%= f.label :non_itis_id %><br />
+    <%= f.number_field :non_itis_id %>
+  </div>
+  <div class="field">
+    <%= f.label :working_name %><br />
+    <%= f.text_field :working_name %>
+  </div>
+  <div class="field">
+    <%= f.label :functional_group_id %><br />
+    <%= f.number_field :functional_group_id %>
+  </div>
+  <div class="field">
+    <%= f.label :native_status %><br />
+    <%= f.text_field :native_status %>
+  </div>
+  <div class="field">
+    <%= f.label :is_assemblage %><br />
+    <%= f.check_box :is_assemblage %>
+  </div>
+   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
