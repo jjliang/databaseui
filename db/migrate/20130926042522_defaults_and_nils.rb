@@ -13,13 +13,13 @@ class DefaultsAndNils < ActiveRecord::Migration
   	change_column :citations, :closed, :boolean, :null => false, :default => 0
   	change_column :competition_interactions, :stage_1_id, :integer, :null => false
   	change_column :competition_interactions, :stage_2_id, :integer, :null => false
-  	change_column :competition_interaction_observations, :datum, :string, :null => false, :default => ''
+  	#change_column :competition_interaction_observations, :datum, :string, :null => false, :default => ''
   	change_column :facilitation_interactions, :stage_1_id, :integer, :null => false
   	change_column :facilitation_interactions, :stage_2_id, :integer, :null => false
-  	change_column :facilitation_interaction_observations, :datum, :string, :null => false, :default => ''
+  	#change_column :facilitation_interaction_observations, :datum, :string, :null => false, :default => ''
   	change_column :functional_groups, :name, :string, :null => false
-  	change_column :location_data, :lat, :float, :null => false
-  	change_column :location_data, :lon, :float, :null => false
+  	change_column :location_data, :latitude, :float, :null => false
+  	change_column :location_data, :longitude, :float, :null => false
   	change_column :nodes, :working_name, :string, :null => false
   	change_column :nodes, :is_assemblage, :boolean, :null => false
   	change_column :node_max_ages, :max_age, :float, :null => false
@@ -32,16 +32,16 @@ class DefaultsAndNils < ActiveRecord::Migration
   	change_column :non_itis, :parent_id_is_itis, :boolean, :null => false
   	change_column :parasitic_interactions, :stage_1_id, :integer, :null => false
   	change_column :parasitic_interactions, :stage_2_id, :integer, :null => false
-  	change_column :parasitic_interaction_observations, :prevalence, :float, :default => nil
-  	change_column :parasitic_interaction_observations, :intensity, :float, :default => nil
-  	change_column :parasitic_interaction_observations, :datum, :string, :null => false, :default => ''
+  	#change_column :parasitic_interaction_observations, :prevalence, :float, :default => nil
+  	#change_column :parasitic_interaction_observations, :intensity, :float, :default => nil
+  	#change_column :parasitic_interaction_observations, :datum, :string, :null => false, :default => ''
   	change_column :stage_biomass_changes, :biomass_change, :float, :null => false
   	change_column :stage_biomass_changes, :datum, :string, :null => false
   	change_column :stage_biomass_densities, :biomass_density, :float, :null => false
   	change_column :stage_biomass_densities, :datum, :string, :null => false, :default => ''
   	change_column :stage_consumer_strategies, :datum, :string, :null => false, :default => ''
-  	change_column :stage_consum_biomass_ratios, :consum_biomass_ratio, :float, :null => false
-  	change_column :stage_consum_biomass_ratios, :datum, :string, :null => false, :default => ''
+  	#change_column :stage_consum_biomass_ratios, :consum_biomass_ratio, :float, :null => false
+  	#change_column :stage_consum_biomass_ratios, :datum, :string, :null => false, :default => ''
   	change_column :stage_drymasses, :drymass, :float, :null => false
   	change_column :stage_drymasses, :datum, :string, :null => false, :default => ''
   	change_column :stage_durations, :duration, :float, :null => false

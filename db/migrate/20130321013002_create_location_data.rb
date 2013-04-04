@@ -1,9 +1,10 @@
 class CreateLocationData < ActiveRecord::Migration
   def change
     create_table :location_data do |t|
+      t.float :latitude
+      t.float :longitude
       t.integer :location_id
-      t.float :lat
-      t.float :lon
+      t.string :name
 
       t.timestamps
     end

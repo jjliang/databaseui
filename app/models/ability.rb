@@ -183,9 +183,9 @@ class Ability
 		
 		if user.role? :moderator
 			
-			# Locations
-			can [:create, :read], Locations
-			can :manage, Locations, :user_id => user.id
+			# Location
+			can [:create, :read], Location
+			can :manage, Location, :user_id => user.id
 			
 			# Location_Data
 			can [:create, :read], LocationData
