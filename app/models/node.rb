@@ -3,5 +3,8 @@ class Node < ActiveRecord::Base
   belongs_to :functional_group
   belongs_to :user
   belongs_to :project
+  has_one :node_max_age
+  has_one :node_range
+  has_many :stages
   #has_one :non_itis, :dependent => :destroy  
 end

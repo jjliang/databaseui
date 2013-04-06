@@ -13,11 +13,13 @@
 	<div class="tab-pane active" id="home">
 		<p> Here you can list all users and see users waiting approval </p>
 	</div>
-	
 	<div class="tab-pane" id="all">
-		<%= render :partial => 'listusers', :user => @userlist %>
+		<div class="well">
+			<fieldset>
+				<%= render :partial => 'listusers', :user => @userlist %>
+			</fieldset>
+		</div>
 	</div>
-	
 	<div class="tab-pane" id="waiting">
 		<%= render :partial => 'listusers', :user => @userlist %>
 	</div>
