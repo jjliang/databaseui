@@ -41,6 +41,8 @@ class NonItisController < ApplicationController
   # POST /non_itis.json
   def create
     @non_iti = NonIti.new(params[:non_iti])
+    @non_iti.project_id = current_user.project_id
+    @non_iti.user_id = current_user.id
 
     respond_to do |format|
       if @non_iti.save

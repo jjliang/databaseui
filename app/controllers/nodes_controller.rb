@@ -1,7 +1,7 @@
 class NodesController < ApplicationController
   # GET /nodes
   # GET /nodes.json
-  autocomplete :working_name
+  #autocomplete :working_name
   def index
     @nodes = Node.all
 
@@ -42,6 +42,8 @@ class NodesController < ApplicationController
   # POST /nodes.json
   def create
     @node = Node.new(params[:node])
+    @node.project_id = current_user.project_id
+    @node.user_id = current_user.id
 
     respond_to do |format|
       if @node.save

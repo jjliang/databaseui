@@ -42,6 +42,7 @@ class CitationsController < ApplicationController
   def create
     @citation = Citation.new(params[:citation])
     @citation.user_id = current_user.id
+    @citation.project_id = current_user.project_id
     respond_to do |format|
       if @citation.save
         format.html { redirect_to @citation, notice: 'Citation was successfully created.' }

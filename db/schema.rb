@@ -110,6 +110,7 @@ ActiveRecord::Schema.define(:version => 20130926042527) do
   end
 
   create_table "functional_groups", :force => true do |t|
+
     t.string   "name",       :default => "",    :null => false
     t.datetime "created_at",                    :null => false
     t.datetime "updated_at",                    :null => false

@@ -19,6 +19,8 @@ User.create(:firstname => 'Project', :lastname => 'Lead', :username => 'lead', :
 LocationData.create(latitude: [42.31276,42.35653,42.45453,41.54244],longitude: [-
  71.03645,-71.06754,-71.7856,-71.14232],location_id: 1,name: "UMASS BOSTON")
 
+
 LocationData.create(latitude: [41.31276,44.35653,41.25453,45.52244],longitude: [-
  72.03645,-72.06754,-74.7856,-72.14232],location_id: 2,name: "Amazon")
+
 
