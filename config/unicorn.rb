@@ -9,7 +9,7 @@
 # documentation.
 
 # Setting the application path
-app_path = "/var/rails/fwb/current"
+#app_path = "/var/rails/fwb/current"
 
 # Use at least one worker per core if you're on a dedicated server,
 # more will usually help for _short_ waits on databases/caches.
@@ -23,8 +23,10 @@ worker_processes 1
 # user "unprivileged_user", "unprivileged_group"
 ##user 'apps' , 'apps'
 
-##rails_env = ENV['RAILS_ENV'] || 'production'
+user "fwb" ,"rvm"
 
+#rails_env = ENV['RAILS_ENV'] || 'staging'
+RAILS_ENV='production'
 # Help ensure your application will always spawn in the symlinked
 # "current" directory that Capistrano sets up.
 working_directory "/var/rails/fwb/current" # available in 0.94.0+
@@ -35,16 +37,16 @@ listen "/var/rails/fwb/current/tmp/unicorn.sock", :backlog => 64
 listen 8000, :tcp_nopush => true
 
 # nuke workers after 30 seconds instead of 60 seconds (the default)
-timeout 180
+timeout 30
 
 # feel free to point this anywhere accessible on the filesystem
-pid "/var/rails/fwb/current/shared/pids/unicorn.pid"
+pid "/var/rails/fwb/current/tmp/pids/unicorn.pid"
 
 # By default, the Unicorn logger will write to stderr.
 # Additionally, ome applications/frameworks log to stderr or stdout,
 # so prevent them from going to /dev/null when daemonized here:
-stderr_path "/var/rails/fwb/current/shared/log/unicorn.stderr.log"
-stdout_path "/var/rails/fwb/current/shared/log/unicorn.stdout.log"
+stderr_path "/var/rails/fwb/current/log/unicorn.stderr.log"
+stdout_path "/var/rails/fwb/current/log/unicorn.stdout.log"
 
 # combine Ruby 2.0.0dev or REE with "preload_app true" for memory savings
 # http://rubyenterpriseedition.com/faq.html#adapt_apps_for_cow
@@ -75,14 +77,14 @@ before_fork do |server, worker|
   # # thundering herd (especially in the "preload_app false" case)
   # # when doing a transparent upgrade.  The last worker spawned
   # # will then kill off the old master process with a SIGQUIT.
-  old_pid = "#{server.config[:pid]}.oldbin"
-  if old_pid != server.pid
-  	begin
-        sig = (worker.nr + 1) >= server.worker_processes ? :QUIT : :TTOU
-       Process.kill(sig, File.read(old_pid).to_i)
-     rescue Errno::ENOENT, Errno::ESRCH
-     end
-   end
+#  old_pid = "#{server.config[:pid]}.oldbin"
+#  if old_pid != server.pid
+#  	begin
+#        sig = (worker.nr + 1) >= server.worker_processes ? :QUIT : :TTOU
+#       Process.kill(sig, File.read(old_pid).to_i)
+#     rescue Errno::ENOENT, Errno::ESRCH
+#     end
+#   end
   #
   # Throttle the master from forking too quickly by sleeping.  Due
   # to the implementation of standard Unix signal handlers, this

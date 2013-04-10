@@ -8,7 +8,7 @@
 
 User.create(:firstname => 'Admin', :lastname => 'Tester', :username => 'admin', :email => 'admin@foodwebbuilder.com', :password => '12345678', :role => 'admin', :approved => 1, :project_id =>1)
 
-User.create(:firstname => 'Moderator', :lastname => 'Tester', :username => 'mod', :email => 'mod@foodwebbuilder.com', :password => '12345678', :role => 'moderator', :approved => 1, :project_id =>1)
+User.create(:firstname => 'Moderator', :lastname => 'Tester', :username => 'moderator', :email => 'mod@foodwebbuilder.com', :password => '12345678', :role => 'moderator', :approved => 1, :project_id =>1)
 
 User.create(:firstname => 'User', :lastname => 'Tester', :username => 'user', :email => 'user@foodwebbuilder.com', :password => '12345678', :role => 'user', :approved => 1, :project_id =>1)
 

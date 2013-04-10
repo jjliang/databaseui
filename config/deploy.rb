@@ -1,63 +1,78 @@
-require "bundler/capistrano"
-require "rvm/capistrano"
-#$LOAD_PATH.unshift File.join(File.dirname(__FILE__), 'deploy')
-require "capistrano_database.rb"
+  $LOAD_PATH.unshift File.join(File.dirname(__FILE__), 'deploy')
+  require "capistrano_database.rb"
+  require "bundler/capistrano"
+	require "rvm/capistrano"
+	
+	set :rvm_ruby_string, "2.0.0"
+	set :rvm_type, :user
+
 set :application, "FoodWebBuilder"
-before "deploy:setup", "db:configure"
-after "deploy:update_code", "db:symlink"
-default_run_options[:pty] = true  # Must be set for the password prompt from #git to work    
+#default_run_options[:pty] = true  # Must be set for the password prompt from #git to work
+set :default_stage, "staging" 
 set :repository, "http://github.com/jjliang/databaseui.git"  # Your clone URL
 set :scm, 'git'
-
-
-set :deploy_via, :remote_cache  #If omitted each deploy will do a full repository clone 
-set :git_shallow_clone, 1  # only copy the most recent, not the entire repository (default:1)  
+set :branch, "staging"
+#set :deploy_via, :remote_cache  #If omitted each deploy will do a full repository clone 
+#set :git_shallow_clone, 1  # only copy the most recent, not the entire repository (default:1)  
 
 # set :deploy_to, "/var/www" #specify where on the server our application resides 
-set :user, 'fwb' #The servers user for deploys
-set :user_sudo, false
+set :deploy_to, "/var/rails/fwb"
+set :user, "fwb" #The servers user for deploys
+set :use_sudo, false
 set :scm_password, Proc.new { Capistrano::CLI.password_prompt "SCM Password: "}
 
-#Define stage and productipn environments
-set :stages, ["staging", "production"]
-set :default_stage, "staging"
+role :web, "fwb.cs.umb.edu"
+role :app, "fwb.cs.umb.edu"
+role :db, "fwb.cs.umb.edu", :primary => true
 
-after "deploy:restart", "deploy:cleanup" #clean up old releases on each deploy uncomment this
+set :rails_env, :staging
+set :unicorn_binary, "/var/rails/fwb/.rvm/bin/bootup_unicorn"
+set :unicorn_config, "#{current_path}/config/unicorn.rb"
+set :unicorn_pid, "#{current_path}/tmp/pids/unicorn.pid"
 
-# =============================================================================
-# TASKS 
-# =============================================================================
+namespace :deploy do
 
-#  Multiple Stages Without Multistage Extension
-#  https://github.com/capistrano/capistrano/wiki/2.x-Multiple-Stages-Without-Multistage-Extension
-#
-#  cap production deploy - to deploy to prod. / deploy to stage => cap deploy
-#  cap production deploy:restart
-task :production do
-  role :web, "fwb.cs.umb.edu"   # Your HTTP server, Apache/etc (where your web server software runs)
-  role :app, "fwb.cs.umb.edu"   # This may be the same as your `Web` server
-  role :db,  "127.0.0.0.1", :primary => true 	# This is where Rails migrations will run 
-  set :deploy_to, "/var/rails/fwb" #specify where on the server our application resides 
-  set :deploy_via, :remote_cache # only copy the most recent, not the entire repository
-  set :branch, 'staging' #branch to checkout during deployment
+	desc "starting the Food Web Builder"
+	task :start, :roles => :app, :except => { :no_release => true} do
+		run "cd #{current_path} && #{try_sudo} #{unicorn_binary} -c #{unicorn_config} -E #{rails_env} -D"
+	end 
+	
+	task :stop, :roles => :app, :except => { :no_release => true} do
+		run "#{try_sudo} kill `cat #{unicorn_pid}`"
+	end
+	task :graceful_stop, :roles => :app, :except => { :no_release => true} do
+		run "#{try_sudo} kill -s QUIT `cat #{unicorn_pid}`"
+	end
+	task :reload, :roles => :app, :except => { :no_release => true} do
+		run "#{try_sudo} kill -s USR2 `cat #{unicorn_pid}`"
+	end
+	task :create do
+	run "cd #{current_path} && rake db:setup"
+	end
+	task :restart, :roles => :app, :except => { :no_release => true} do
+	 stop
+	 start
+	end
+	task :cold do
+	  transaction do
+	    update
+	    setup_db
+	    start
+	  end
+	end
+
+	task :setup_db, :roles => :app do
+	  raise RuntimeError.new('db:setup aborted!') unless Capistrano::CLI.ui.ask("About to `rake db:setup`. Are you sure to 	wipe the entire database (anything other than 'yes' aborts):") == 'yes'
+	  run "cd #{current_path}; bundle exec rake db:setup RAILS_ENV=#{rails_env}"
+	end
+	
+	task :seed_db, :roles => :app do
+		  raise RuntimeError.new('db:seed aborted!') unless Capistrano::CLI.ui.ask("About to `rake db:seed`. Are you sure to seed data into the database (anything other than 'yes' aborts):") == 'yes'
+	  run "cd #{current_path}; bundle exec rake db:seed RAILS_ENV=#{rails_env}"
+	end
+	
+
 end
 
-task :staging do
-  role :web, "fwb.cs.umb.edu"   # Your HTTP server, Apache/etc (where your web server software runs)
-  role :app, "fwb.cs.umb.edu"   # This may be the same as your `Web` server
-  role :db,  "localhost", :primary => true 	# This is where Rails migrations will run 
-  set :deploy_to, "/var/rails/fwb"
-  set :deploy_via, :remote_cache # only copy the most recent, not the entire repository
-  set :branch, 'staging' #branch to checkout during deployment
-end
 
-# =============================================================================
-# SSH OPTIONS
-# =============================================================================
-# ssh_options[:keys] = %w(/path/to/my/key /path/to/another/key)
-# ssh_options[:port] = 25
-#If you're using your own private keys for git, you want to tell Capistrano 
-#to use agent forwarding with this command. Agent forwarding can make key management
-#much simpler as it uses your local keys instead of keys installed on the server
- set :ssh_options, { :forward_agent => true, :paranoid => false }
- 
+

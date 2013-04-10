@@ -14,6 +14,8 @@ class User < ActiveRecord::Base
   # This is for login with username or e-mail
   attr_accessor :login
   
+
+ 
    attr_accessible :email, :password, :password_confirmation, :remember_me , :role , :approved , :username, :firstname, :lastname, :project_id
   # attr_accessible :title, :body
   has_many :authors

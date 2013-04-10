@@ -25,7 +25,7 @@
             <a href="#users" data-toggle="tab">Users</a>
         	</li>
         <% end %>
-        <% if current_user.role == 'admin' || 'moderator' || 'lead' %>
+        <% if can? :access, :rails_admin %>
         	<li>
             <a href="admin">Database</a>
         	</li>
