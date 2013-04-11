@@ -33,7 +33,50 @@
     </ul>
     <div class="tab-content">
         <div class="tab-pane active" id="navhome">
-           <%= gmaps4rails(@json) %>
+                <%= gmaps({
+       "polygons"    => { "data" => @polygons    , "options" => { "fillColor" => "#000"} }
+     })
+ %>
+<!-- Some java script for the google map being clickable -->
+<% content_for :scripts do %>
+<script type="text/javascript" charset="utf-8">
+
+Gmaps.map.callback = function() 
+{
+    console.log(Gmaps.map)
+    console.log(Gmaps.map.polygons);
+    Gmaps.map.polygons[0].infowindow = new google.maps.InfoWindow
+    ({
+        content: 'you clicked me!'
+    });
+
+google.maps.event.addListener(Gmaps.map.polygons[0].serviceObject, "click", function(event) 
+    {
+        alert("test2");
+        console.log("the click event fired");
+        infowindow = Gmaps.map.polygons[0].infowindow;
+        infowindow.setPosition(event.latLng);
+        infowindow.open(Gmaps.map.map);
+    });
+
+google.maps.event.addListener(Gmaps.map.polygons[1].serviceObject, "click", function(event) 
+    {
+        alert("test1");
+        console.log("the click event fired");
+        infowindow = Gmaps.map.polygons[1].infowindow;
+        infowindow.setPosition(event.latLng);
+        infowindow.open(Gmaps.map.map);
+    });
+
+google.maps.event.addListener(Gmaps.map.serviceObject, "click", function(event) {
+    alert(event.latLng);
+  });
+}
+
+</script>
+<!-- end javascript -->
+<% end %>
+
         </div>
         <div class="tab-pane" id="nodes">
          
