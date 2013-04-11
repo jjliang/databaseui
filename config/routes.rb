@@ -1,6 +1,14 @@
 FoodWebBuilder::Application.routes.draw do
-  resources :projects
+  
+	#For Auto Complete
+  	resources :nodes do
+  	get :autocomplete_node_working_name, :on => :collection
+	end
 
+
+
+	resources :projects
+ 
 
 		#Load resources for models
 	
@@ -69,5 +77,4 @@ FoodWebBuilder::Application.routes.draw do
   match 'visualization' => 'visualization#index'
   match 'dataentry' => 'dashboard#dataentry'
 	
-
 end

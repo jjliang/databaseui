@@ -33,17 +33,20 @@
                 <div class="row">
                     <div class="span4 offset1">
 					    <h4>Node/Stage 1</h4>
-                        <label>Working Name: </label>
-                        <input type="text">
+                        <%= form_tag do %>
+  <%= autocomplete_field_tag 'working_name', '',autocomplete_node_working_name_nodes_path %>
+<% end %>
                         <label>Latin Name: </label>
                         <input type="text">
                     </div>
 					<div class="span4 offset1">
 					    <h4>Node/Stage 2</h4>
-                        <label>Working Name: </label>
-                        <input type="text">
+                        
+                        <%= form_tag do %>
+  <%= autocomplete_field_tag 'working_name', '',autocomplete_node_working_name_nodes_path %>
+<% end %>
                         <label>Latin Name: </label>
-                        <input type="number">
+                        <input type="text">
                     </div>
 			    </div>
 				<div class="row">
