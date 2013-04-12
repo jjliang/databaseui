@@ -30,6 +30,7 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
+    bcrypt-ruby (3.0.1-x86-mingw32)
     bootstrap-sass (2.3.1.0)
       sass (~> 3.2)
     builder (3.0.4)
@@ -82,7 +83,6 @@ GEM
     kaminari (0.14.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
-    kgio (2.8.0)
     lazy_high_charts (1.4.1)
       bundler (>= 1.0)
       hash-deep-merge
@@ -93,6 +93,7 @@ GEM
     mime-types (1.22)
     multi_json (1.7.2)
     mysql2 (0.3.11)
+    mysql2 (0.3.11-x86-mingw32)
     nested_form (0.3.2)
     net-scp (1.1.0)
       net-ssh (>= 2.6.5)
@@ -102,6 +103,7 @@ GEM
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
     nokogiri (1.5.9)
+    nokogiri (1.5.9-x86-mingw32)
     orm_adapter (0.4.0)
     polyglot (0.3.3)
     rack (1.4.5)
@@ -146,7 +148,6 @@ GEM
       rake (>= 0.8.7)
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
-    raindrops (0.10.0)
     rake (10.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
@@ -174,15 +175,12 @@ GEM
     uglifier (2.0.1)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
-    unicorn (4.6.2)
-      kgio (~> 2.6)
-      rack
-      raindrops (~> 0.7)
     warden (1.2.1)
       rack (>= 1.0)
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   bootstrap-sass
@@ -204,4 +202,3 @@ DEPENDENCIES
   rvm-capistrano
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
-  unicorn

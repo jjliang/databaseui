@@ -10,28 +10,49 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :parent_id %><br />
-    <%= f.number_field :parent_id %>
-  </div>
-  <div class="field">
-    <%= f.label :latin_name %><br />
-    <%= f.text_field :latin_name %>
-  </div>
-  <div class="field">
-    <%= f.label :taxonomy_level %><br />
-    <%= f.text_field :taxonomy_level %>
-  </div>
-  <div class="field">
-    <%= f.label :parent_id_is_itis %><br />
-    <%= f.check_box :parent_id_is_itis %>
-  </div>
-  <div class="field">
-    <%= f.label :info %><br />
-    <%= f.text_area :info %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <!-- Begin: Add New Node form -->
+  <div class="row">
+		<!-- begin: first column -->
+	    <div class="span4 offset1">  
+			<div class="field">
+				<%= f.label :parent_id %>
+				<%= f.number_field :parent_id %>
+			</div>
+			<div class="field">
+				<%= f.label :latin_name %>
+				<%= f.text_field :latin_name %>
+			</div>
+			<div class="field">
+				<%= f.label :taxonomy_level %>
+				<%= f.text_field :taxonomy_level %>
+			</div>
+			<div class="field">
+				<%= f.check_box :parent_id_is_itis , :class => 'pull-left'%>
+				<%= f.label :parent_id_is_itis , :class => 'pull-left spacer' %><br />
+			</div>
+		</div>
+		<!-- end: first column -->
+		
+		<!-- begin: second column -->
+	    <div class="span4 offset1"> 
+			<div class="field">
+				<%= f.label :info %>
+				<%= f.text_area :info , :rows => 9%>
+			</div>
+		</div>
+		<!-- end: second column -->
+	
+	</div>
+    	
+	<!-- begin: buttons -->
+	<div class="form-actions">
+		<%= f.submit :class => 'btn btn-primary'%>
+		<button type="reset" class="btn">
+			Reset
+		</button>
+	</div>
+	<!-- end: buttons -->
+  
+  <!-- End: Add New Node form -->
+  
 <% end %>

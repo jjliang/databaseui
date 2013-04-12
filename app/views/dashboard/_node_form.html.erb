@@ -17,33 +17,55 @@
         </ul>
     </div>
     <% end %>
-
-    <div class="field">
-        <%= f.label :itis_id %>
-        <%= f.number_field :itis_id %>
+	<!-- Begin: Add New Node form -->
+    <div class="row">
+	    
+		<!-- begin: first column -->
+	    <div class="span4 offset1">
+			<div class="field">
+				<%= f.label :itis_id %>
+				<%= f.number_field :itis_id %>
+			</div>
+			<div class="field">
+				<%= f.label :non_itis_id %>
+				<%= f.number_field :non_itis_id %>
+			</div>
+			<div class="field">
+			    <%= f.label :working_name %>
+				<%= f.text_field :working_name%>
+			</div>
+		</div>
+		<!-- end: first column -->
+		
+		<!-- begin: second column -->
+		<div class="span4 offset1">
+			<div class="field">
+				<%= f.label :functional_group_id %>
+				<%= f.number_field :functional_group_id %>
+			</div>
+			<div class="field">
+				<%= f.label :native_status %>
+				<%= f.text_field :native_status %>
+			</div>
+			<div class="field">
+			    <%= f.check_box :is_assemblage , :class => 'pull-left' %> 
+			    <%= f.label :is_assemblage , :class => 'pull-left spacer' %>
+			</div>
+			
+		</div>
+		<!-- end: second column -->
+	</div>
+	
+	<!-- begin: buttons -->
+	<div class="form-actions">
+		<%= f.submit :class => 'btn btn-primary'%>
+		
+		<button type="reset" class="btn">
+			Reset
+        </button>
     </div>
-    <div class="field">
-        <%= f.label :non_itis_id %>
-        <%= f.number_field :non_itis_id %>
-    </div>
-    <div class="field">
-        <%= f.label :working_name %>
-        <%= f.text_field :working_name%>
-    </div>
-    <div class="field">
-        <%= f.label :functional_group_id %>
-        <%= f.number_field :functional_group_id %>
-    </div>
-    <div class="field">
-        <%= f.label :native_status %>
-        <%= f.text_field :native_status %>
-    </div>
-    <div class="field">
-        <%= f.label :is_assemblage %>
-        <%= f.check_box :is_assemblage %>
-    </div>
-    <div class="actions">
-        <%= f.submit %>
-    </div>
-    <% end %>
+	<!-- end: buttons -->
+	
+	<!-- End: Add New Node form -->
+	<% end %>
 </fieldset>
