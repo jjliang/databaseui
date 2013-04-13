@@ -25,6 +25,7 @@ class User < ActiveRecord::Base
   has_many :competition_interaction_observations
   has_many :facilitation_interactions
   has_many :facilitation_interaction_observations
+  #has_many :functional_groups
   has_many :nodes
   has_many :node_max_ages
   has_many :node_ranges

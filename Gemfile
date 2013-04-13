@@ -32,7 +32,7 @@ gem 'jquery-rails'
 gem 'jbuilder'
 
 # Use unicorn as the app server
-#gem 'unicorn'
+# gem 'unicorn'
 
 # Using capistrano with rvm
 gem 'rvm-capistrano'
@@ -64,4 +64,3 @@ gem 'lazy_high_charts'
 
 # For autocompletion in forms
 gem 'rails3-jquery-autocomplete'
-

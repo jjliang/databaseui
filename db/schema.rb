@@ -25,8 +25,8 @@ ActiveRecord::Schema.define(:version => 20130926042527) do
   end
 
   create_table "authors", :force => true do |t|
-    t.string   "first_name", :default => "",    :null => false
-    t.string   "last_name",  :default => "",    :null => false
+    t.string   "first_name",                    :null => false
+    t.string   "last_name",                     :null => false
     t.integer  "user_id",                       :null => false
     t.integer  "project_id",                    :null => false
     t.boolean  "mod",        :default => true
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(:version => 20130926042527) do
   end
 
   create_table "citations", :force => true do |t|
-    t.string   "title",        :default => "",    :null => false
+    t.string   "title",                           :null => false
     t.string   "document"
     t.integer  "year",                            :null => false
     t.text     "abstract"
@@ -110,8 +110,7 @@ ActiveRecord::Schema.define(:version => 20130926042527) do
   end
 
   create_table "functional_groups", :force => true do |t|
-
-    t.string   "name",       :default => "",    :null => false
+    t.string   "name",                          :null => false
     t.datetime "created_at",                    :null => false
     t.datetime "updated_at",                    :null => false
     t.integer  "project_id",                    :null => false
@@ -128,7 +127,7 @@ ActiveRecord::Schema.define(:version => 20130926042527) do
   end
 
   create_table "locations", :force => true do |t|
-    t.string   "name",       :default => "",   :null => false
+    t.string   "name",                         :null => false
     t.integer  "left",                         :null => false
     t.integer  "right",                        :null => false
     t.integer  "parent",                       :null => false
@@ -177,7 +176,7 @@ ActiveRecord::Schema.define(:version => 20130926042527) do
   create_table "nodes", :force => true do |t|
     t.integer  "itis_id",                                :null => false
     t.integer  "non_itis_id",                            :null => false
-    t.string   "working_name",        :default => "",    :null => false
+    t.string   "working_name",                           :null => false
     t.integer  "functional_group_id",                    :null => false
     t.string   "native_status"
     t.boolean  "is_assemblage",                          :null => false
@@ -191,7 +190,7 @@ ActiveRecord::Schema.define(:version => 20130926042527) do
 
   create_table "non_itis", :force => true do |t|
     t.integer  "parent_id",                            :null => false
-    t.string   "latin_name",        :default => "",    :null => false
+    t.string   "latin_name",                           :null => false
     t.string   "taxonomy_level",    :default => "",    :null => false
     t.boolean  "parent_id_is_itis",                    :null => false
     t.text     "info"
@@ -235,7 +234,7 @@ ActiveRecord::Schema.define(:version => 20130926042527) do
   end
 
   create_table "projects", :force => true do |t|
-    t.string   "name",       :default => "",    :null => false
+    t.string   "name",                          :null => false
     t.integer  "owner",                         :null => false
     t.integer  "user_id",                       :null => false
     t.boolean  "public",     :default => false
@@ -260,7 +259,7 @@ ActiveRecord::Schema.define(:version => 20130926042527) do
     t.integer  "stage_id",                                                          :null => false
     t.decimal  "biomass_change", :precision => 64, :scale => 12,                    :null => false
     t.text     "comment"
-    t.string   "datum",                                          :default => "",    :null => false
+    t.string   "datum",                                                             :null => false
     t.integer  "user_id",                                                           :null => false
     t.integer  "project_id",                                                        :null => false
     t.boolean  "mod",                                            :default => true
@@ -342,7 +341,7 @@ ActiveRecord::Schema.define(:version => 20130926042527) do
   create_table "stage_fecundities", :force => true do |t|
     t.integer  "citation_id",                    :null => false
     t.integer  "stage_id",                       :null => false
-    t.string   "fecundity",   :default => "",    :null => false
+    t.string   "fecundity",                      :null => false
     t.text     "comment"
     t.string   "datum",       :default => "",    :null => false
     t.integer  "user_id",                        :null => false
@@ -354,7 +353,7 @@ ActiveRecord::Schema.define(:version => 20130926042527) do
   end
 
   create_table "stage_habitat_descriptors", :force => true do |t|
-    t.string   "descriptor", :default => "",    :null => false
+    t.string   "descriptor",                    :null => false
     t.integer  "user_id",                       :null => false
     t.integer  "project_id",                    :null => false
     t.boolean  "mod",        :default => true
@@ -468,7 +467,7 @@ ActiveRecord::Schema.define(:version => 20130926042527) do
   create_table "stage_mobilities", :force => true do |t|
     t.integer  "citation_id",                    :null => false
     t.integer  "stage_id",                       :null => false
-    t.string   "mobility",    :default => "",    :null => false
+    t.string   "mobility",                       :null => false
     t.text     "comment"
     t.string   "datum",       :default => "",    :null => false
     t.integer  "user_id",                        :null => false
@@ -524,7 +523,7 @@ ActiveRecord::Schema.define(:version => 20130926042527) do
   create_table "stage_reproductive_strategies", :force => true do |t|
     t.integer  "citation_id",                              :null => false
     t.integer  "stage_id",                                 :null => false
-    t.string   "reproductive_strategy", :default => "",    :null => false
+    t.string   "reproductive_strategy",                    :null => false
     t.text     "comment"
     t.string   "datum",                 :default => "",    :null => false
     t.integer  "user_id",                                  :null => false
@@ -538,7 +537,7 @@ ActiveRecord::Schema.define(:version => 20130926042527) do
   create_table "stage_residencies", :force => true do |t|
     t.integer  "citation_id",                    :null => false
     t.integer  "stage_id"
-    t.string   "residency",   :default => "",    :null => false
+    t.string   "residency",                      :null => false
     t.text     "comment"
     t.string   "datum",       :default => "",    :null => false
     t.integer  "user_id",                        :null => false
@@ -592,7 +591,7 @@ ActiveRecord::Schema.define(:version => 20130926042527) do
     t.integer  "citation_id",                                                               :null => false
     t.integer  "trophic_interaction_id",                                                    :null => false
     t.integer  "location_id",                                                               :null => false
-    t.string   "lethality",                                              :default => "",    :null => false
+    t.string   "lethality",                                                                 :null => false
     t.string   "structures_consumed"
     t.decimal  "percentage_consumed",    :precision => 64, :scale => 12
     t.decimal  "percentage_diet",        :precision => 64, :scale => 12
