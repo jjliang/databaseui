@@ -12,7 +12,10 @@ class LocationData < ActiveRecord::Migration
       t.text :longitude
       t.integer :location_id
       t.string :name
-
+      t.integer :user_id
+      t.integer :project_id
+      t.boolean :mod
+      t.boolean :approved
     end
   end
 

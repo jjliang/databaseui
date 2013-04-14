@@ -6,23 +6,38 @@ class DashboardController < ApplicationController
    counter = 0
 
    ##For google maps
-    LocationData.find_each do |location|
-    
-    @polygons = Array.new(LocationData.count,Array.new)
+    #Code for generating polygons
+	counter = 0
+	#User can only see regions belonging to their project
+	if current_user.role == 'user'	
+		@polygons = Array.new(LocationData.where(["project_id = ?",current_user.project_id]).count) { Array.new }
+		LocationData.where(["project_id = ?",current_user.project_id]).find_each do |location|
+		location.latitude.each_index do |index|
+		@polygons[counter] << { :lat => location.latitude[index], :lng =>location.longitude[index]}
+			
+		end
+		counter += 1
+		end  
+	else
+		@polygons = Array.new(LocationData.count) { Array.new }
+		LocationData.find_each do |location|
+			location.latitude.each_index do |index|
+			@polygons[counter] << { :lat => location.latitude[index], :lng =>location.longitude[index]}
+				
+			end
+		counter += 1
+		end  
+	end
+		
+		@polygons2 = Array.new(@polygons)	
+		@polygons = @polygons.to_json
+		@polygons2 = @polygons2.to_json
+		respond_to do |format|
+		format.html
+		format.json { render json: @polygons }   
+		format.json { render json: @polygons2 }   
+		end	
 
-    location.latitude.each_index do |index|
-    @polygons[counter] << { :lat => location.latitude[index], :lng =>location.longitude[index]}
-    end
-    counter = counter + 1
-        end
-    
-    
-    @polygons = @polygons.to_json
-    respond_to do |format|
-    format.html
-    format.json { render json: @polygons }   
-
-  end
 end
   
   def dataentry

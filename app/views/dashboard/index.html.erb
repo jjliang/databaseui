@@ -24,6 +24,9 @@
         	<li>
             <a href="#users" data-toggle="tab">Users</a>
         	</li>
+			<li>
+            <a href="#regions" data-toggle="tab">Regions</a>
+        	</li>
         <% end %>
         <% if can? :access, :rails_admin %>
         	<li>
@@ -31,46 +34,44 @@
         	</li>
         <% end %>
     </ul>
-    <div class="tab-content">
+	
+	<div class="tab-content">
         <div class="tab-pane active" id="navhome">
-                <%= gmaps({
-       "polygons"    => { "data" => @polygons    , "options" => { "fillColor" => "#000"} }
-     })
- %>
+		<!-- google map -->
+		<div class="span 4 offset1">
+			<%= gmaps({
+			"polygons"    => { :data => @polygons}   , :map_options => {:libraries => ["drawing"], :fillColor => "#000" }, :last_map => false})%>
+    </div>
 <!-- Some java script for the google map being clickable -->
 <% content_for :scripts do %>
 <script type="text/javascript" charset="utf-8">
 
 Gmaps.map.callback = function() 
 {
-    console.log(Gmaps.map)
-    console.log(Gmaps.map.polygons);
-    Gmaps.map.polygons[0].infowindow = new google.maps.InfoWindow
+    for (var i=0;i<Gmaps.map.polygons.length;i++){
+    Gmaps.map.polygons[i].infowindow = new google.maps.InfoWindow
     ({
-        content: 'you clicked me!'
+        content: 'you clicked on region ' + i
     });
 
-google.maps.event.addListener(Gmaps.map.polygons[0].serviceObject, "click", function(event) 
-    {
-        alert("test2");
-        console.log("the click event fired");
-        infowindow = Gmaps.map.polygons[0].infowindow;
-        infowindow.setPosition(event.latLng);
-        infowindow.open(Gmaps.map.map);
-    });
 
-google.maps.event.addListener(Gmaps.map.polygons[1].serviceObject, "click", function(event) 
-    {
-        alert("test1");
-        console.log("the click event fired");
-        infowindow = Gmaps.map.polygons[1].infowindow;
-        infowindow.setPosition(event.latLng);
-        infowindow.open(Gmaps.map.map);
-    });
+	function infowindow(num)
+	{
+		 return function (event) 
+		{
+				
+				console.log("the click event fired");
+				infowindow =  Gmaps.map.polygons[num].infowindow 
+				infowindow.setPosition(event.latLng);
+				infowindow.open(Gmaps.map.map);
 
-google.maps.event.addListener(Gmaps.map.serviceObject, "click", function(event) {
-    alert(event.latLng);
-  });
+		};
+	}(i);
+		google.maps.event.addListener(Gmaps.map.polygons[i].serviceObject, "click", infowindow(i));
+	}
+		google.maps.event.addListener(Gmaps.map.serviceObject, "click", function(event) {
+		alert(event.latLng);
+		});
 }
 
 </script>
@@ -95,6 +96,12 @@ google.maps.event.addListener(Gmaps.map.serviceObject, "click", function(event) 
         		</div>
         	</div>
         </div>
+		<div class ="tab-pane" id="regions">
+			<div class="well">
+        		<%= render :partial => 'region' %>
+        	</div>
+		</div>
+			
     </div>
 </div>
 

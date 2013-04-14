@@ -94,8 +94,8 @@ class DefaultAndNils < ActiveRecord::Migration
   	change_column :locations, :mod, :boolean, :default => true
   	
   	# location_data table
-  	change_column :location_data, :latitude, :decimal, :precision => 64, :scale => 12, :null => false
-  	change_column :location_data, :longitude, :decimal,:precision => 64, :scale => 12, :null => false
+  	#change_column :location_data, :latitude, :decimal, :precision => 64, :scale => 12, :null => false
+  	#change_column :location_data, :longitude, :decimal,:precision => 64, :scale => 12, :null => false
   	change_column :location_data, :user_id, :integer, :null => false
   	change_column :location_data, :project_id, :integer, :null => false
   	change_column :location_data, :mod, :boolean, :default => true
@@ -170,7 +170,7 @@ class DefaultAndNils < ActiveRecord::Migration
   	#Projects table
   	change_column :projects, :name, :string, :null => false
   	change_column :projects, :user_id, :integer, :null => false
-  	change_column :projects, :owner, :integer, :null => false
+  	#change_column :projects, :owner, :integer, :null => false
   	change_column :projects, :approved, :boolean, :default => false
   	change_column :projects, :public, :boolean, :default => false
   	

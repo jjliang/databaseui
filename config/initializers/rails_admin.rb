@@ -21,6 +21,7 @@ RailsAdmin.config do |config|
   		field :username
   		field :email
   		field :approved
+        field :project_id
   	end
   end
 end

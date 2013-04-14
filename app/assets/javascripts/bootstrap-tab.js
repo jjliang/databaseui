@@ -46,7 +46,9 @@
         selector = $this.attr('href')
         selector = selector && selector.replace(/.*(?=#[^\s]*$)/, '') //strip for ie7
       }
-
+	else {
+      console.log("test1");
+	}
       if ( $this.parent('li').hasClass('active') ) return
 
       previous = $ul.find('.active:last a')[0]

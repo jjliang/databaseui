@@ -11,12 +11,75 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require jquery-ui
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree.
 //= require highcharts
 //= require gmaps4rails/gmaps4rails.base
 //= require gmaps4rails/gmaps4rails.googlemaps
-//= require jquery-ui
 //= require autocomplete-rails
+
+//For loading map in dashboard tabs
+$(document).ready(function(){
+	$('a[href="#regions"]').on('shown', function (e) {
+	    console.log("test1");
+		Gmaps.second_map.initialize();
+		Gmaps.second_map.create_polygons();
+		Gmaps.second_map.adjustMapToBounds();
+		google.maps.event.trigger(Gmaps.second_map, 'resize');
+		Gmaps.second_map.callback();
+	 });
+	 $('a[href="#regionhome"]').on('shown', function (e) {
+		Gmaps.second_map.initialize();
+		Gmaps.second_map.create_polygons();
+		Gmaps.second_map.adjustMapToBounds();
+		google.maps.event.trigger(Gmaps.second_map, 'resize');
+		Gmaps.second_map.callback();
+	 });
+	 //New region requires a different map click event
+	$('a[href="#newregion"]').on('shown', function (e) {
+		Gmaps.second_map.initialize();
+		Gmaps.second_map.adjustMapToBounds();
+		google.maps.event.trigger(Gmaps.second_map, 'resize');
+		Gmaps.second_map.callback();
+				google.maps.event.clearListeners(Gmaps.second_map.serviceObject, "click");
+		var drawingManager = new google.maps.drawing.DrawingManager({
+		drawingMode: google.maps.drawing.OverlayType.MARKER,
+		drawingControl: true,
+		drawingControlOptions: {
+		position: google.maps.ControlPosition.TOP_CENTER,
+		drawingModes: [
+      google.maps.drawing.OverlayType.MARKER,
+      google.maps.drawing.OverlayType.POLYGON,
+    ]
+  },
+  markerOptions: {
+    //add map icon here    icon: 'http://www.example.com/icon.png'
+  },
+  polygonOptions: {
+    strokeColor: "#FFAA00",
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: "#000000",
+      fillOpacity: 0.35,
+      clickable: true
+  }
+});
+drawingManager.setMap(Gmaps.second_map.map);
+	});
+	$('a[href="#navhome"]').on('shown', function (e) {
+		Gmaps.second_map.initialize();
+		Gmaps.second_map.adjustMapToBounds();
+		google.maps.event.trigger(Gmaps.second_map, 'resize');
+		Gmaps.second_map.callback();
+	});
+	$('a[href="#editregion"]').on('shown', function (e) {
+		Gmaps.second_map.initialize();
+		Gmaps.second_map.create_polygons();
+		Gmaps.second_map.adjustMapToBounds();
+		google.maps.event.trigger(Gmaps.second_map, 'resize');
+		Gmaps.second_map.callback();
+	});
+});
 
