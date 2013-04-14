@@ -5,7 +5,18 @@
 		
 		<div class="row-fluid">
 			<div class=span12">
-				<h2 style="text-align: center">Sign up</h2>
+				<h2 style="text-align: center">Sign up <br />
+					<button type="button" data-toggle="collapse" data-target="#inst" class="btn btn-info btn-mini">
+					Instructions
+				</button>
+			</h2>
+			<div id="inst" style="text-align: center" class="collapse">
+				<p>
+					Please fill out the information below.<br \> If your project is not listed
+					please select New Project and write your project name in the comment area.
+				</p>
+			</div>
+				
 				<div class="row-fluid">
 				
 					<div class="span4 offset3">
@@ -30,8 +41,9 @@
 						
 						<div>
 							<br />
-							<%=f.label :project_id %>
-							<%= f.select(project_names) %>
+							<%= f.label :project_id %>
+							<%= options_from_collection_for_select(Project.all, :id, :name) %>
+							<%= collection_select(:project, :project_id, Project.all, :id, :name) %>
 						</div>
 					</div> <!-- end span6 -->
 
@@ -53,6 +65,12 @@
 							<br />
 							<%= f.label :password_confirmation %>
 							<%= f.password_field :password_confirmation %>
+						</div>
+						
+						<div>
+							<br />
+							<%= f.label :comment %>
+							<%= f.text_area :comment, :size => "20x5" %>
 						</div>
 						
 						<div>

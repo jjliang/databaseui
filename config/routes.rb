@@ -1,6 +1,14 @@
 FoodWebBuilder::Application.routes.draw do
-  resources :projects
+  
+	#For Auto Complete
+  	resources :nodes do
+  	get :autocomplete_node_working_name, :on => :collection
+	end
 
+
+
+	resources :projects
+ 
 
 		#Load resources for models
 	
@@ -47,8 +55,11 @@ FoodWebBuilder::Application.routes.draw do
 	resources :trophic_interactions
 	resources :trophic_interaction_observations
 	
-
+	# Mount rails admin
 	mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+	
+	# Overriding the devise registrations controllrt
+	
 	
 	# Configure routes for authenticated User to dashboard
   authenticated :user do
@@ -57,7 +68,7 @@ FoodWebBuilder::Application.routes.draw do
   	resources :users
   end
   
-
+	devise_for :users, :controllers => {:registrations => "registrations"}
   # Default root to home/index.html.erb
   root :to =>"home#index"
   devise_for :users
@@ -69,5 +80,4 @@ FoodWebBuilder::Application.routes.draw do
   match 'visualization' => 'visualization#index'
   match 'dataentry' => 'dashboard#dataentry'
 	
-
 end

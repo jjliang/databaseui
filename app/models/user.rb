@@ -16,7 +16,7 @@ class User < ActiveRecord::Base
   
 
  
-   attr_accessible :email, :password, :password_confirmation, :remember_me , :role , :approved , :username, :firstname, :lastname, :project_id
+   attr_accessible :email, :password, :password_confirmation, :remember_me , :role , :approved , :username, :firstname, :lastname, :project_id, :comment
   # attr_accessible :title, :body
   has_many :authors
   has_many :author_cites
@@ -25,6 +25,7 @@ class User < ActiveRecord::Base
   has_many :competition_interaction_observations
   has_many :facilitation_interactions
   has_many :facilitation_interaction_observations
+  #has_many :functional_groups
   has_many :nodes
   has_many :node_max_ages
   has_many :node_ranges

@@ -1,8 +1,11 @@
 class DashboardController < ApplicationController
  
  def index
-   @userlist = User.all
+    ##For non approved user list
+   @userlist = User.where(["project_id = ?",current_user.project_id] && ["approved = false"]).all
    counter = 0
+
+   ##For google maps
     LocationData.find_each do |location|
     
     @polygons = Array.new(LocationData.count,Array.new)

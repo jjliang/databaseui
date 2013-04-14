@@ -1,3 +1,5 @@
 class Project < ActiveRecord::Base
-  attr_accessible :approved, :name, :owner, :public, :user_id
+  attr_accessible :approved, :name, :creator, :public, :user_id
+  validates :name, :presence => true,
+  								 :uniqueness => true
 end

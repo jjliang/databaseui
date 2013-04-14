@@ -4,7 +4,7 @@
     </legend>
 
     <%= form_for(@node) do |f| %>
-    <% if @node.errors.any? %>
+        <% if @node.errors.any? %>
     <div id="error_explanation">
         <h2><%= pluralize(@node.errors.count, "error") %> prohibited this node from being saved:</h2>
 
@@ -28,7 +28,7 @@
     </div>
     <div class="field">
         <%= f.label :working_name %>
-        <%= f.text_field :working_name %>
+        <%= f.autocomplete_field :working_name, autocomplete_node_working_name_nodes_path %>
     </div>
     <div class="field">
         <%= f.label :functional_group_id %>
