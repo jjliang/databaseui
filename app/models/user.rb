@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
   # This is for login with username or e-mail
   attr_accessor :login
   
-
+	validates_uniqueness_of :email, :message=>"Account exists with that e-mail already"
  
    attr_accessible :email, :password, :password_confirmation, :remember_me , :role , :approved , :username, :firstname, :lastname, :project_id, :comment
   # attr_accessible :title, :body
