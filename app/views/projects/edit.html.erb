@@ -1,6 +1,14 @@
-<h1>Editing project</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @project %> |
-<%= link_to 'Back', projects_path %>
+<h1 style="text-align: center">Editing project</h1>
+<div class="span12">
+	<div class="row-fluid">
+		<div class="span4 offset5">
+			<%= render 'form' %>
+			<button type="button" class="btn btn">
+				<%= link_to 'Show', @project %>
+			</button>
+			<button type="button" class="btn btn">
+				<%= link_to 'Back', projects_path %>
+			</button>
+		</div>
+	</div>
+</div>

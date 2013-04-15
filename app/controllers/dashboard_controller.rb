@@ -8,6 +8,9 @@ class DashboardController < ApplicationController
    @userlist = User.where(["project_id = ?",current_user.project_id] && ["approved = false"]).all
    counter = 0
 		
+		#Projects
+		@project = Project.new
+		@projectlist = Project.all
    ##For google maps
     #Code for generating polygons
 	counter = 0

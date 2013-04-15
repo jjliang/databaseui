@@ -14,6 +14,12 @@ class ApplicationController < ActionController::Base
       @current_project ||= Project.find(project_id)
     end
 
+	# Helper method to disply users
+	helper_method :owner_user
+		def owner_user(id)
+			@owner_user ||= User.find(id)
+		end
+		
     rescue_from CanCan::AccessDenied do |exception|
     redirect_to root_url, :alert => exception.message
   end

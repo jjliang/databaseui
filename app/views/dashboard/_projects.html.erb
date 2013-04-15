@@ -1,0 +1,51 @@
+<ul class="nav nav-pills">
+
+	<li class="active">
+		<a href="#home" data-toggle="tab">Home</a>
+	</li>
+
+	<li>
+		<a href="#newproject" data-toggle="tab">New Project</a>
+	</li>
+
+	<li>
+		<a href="#listprojects" data-toggle="tab">List Project</a>
+	</li>
+</ul>
+
+<div class="tab-content">
+	<div class="tab-pane active" id="home">
+		<p> Here you can create, edit and view projects </p>
+	</div>
+
+
+	<div class="tab-pane" id="newproject">
+		<div class="well">
+			<h3>Instructions
+				<button type="button" data-toggle="collapse" data-target="#projectinfo" class="btn btn-info">
+					Collapse/Expand
+				</button>
+			</h3>
+			<div id="projectinfo" class="collapse">
+				<p>
+					Here we can create new projects for Project Leader accounts using the
+					<em>New Project</em> tab above.
+				</p>
+
+				<p>
+					We use the project name stating in the comments of user sign up
+				</p>
+			</div>
+		</div>
+		<fieldset>
+			<legend>
+				Add New Project
+			</legend>
+			<%= render :partial => 'projects/form', :project => @project %>
+		</fieldset>
+	</div>
+	
+	<div class="tab-pane" id="listprojects">
+		<%= render :partial => 'listprojects' %>
+	</div>
+</div>

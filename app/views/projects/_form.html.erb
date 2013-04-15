@@ -12,23 +12,28 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name %>
     <%= f.text_field :name %>
   </div>
+  
   <div class="field">
-    <%= f.label :owner %><br />
-    <%= f.number_field :owner %>
+    <%= f.label :creator %>
+    <%= f.select "creator", User.find(:all).collect{|p| [p.username, p.id]} %>
   </div>
   <div class="field">
-    <%= f.label :user_id %><br />
-    <%= f.number_field :user_id %>
+    <%= f.label :user_id %>
+    <%= options_from_collection_for_select(User.all, :id, :username) %>
+		<%= collection_select(:project, :user_id, User.all, :id, :username, :prompt => "Please select user") %>
   </div>
+  
+  
   <div class="field">
-    <%= f.label :public %><br />
+    <%= f.label :public %>
     <%= f.check_box :public %>
   </div>
+ 
   <div class="field">
-    <%= f.label :approved %><br />
+    <%= f.label :approved %>
     <%= f.check_box :approved %>
   </div>
   <div class="actions">
