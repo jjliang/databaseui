@@ -4,25 +4,23 @@
 	</div>
 </div>
 
-	<!-- google map -->
+<!-- google map -->
 	<div class="row-fluid">
 		<div class="span 1 offset3">
-      <%= gmaps({
-       "polygons"    => { "data" => @polygons    , "options" => { "fillColor" => "#000" } }
-     })
- %>
+				<%= gmaps({ "polygons"    => { "data" => @polygons    , "options" => { "fillColor" => "#000" } } }) %>
 
-<!-- Some java script for the google map being clickable -->
-<% content_for :scripts do %>
-<script type="text/javascript" charset="utf-8">
-Gmaps.map.callback = function() 
-{
-    console.log("sup");
-    for (var i=0;i<Gmaps.map.polygons.length;i++){
-    Gmaps.map.polygons[i].infowindow = new google.maps.InfoWindow
-    ({
-        content: 'you clicked on region ' + i
-    });
+				<!-- Some java script for the google map being clickable -->
+				<% content_for :scripts do %>
+					<script type="text/javascript" charset="utf-8">
+
+						Gmaps.map.callback = function() 
+							{
+							console.log("sup");
+							for (var i=0;i<Gmaps.map.polygons.length;i++){
+							Gmaps.map.polygons[i].infowindow = new google.maps.InfoWindow
+							({
+								content: 'you clicked on region ' + i
+							});
 
 
 function infowindow(num)
