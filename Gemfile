@@ -32,7 +32,7 @@ gem 'jquery-rails'
 gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+ gem 'unicorn'
 
 # Using capistrano with rvm
 gem 'rvm-capistrano'

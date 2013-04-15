@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-load_and_authorize_resource
+load_and_authorize_resource :only => [:index, :edit]
   # GET /users
   # GET /users.json
   def index

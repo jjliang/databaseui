@@ -71,6 +71,10 @@ namespace :deploy do
 	  run "cd #{current_path}; bundle exec rake db:seed RAILS_ENV=#{rails_env}"
 	end
 	
+	task :rvm_stable, :roles => :app do
+		run"cd #{current_path}; rvm get stable"
+	end
+	
 
 end
 
