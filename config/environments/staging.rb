@@ -49,10 +49,8 @@ FoodWebBuilder::Application.configure do
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
 
 
-	config.assets.precompile += %w( 'jquery-1.9.1.js', 'jquery-ui-1.10.2.custom.min.js', 'autocomplete-rails.js' )
+ #config.assets.precompile = ['*.js', '*.css']
 
-  config.assets.precompile = ['*.js', '*.css']
-  config.assets.precompile = ['*.js']
    #config.assets.precompile = ['jquery-1.9.1.js', '*.css']
   
 
