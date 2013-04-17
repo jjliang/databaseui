@@ -1,12 +1,44 @@
-<ul class="nav nav-pills nav-stacked span2"> 
+<ul class="nav nav-pills nav-stacked span3"> 
         <li class="active">
-            <a href="#help" data-toggle="tab">Help Topic</a>            
-        </li>       
+            <a href="#homeu" data-toggle="tab">Home</a>            
+        </li>  
+        <li>
+        	<a href="#newauth" data-toggle="tab">Add New Author</a>        	
+        </li>
+        <li>
+        	<a href="#newcit" data-toggle="tab">Add New Citation</a>
+        </li>
+        <li>
+        	<a href="#newtax" data-toggle="tab">Add New Taxon</a>
+        </li> 
+        <li>
+        	<a href="#noniti" data-toggle="tab">Add Non-ITIS Taxon</a>
+        </li>    
 </ul>
 <div class="tab-content">
-    <div class="tab-pane active offset1" id="help">
+    <div class="tab-pane active offset2" id="homeu">
         <p>
-           	Here is where help instructions for a user help topic would be.
+           	The user role is meant for those who are only entering data into a food web project.
         </p>  
     </div>
+    <div class="tab-pane offset1" id="newauth">
+    	<p>
+    		To add an author of a citation, click on the "Data Entry" tab in the navigation bar at the top of the screen. When the new screen renders in the browser choose the "Citations" tab on the lefthand side of the screen. More options will appear. Choose the "New Author" option. Fill in the required fields and click the "Create Author" button.
+    	</p>
+    </div>
+	<div class="tab-pane offset1" id="newauth">
+		<p>
+			To add a new citation, click on the "Data Entry" tab in the navigation bar at the top of the screen. When the new screen renders in the browser choose the "Citations" tab on the lefthand side of the screen. More options will appear. Choose the "New Citation" option. Fill in the required fields and click the "Create Citation" button.
+		</p>
+	</div>
+    <div class="tab-pane offset1" id="newtax">
+	    <p>
+	    	To enter a new taxon into the food web, after you have signed in, click on the "Data Entry" tab in the navigation bar at the top of the screen. When the new page renders in the browser window, choose the "Nodes" tab on the lefthand side of the screen. More options will appear in the window. Choose the "New Node" option. Begin entering the ITIS name into the respective field. If the ITIS name you are entering is in the ITIS database, then a matching name should appear in a drop down box from the field that you can choose. If no such option appears, then you may have a non-ITIS entry. Otherwise, choose the name that matches your intended entry and continue to fill in the required fields. When you are finished, click the "Create Node" button. You have now created a new node in the food web.
+	    </p>
+	</div>
+	<div class="tab-pane offset1" id="noniti">
+		<p>
+			To enter a non-ITIS taxon into the food web, after you have signed in, click on the "Data Entry" tab in the navigation bar at the top of the screen. When the new page renders in the browser window, choose the "Nodes" tab on the lefthand side of the screen. More options will appear in the window. Choose the "New non-ITIS Node" option. Fill in the required fields. When you are finished, click the "Create Non-ITIS" button. You have now created a new non-ITIS node in the food web.
+		</p>
+	</div>
 </div>

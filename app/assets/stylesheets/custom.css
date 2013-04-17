@@ -94,3 +94,13 @@ li > ol {
 .spacer{
 	padding-left: 10px;
 }
+<<<<<<< HEAD
+=======
+.form-actions div {
+	display:inline;
+}
+.edit-account-title{
+	margin-left: 30px;
+}
+
+>>>>>>> Edit account -UI changes

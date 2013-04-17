@@ -1,41 +1,74 @@
 <div class="container">
-	<div class="span4 offset4">
-		<h2>Edit <%= resource_name.to_s.humanize %></h2>
-
+	<div class="page-header span10 edit-account-title">
+		<h1>Edit <%= resource_name.to_s.humanize %></h1>
+	</div>
+	
+	<div class="span12">
+		<!-- Begin: Edit Account Form -->
+		
 		<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
-			<%= devise_error_messages! %>
+		<%= devise_error_messages! %>
+		<div class="row">	
+			<!--begin: first column-->
+			<div class="span4 offset1">
+				<div class="field">
+					<%=f.label :first_Name %>
+					<%= f.text_field :firstname, :readonly =>true %>
+				</div>
+				
+				<div class="field">
+					<%=f.label :last_Name %>
+					<%= f.text_field :lastname, :readonly =>true %>
+				</div>
+				
+				<div class="field">
+					<%=f.label :username %>
+					<%= f.text_field :username, :readonly=>true %>
+				</div>
+				
+				<div class="field">
+					<%= f.label :email %>
+					<%= f.email_field :email, :autofocus => true %>
+				</div>
+
+				<% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+				<div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+				<% end %>
+			</div>
+			<!--begin: first column-->
 			
-			<div><%=f.label :first_Name %>
-			<%= f.text_field :firstname, :readonly =>true %>
+			<!--begin: second column-->
+			<div class="span4 offset1">
+				<div>
+					<%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
+					<%= f.password_field :password, :autocomplete => "off" %>
+				</div>
+
+				<div>
+					<%= f.label :password_confirmation %>
+					<%= f.password_field :password_confirmation %>
+				</div>
+
+				<div>
+					<%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+					<%= f.password_field :current_password %>
+				</div>
+
+				
+			</div>
+			<!--end: second column-->
 			
-			<div><%=f.label :last_Name %>
-			<%= f.text_field :lastname, :readonly =>true %>
+		</div>
 			
-			<div><%=f.label :username %>
-			<%= f.text_field :username, :readonly=>true %>
+		<!--begin: buttons -->
+		<div class="form-actions">
+			<%= f.submit "Update" , :class => 'btn btn-primary'%>
+			<span class="spacer">Unhappy?</span> <%= button_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete , :class => 'btn btn-primary'%>		
+			<%= link_to "Back", :back ,:class => 'btn spacer'%>
+		</div>
+		<!--end: buttons -->
 			
-			<div><br /<%= f.label :email %><br \>
-			<%= f.email_field :email, :autofocus => true %></div>
-
-			<% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-			<div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-		<% end %>
-
-		<div><%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-			<%= f.password_field :password, :autocomplete => "off" %></div>
-
-		<div><%= f.label :password_confirmation %><br />
-			<%= f.password_field :password_confirmation %></div>
-
-		<div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-			<%= f.password_field :current_password %></div>
-
-		<div><%= f.submit "Update" %></div>
-		<br />
-		<% end %>
-
-		<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete %>.</p>
-
-		<%= link_to "Back", :back %>
+			<% end %>
+		<!-- End: Edit Account Form -->
 	</div>
 </div>
