@@ -1,5 +1,8 @@
 FoodWebBuilder::Application.routes.draw do
   
+  resources :forums
+
+
 	#For Auto Complete
   	resources :nodes do
   	get :autocomplete_node_working_name, :on => :collection

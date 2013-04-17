@@ -17,19 +17,16 @@
             <a href="#projlead" data-toggle="tab">Project Leader</a>
         </li>
         <li>
+            <a href="#mod" data-toggle="tab">Moderator</a>
+        </li>
+        <li>
             <a href="#user" data-toggle="tab">User</a>
         </li>
     </ul>
     <div class="tab-content"> 
     	<div class="tab-pane active offset3" id="navhome">
             <p>
-                Click on one of the tabs on the left to navigate to your help topic.<br \><br \>
-                Because our project is still being built, we would greatly appreciate being notified
-                about any bugs you come across.<br \><br \>
-                Please post on our facebook page: 
-                <a href="http://www.facebook.com/FoodWebBuilder" target="_blank">
-                	<u>Food Web Builder</u></a><br \>
-                or e-mail us at foodwebbuilder@googlegroups.com.
+                Click on one of the tabs on the left to navigate to your help topic.
             </p>
         </div>
        	<div class="tab-pane" id="general">
@@ -41,6 +38,9 @@
        	<div class="tab-pane" id="projlead">
         	<%= render 'home/project_leader' %>
        	</div>
+        <div class="tab-pane" id="mod">
+            <%= render 'home/moderator' %>
+        </div>
        	<div class="tab-pane" id="user">
         	<%= render 'home/user' %>
        	</div>
