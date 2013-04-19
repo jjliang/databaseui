@@ -1,3 +1,5 @@
+
+<fieldset>
 <%= form_for(@citation) do |f| %>
   <% if @citation.errors.any? %>
     <div id="error_explanation">
@@ -11,47 +13,54 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :abstract %><br />
-    <%= f.text_area :abstract %>
+
+  <div class="span4">   
+    <%= f.label :abstract %>
+      <%= f.text_area :abstract, :rows => "10" %>
   </div>
-  <div class="field">
-    <%= f.label :closed %><br />
-    <%= f.number_field :closed %>
-  </div>
-  <div class="field">
-    <%= f.label :document %><br />
-    <%= f.text_field :document %>
-  </div>
-  <div class="field">
-    <%= f.label :format_title %><br />
-    <%= f.text_field :format_title %>
-  </div>
-  <div class="field">
-    <%= f.label :number %><br />
-    <%= f.number_field :number %>
-  </div>
-  <div class="field">
-    <%= f.label :pages %><br />
-    <%= f.text_field :pages %>
-  </div>
-  <div class="field">
-    <%= f.label :publisher %><br />
-    <%= f.text_field :publisher %>
-  </div>
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </div>
-    <div class="field">
-    <%= f.label :volume %><br />
-    <%= f.number_field :volume %>
-  </div>
-  <div class="field">
-    <%= f.label :year %><br />
-    <%= f.number_field :year %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+
+    <div class="span4">      
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+      </div>
+      <div class="span4">
+        <%= f.label :document %>
+        <%= f.text_field :document %>
+      </div>
+        <div class="span4">
+        <%= f.label :publisher %>
+        <%= f.text_field :publisher %>
+      </div>      
+      <div class="span4">
+        <%= f.label :volume %>
+        <%= f.number_field :volume %>
+      </div>
+      <div class="span4">
+        <%= f.label :year %>
+        <%= f.number_field :year %>
+      </div>      
+      <div class="span4">
+        <%= f.label :pages %>
+        <%= f.text_field :pages %>
+      </div>
+
+
+      <div class="span4">
+          <%= f.label :format_title %>
+          <%= f.text_field :format_title %>
+      </div>
+    <div class="span4">
+        <%= f.label :number %>
+        <%= f.number_field :number %>
+    </div>
+
+
+  <div class="span10 form-actions">
+    <%= f.submit :class => 'btn btn-primary'%>
+    <button type="reset" class="btn">
+      Reset
+    </button>
+  </div> 
+  
+  <% end %>
+</fieldset>

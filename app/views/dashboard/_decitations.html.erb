@@ -91,6 +91,7 @@
 
 	<% if can? :create, @citation %>
 		<div class="tab-pane" id="newcite">
+			<h2> Add New Citation </h2>
 			<div class="well">
 				<h3>Instructions
 					<button type="button" data-toggle="collapse" data-target="#newciteinfo" class="btn btn-info btn-mini">
@@ -114,12 +115,9 @@
 					</p>
 				</div>
 			</div>
-			<fieldset>
-				<legend>
-					Add New Citation
-				</legend>
+				<div class="container">
 				<%= render :partial => 'citations/form', :citation => @citation %>
-			</fieldset>
+			</div>
 		</div>
 	<% end %>
 
