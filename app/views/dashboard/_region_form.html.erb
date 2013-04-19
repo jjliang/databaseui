@@ -1,0 +1,27 @@
+<%= form_for(@location_datum) do |f| %>
+  <% if @location_datum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@location_datum.errors.count, "error") %> prohibited this location_datum from being saved:</h2>
+
+      <ul>
+      <% @location_datum.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field:name %>
+  </div>
+    <%= f.hidden_field :latitude%>
+	<%= f.hidden_field :longitude%>
+  
+  
+  
+  
+  <div class="actions">
+    <%= f.submit 'Create Region', :class => 'btn btn-inverse'%>
+  </div>
+<% end %>

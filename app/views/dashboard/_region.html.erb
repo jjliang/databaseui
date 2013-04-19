@@ -39,15 +39,15 @@
 		};
 	}(i);
 		google.maps.event.addListener(Gmaps.second_map.polygons[i].serviceObject, "click", infowindow(i));
-	}
+	}  
 		google.maps.event.addListener(Gmaps.second_map.serviceObject, "click", function(event) {
-		alert(event.latLng);
+		//alert(event.latLng);
 		});
-	}
+	}   
 	</script>
 	<!-- end javascript -->
 	<% end %>
-	 <div class="tab-pane active" id="regionhome">
+	<div class="tab-pane active" id="regionhome">
 	 
 	 
 	</div>
@@ -56,6 +56,19 @@
 	</div>
 	<div class="tab-pane" id="editregion">
 			
+	</div>
+	<div id="newpolygon" class="modal hide fade">
+	<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	<h3> Region Editor </h3>
+	</div>
+	<div class="modal-body">
+    <%= render :partial => 'region_form', :location_data => @location_datum %>
+	</div>
+	<div class="modal-footer">
+    </div>
+	
+	
 	</div>
 </div/>
 

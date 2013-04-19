@@ -1,4 +1,4 @@
-class LocationData < ActiveRecord::Base
+class LocationDatum < ActiveRecord::Base
   serialize :latitude
   serialize :longitude
   acts_as_gmappable :process_geocoding => false

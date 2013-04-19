@@ -53,7 +53,7 @@ class Ability
 			#User can only read the locations, locations_data tables according to project
 			can :read, Location, :project_id => user.project_id
 			
-			can :read, LocationData, :project_id => user.project_id
+			can :read, LocationDatum, :project_id => user.project_id
 			
 			# Node
 			can :create, Node
@@ -223,8 +223,8 @@ class Ability
 			can :manage, Location, :project_id => user.project_id, :mod => true
 			
 			# Location_Data
-			can [:create, :read], LocationData
-			can :manage, LocationData, :project_id => user.project_id, :mod => true
+			can [:create, :read], LocationDatum
+			can :manage, LocationDatum, :project_id => user.project_id, :mod => true
 			
 			# Node
 			can :create, Node
@@ -396,7 +396,7 @@ class Ability
 			can :manage, Location, :project_id => user.project_id
 			
 			# Location_Data
-			can :manage, LocationData, :project_id => user.project_id
+			can :manage, LocationDatum, :project_id => user.project_id
 			
 			# Node
 			can [:manage], Node, :project_id => user.project_id

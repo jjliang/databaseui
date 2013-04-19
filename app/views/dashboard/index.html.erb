@@ -28,11 +28,11 @@
         </li>
         
         <% if can? :access, :rails_admin %>
-        
+			<% if current_user.role == 'lead' %>
         	<li>
             <a href="#regions" data-toggle="tab">Regions</a>
         	</li>
-        	
+        	<% end%>
         	<% if current_user.role == 'admin' %>
         		<li>
         			<a href="#projects" data-toggle="tab">Projects</a>
@@ -69,7 +69,7 @@
 									infowindow =  Gmaps.map.polygons[num].infowindow 
 									infowindow.setPosition(event.latLng);
 									infowindow.open(Gmaps.map.map);} ; }(i);
-			
+
 				google.maps.event.addListener(Gmaps.map.polygons[i].serviceObject, "click", infowindow(i)); }
 				google.maps.event.addListener(Gmaps.map.serviceObject, "click", function(event) {
 					alert(event.latLng); }); }
@@ -96,12 +96,10 @@
 				<div class ="tab-pane" id="regions">
       		<%= render :partial => 'region' %>
 				</div>
-				
+
 				<div class="tab-pane" id="projects">
 					<%= render :partial => 'projects' %>
 				</div>
-				
+
     </div>
 </div>
-
-

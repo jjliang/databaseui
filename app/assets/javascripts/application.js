@@ -43,7 +43,7 @@ $(document).ready(function(){
 		Gmaps.second_map.adjustMapToBounds();
 		google.maps.event.trigger(Gmaps.second_map, 'resize');
 		Gmaps.second_map.callback();
-				google.maps.event.clearListeners(Gmaps.second_map.serviceObject, "click");
+		google.maps.event.clearListeners(Gmaps.second_map.serviceObject, "click");
 		var drawingManager = new google.maps.drawing.DrawingManager({
 		drawingMode: google.maps.drawing.OverlayType.MARKER,
 		drawingControl: true,
@@ -63,10 +63,39 @@ $(document).ready(function(){
       strokeWeight: 2,
       fillColor: "#000000",
       fillOpacity: 0.35,
-      clickable: true
+      clickable: true,
+	  draggable:true,
+	  editable: true
   }
 });
-drawingManager.setMap(Gmaps.second_map.map);
+	drawingManager.setMap(Gmaps.second_map.map);
+	//When polygon is drawn
+	google.maps.event.addListener(drawingManager, 'overlaycomplete', function(event) {
+	    console.log(event);
+		if (event.type == google.maps.drawing.OverlayType.POLYGON) {
+		$('#newpolygon').modal({
+		keyboard: false,
+		backdrop: 'static'
+		
+		});
+		}
+			var latitudeData = [], longitudeData = [];
+		    result = event.overlay.latLngs.b[0].b;
+			for (i = 0, len = result.length; i < len; i++) { 
+				latitudeData.push(result[i].Ya);
+				longitudeData.push(result[i].Za);	
+	}
+	document.getElementById('location_datum_latitude').value = latitudeData;
+	document.getElementById('location_datum_longitude').value = longitudeData;
+		
+	
+		});
+	
+	
+	});
+	
+	$('#newpolygon').on('hidden', function () {
+		
 	});
 	$('a[href="#navhome"]').on('shown', function (e) {
 		Gmaps.second_map.initialize();
@@ -82,6 +111,14 @@ drawingManager.setMap(Gmaps.second_map.map);
 		Gmaps.second_map.callback();
 	});
 	
+
+	$(".modal").css({
+		'width' : 300,
+		'height' : 'auto',
+		'overflow' : 'auto'
+		
+		});
+
 		$('#myCarousel').bind('slide', function () {
 	    console.log("test1");
 		Gmaps.map.initialize();

@@ -4,8 +4,8 @@ class HomeController < ApplicationController
   def index
     #Code for generating polygon json
     counter = 0
-    @polygons = Array.new(LocationData.count) { Array.new }
-    LocationData.find_each do |location|
+    @polygons = Array.new(LocationDatum.count) { Array.new }
+    LocationDatum.find_each do |location|
     
     location.latitude.each_index do |index|
     @polygons[counter] << { :lat => location.latitude[index], :lng =>location.longitude[index]}
