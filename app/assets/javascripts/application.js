@@ -128,6 +128,57 @@ $(document).ready(function(){
 		Gmaps.map.callback();
 	 });
 	
+	//for searching by common name
+	$('#node_working_name').typeahead(
+	{
+		source: function(query,process) 
+		{
+			$.ajax({
+			url     : "http://www.itis.gov/ITISWebService/jsonservice/searchByCommonName",
+			data    : { "tsn" : query },
+			dataType: "jsonp",
+			jsonp   : "jsonp",
+			success : function(data) 
+						{ 
+							result = [];
+							console.log(data);
+							for (var i = 0; i < data.commonNames.length; i++)
+							{
+								result[i] = data.commonNames[i].commonName;
+							}
+							console.log(result);
+							process(result);
+						} 
+			});
+		}
+		
+    });
+	
+	//for searching by itis id (TSN)
+	$('#node_working_name').typeahead(
+	{
+		source: function(query,process) 
+		{
+			$.ajax({
+			url     : "http://www.itis.gov/ITISWebService/jsonservice/searchByCommonName",
+			data    : { "tsn" : query },
+			dataType: "jsonp",
+			jsonp   : "jsonp",
+			success : function(data) 
+						{ 
+							result = [];
+							console.log(data);
+							for (var i = 0; i < data.commonNames.length; i++)
+							{
+								result[i] = data.commonNames[i].commonName;
+							}
+							console.log(result);
+							process(result);
+						} 
+			});
+		}
+		
+    });
 });
 
 
