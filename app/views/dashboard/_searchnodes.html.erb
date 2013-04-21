@@ -12,7 +12,7 @@
 	
 	<div id="searchinfo" class="collapse">
 		<p>
-			Search for a node by its
+			Search for a node by itis
 		</p>
 		
 		<ul>
@@ -23,10 +23,10 @@
 	</div>
 </div>
 
-<form>
+<form action="/search" method="get">
 	<div class="span4">
 		<label>Working Name: </label>
-		<input type="text">
+		<input type="text" name = "working">
 	</div>
 		
 	<div class="span4">
@@ -41,7 +41,10 @@
 
 	<div class="span9">
 		<div class="form-actions">
-			<button type="button" class="btn btn-inverse offset3">
+
+			<button type="submit" class="btn btn-inverse offset 3">
+
+
 				Search
 			</button>
 			    

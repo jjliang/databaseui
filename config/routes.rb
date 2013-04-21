@@ -9,7 +9,11 @@ FoodWebBuilder::Application.routes.draw do
 	end
 
 
-
+	#For Node Search
+	
+	match 'search/' => 'dashboard#search', :as => "search"
+	
+	
 	resources :projects
  
 

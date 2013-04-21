@@ -1,0 +1,35 @@
+<h1>Listing nodes</h1>
+
+<table>
+  <tr>
+    <th>Itis</th>
+    <th>Non itis</th>
+    <th>Working name</th>
+    <th>Functional group</th>
+    <th>Native status</th>
+    <th>Is assemblage</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @nodesearch.each do |node| %>
+  <tr>
+    <td><%= node.itis_id %></td>
+    <td><%= node.non_itis_id %></td>
+    <td><%= node.working_name %></td>
+    <td><%= node.functional_group_id %></td>
+    <td><%= node.native_status %></td>
+    <td><%= node.is_assemblage %></td>
+    <td><%= node.user_id %></td>
+    <td><%= link_to 'Show', node %></td>
+    <td><%= link_to 'Edit', edit_node_path(node) %></td>
+    <td><%= link_to 'Destroy', node, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Node', new_node_path %>

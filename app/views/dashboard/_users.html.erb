@@ -19,7 +19,9 @@
 	</div>
 	
 	<div class="tab-pane" id="waiting">
+
 		<% @users= User.where(["project_id = ?",current_user.project_id] && ["approved = false"]).all %>
 		<%= render 'listusers', :locals => {:users => @users} %>
+
 	</div>
 </div>

@@ -4,6 +4,9 @@ class DashboardController < ApplicationController
 		## For all users
 		@users = User.all
     ##For non approved user list
+ 
+ 
+
 		@userlist = User.where(["project_id = ?",current_user.project_id] && ["approved = false"]).all
 
   @location_datum = LocationDatum.new
@@ -50,6 +53,11 @@ class DashboardController < ApplicationController
 		format.json { render json: @polygons2 }   
 		end	
 
+end
+
+def search
+q = params[:working]
+@nodesearch = Node.find(:all, :conditions => ['working_name LIKE ?', "#{q}%"])
 end
 
   
