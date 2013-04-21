@@ -119,6 +119,7 @@ $(document).ready(function(){
 		
 		});
 
+	
 
 		$('#myCarousel').bind('slid', function () {
 	    console.log("test1");
@@ -134,53 +135,42 @@ $(document).ready(function(){
 	{
 		source: function(query,process) 
 		{
-			$.ajax({
-			url     : "http://www.itis.gov/ITISWebService/jsonservice/searchByCommonName",
-			data    : { "tsn" : query },
-			dataType: "jsonp",
-			jsonp   : "jsonp",
-			success : function(data) 
-						{ 
-							result = [];
-							console.log(data);
-							for (var i = 0; i < data.commonNames.length; i++)
-							{
-								result[i] = data.commonNames[i].commonName;
+			if (query.length >= 3)
+			{
+				$.ajax({
+				url     : "http://www.itis.gov/ITISWebService/jsonservice/searchByCommonName",
+				data    : { "tsn" : query },
+				dataType: "jsonp",
+				jsonp   : "jsonp",
+				success : function(data) 
+							{ 
+								console.log("end Query");
+								$('#loading-indicator').hide();
+								result = [];
+								console.log(data);
+								for (var i = 0; i < data.commonNames.length; i++)
+								{
+									result[i] = data.commonNames[i].commonName;
+								}
+								console.log(result);
+								process(result);
+							} ,
+				beforeSend : function() {
+							console.log("Start Query");
+							$('#loading-indicator').show();
 							}
-							console.log(result);
-							process(result);
-						} 
-			});
+				});
+			}
 		}
-		
-    });
-	
-	//for searching by itis id or TSN
-	$('#node_working_name').typeahead(
-	{
-		source: function(query,process) 
-		{
-			$.ajax({
-			url     : "http://www.itis.gov/ITISWebService/jsonservice/searchByCommonName",
-			data    : { "tsn" : query },
-			dataType: "jsonp",
-			jsonp   : "jsonp",
-			success : function(data) 
-						{ 
-							result = [];
-							console.log(data);
-							for (var i = 0; i < data.commonNames.length; i++)
-							{
-								result[i] = data.commonNames[i].commonName;
-							}
-							console.log(result);
-							process(result);
-						} 
-			});
-		}
-		
-    });
-});
+	});	
 
+	
+	
+	$("#loading-indicator").css({
+		height: 25,
+		width: 25
+		
+		});
+});   
 
 

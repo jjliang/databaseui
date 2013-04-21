@@ -45,7 +45,7 @@ class CitationsController < ApplicationController
     @citation.project_id = current_user.project_id
     respond_to do |format|
       if @citation.save
-        format.html { redirect_to @citation, notice: 'Citation was successfully created.' }
+        format.html { redirect_to :back, notice: 'Citation was successfully created.' }
         format.json { render json: @citation, status: :created, location: @citation }
       else
         format.html { render action: "new" }

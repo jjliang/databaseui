@@ -50,7 +50,7 @@ class LocationDataController < ApplicationController
 	
     respond_to do |format|
       if @location_datum.save
-        format.html { redirect_to @location_datum, notice: 'Location datum was successfully created.' }
+        format.html { redirect_to :back, notice: 'Location datum was successfully created.' }
         format.json { render json: @location_datum, status: :created, location: @location_datum }
       else
         format.html { render action: "new" }
