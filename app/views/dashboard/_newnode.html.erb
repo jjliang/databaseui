@@ -40,38 +40,42 @@
 			</ul>
 		</div>
 	<% end %>
-
 	<div class="span4">
-		<%= f.label :working_name %>
+		<%=label_tag 'Common_name' %>
+		<%=text_field_tag 'Common_name' %>
+		<img src="assets/ajax-loader.gif" id="common-name-loading-indicator" style="display:none" />
+	</div>
+	<div class="span4">
+		<%=label_tag 'Latin_name' %>
+		<%=text_field_tag 'Latin_name' %>
+		<img src="assets/ajax-loader.gif" id="latin-name-loading-indicator" style="display:none" />
+	</div>
+		<div class="span4">
+		<%= f.label :itis_id %>
+		<%= f.number_field :itis_id %>
+		<img src="assets/ajax-loader.gif" id=itis-name-loading-indicator" style="display:none" />
+	</div>
+	<div class="span4" hidden ="true" id="node_working_name_field">
+		<%= f.label :working_name%>
 		<%= f.text_field :working_name %>
-		<!--<%= f.autocomplete_field :working_name, autocomplete_node_working_name_nodes_path %> -->
-		<img src="assets/ajax-loader.gif" id="loading-indicator" style="display:none" />
 	</div>
 	
-	<div class="span4">
-		<%= f.label :functional_group_id %>
+	<div class="span4" hidden="true" id="node_functional_group_id_field">
+		<%= f.label :functional_group_id%>
 		<%= collection_select(:node, :functional_group_id,
 			FunctionalGroup.all, :id, :name, :prompt => "Select Functional Group") %>
 	</div>
-	
-	<div class="span4">
-		<%= f.label :itis_id %>
-		<%= f.number_field :itis_id %>
-	</div>
-
-	<div class="span4">
-		<%= f.label :non_itis_id %>
+	<div class="span4" hidden= "true" id="node_non_itis_id_field">
+		<%= f.label :non_itis_id%>
 		<%= f.number_field :non_itis_id %>
-	</div>
-	
-		
-	<div class="span4">
-		<%= f.label :native_status %>
+	</div>	
+	<div class="span4" hidden="true" id="node_native_status_field">
+		<%= f.label :native_status%>
 		<%= f.text_field :native_status %>
 	</div>
 
-	<div class="span4">
-		<%= f.label :is_assemblage %>
+	<div class="span4" hidden= "true" id="node_is_assemblage_field">
+		<%= f.label :is_assemblage%>
 		<%= f.check_box :is_assemblage %>
 	</div>
 	
@@ -79,7 +83,7 @@
 		<div class="well">
 			<div class="actions">
 				<%= f.submit :class=>"btn btn-inverse offset2" %>
-				<button type="reset" class="btn btn-inverse">Reset</button>
+				<button type="reset" class="btn btn-inverse" id = "reset_new_node">Reset</button>
 			</div>
 		</div>
 	</div>

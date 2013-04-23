@@ -131,12 +131,10 @@ $(document).ready(function(){
 	 });
 	
 	//for searching by common name
-	$('#node_working_name').typeahead(
+	$('#Common_name').typeahead(
 	{
 		source: function(query,process) 
 		{
-			if (query.length >= 3)
-			{
 				$.ajax({
 				url     : "http://www.itis.gov/ITISWebService/jsonservice/searchByCommonName",
 				data    : { "tsn" : query },
@@ -144,34 +142,145 @@ $(document).ready(function(){
 				jsonp   : "jsonp",
 				success : function(data) 
 							{ 
-								console.log("end Query");
-								$('#loading-indicator').hide();
+								$('#common-name-loading-indicator').hide();
 								result = [];
-								console.log(data);
 								for (var i = 0; i < data.commonNames.length; i++)
 								{
 									result[i] = data.commonNames[i].commonName;
 								}
-								console.log(result);
+								//show fields
+								$("#node_working_name_field").show();
+								$("#node_functional_group_id_field").show();
+								$("#node_non_itis_id_field").show();
+								$("#node_native_status_field").show();
+								$("#node_is_assemblage_field").show();
 								process(result);
 							} ,
 				beforeSend : function() {
-							console.log("Start Query");
-							$('#loading-indicator').show();
+							$('#common-name-loading-indicator').show();
 							}
 				});
-			}
+		},
+		minLength : 3,
+		updater: function(item)
+		{
+			$.ajax({
+				url     : "http://www.itis.gov/ITISWebService/jsonservice/searchByCommonName",
+				data    : { "tsn" : item },
+				dataType: "jsonp",
+				jsonp   : "jsonp",
+				success : function(data) 
+							{ 
+								$('#itis-name-loading-indicator').hide();
+								result = data.commonNames[0].tsn;
+								$('#node_itis_id').val(result);
+								$.ajax({
+								url     : "http://www.itis.gov/ITISWebService/jsonservice/getScientificNameFromTSN",
+								data    : { "tsn" : result },
+								dataType: "jsonp",
+								jsonp   : "jsonp",
+								success : function(data) 
+								{ 
+									$('#latin-name-loading-indicator').hide();
+									$('#Latin_name').val(data.combinedName);
+								} ,
+								beforeSend : function() {
+											$('#itis-name-loading-indicator').show();
+											}
+								});
+							} ,
+				beforeSend : function() {
+							$('#itis-name-loading-indicator').show();
+							}
+				});
+			return item;
 		}
+		
+		
 	});	
-
+	//For searching by Latin/Scientific name
+	$('#Latin_name').typeahead(
+	{
+		source: function(query,process) 
+		{
+				$.ajax({
+				url     : "http://www.itis.gov/ITISWebService/jsonservice/searchByScientificName",
+				data    : { "tsn" : query },
+				dataType: "jsonp",
+				jsonp   : "jsonp",
+				success : function(data) 
+							{ 
+								$('#latin-name-loading-indicator').hide();
+								result = [];
+								for (var i = 0; i < data.scientificNames.length; i++)
+								{
+									result[i] = data.scientificNames[i].combinedName;
+								}
+								process(result);
+							} ,
+				beforeSend : function() {
+							$('#latin-name-loading-indicator').show();
+							}
+				});
+		},
+		minLength : 3,
+		updater : function(item)
+		{
+			$.ajax({
+				url     : "http://www.itis.gov/ITISWebService/jsonservice/searchByScientificName",
+				data    : { "tsn" : item },
+				dataType: "jsonp",
+				jsonp   : "jsonp",
+				success : function(data) 
+							{ 
+								$('#latin-name-loading-indicator').hide();
+								result = data.scientificNames[0].tsn;
+								$('#node_itis_id').val(result);
+								$.ajax({
+								url     : "http://www.itis.gov/ITISWebService/jsonservice/getCommonNamesFromTSN",
+								data    : { "tsn" : result },
+								dataType: "jsonp",
+								jsonp   : "jsonp",
+								success : function(data) 
+								{			
+									$('#common-name-loading-indicator').hide();
+									if (data.commonNames[0] != null){
+										name = data.commonNames[0].commonName;
+										$('#common-name-loading-indicator').hide();
+										for (var i = 1; i < data.commonNames.length - 1; i++)
+										{	
+											name += ", " + data.commonNames[i].commonName;
+										}
+										$('#Common_name').val(name);
+									}	
+									else {
+										$('#Common_name').val("undefined");
+									}
+								}	 ,
+				beforeSend : function() {
+							$('#common-name-loading-indicator').show();
+							}
+				});
+				
+							} ,
+				beforeSend : function() {
+							$('#latin-name-loading-indicator').show();
+							}
+				});
+			return item;
+		}	
+	});	
 	
-	
-	$("#loading-indicator").css({
+	$("#common-name-loading-indicator").css({
 		height: 25,
 		width: 25
 
     });
-    
+    $("#latin-name-loading-indicator").css({
+		height: 25,
+		width: 25
+
+    });
     // For generating form based on selection for citations
     $("#citation_format").change(function(){
     	if($('#citation_format').val() == "Journal"){
@@ -382,6 +491,14 @@ $(document).ready(function(){
     		$("#abstract").hide();
     	}
     });
+	//hide fields
+	$('#reset_new_node').on('click', function (e) {
+		$("#node_working_name_field").hide();
+		$("#node_functional_group_id_field").hide();
+		$("#node_non_itis_id_field").hide();
+		$("#node_native_status_field").hide();
+		$("#node_is_assemblage_field").hide()
+	});
 });		
 				
 
