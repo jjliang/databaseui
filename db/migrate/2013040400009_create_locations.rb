@@ -6,7 +6,7 @@ class CreateLocations < ActiveRecord::Migration
   		t.integer :right
   		t.integer :parent
   		t.boolean :active
-  		t.integer :visible
+  		t.boolean :visible
   		t.integer :zoom_min
   		t.integer :zoom_max
   		t.integer :z_index

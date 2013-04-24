@@ -85,7 +85,7 @@ class DefaultAndNils < ActiveRecord::Migration
   	change_column :locations, :right, :integer, :null => false
   	change_column :locations, :parent, :integer, :null => false
   	change_column :locations, :active, :boolean, :default => true
-  	change_column :locations, :visible, :boolean, :default => true, :null => false
+  	change_column :locations, :visible, :boolean, :default => true
   	change_column :locations, :zoom_max, :integer, :default => 15, :null => false
   	change_column :locations, :zoom_min, :integer, :default => -1, :null => false
   	change_column :locations, :z_index, :integer, :default => 1, :null => false
