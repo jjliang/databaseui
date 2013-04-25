@@ -193,6 +193,7 @@ $(document).ready(function(){
 			$("#node_functional_group_id_field").show();
 			$("#node_native_status_field").show();
 			$("#node_is_assemblage_field").show();
+			$('#node_working_name').val(item);
 			return item;
 		}
 		
@@ -252,9 +253,11 @@ $(document).ready(function(){
 											name += ", " + data.commonNames[i].commonName;
 										}
 										$('#Common_name').val(name);
+										$('#node_working_name').val(name);
 									}	
 									else {
 										$('#Common_name').val("undefined");
+										$('#node_working_name').val("undefined");
 									}
 								
 								}	 ,
