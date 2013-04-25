@@ -53,6 +53,14 @@
         <%= f.number_field :number %>
     </div>
 
+    <div class="span4 offset1">
+      <!--<%= @id = :id %>-->
+      <%= f.label :author %>
+      <!--<%= options_from_collection_for_select(Author.all, :id, :full_name) %>-->
+      <%= collection_select(:project, :user_id, Author.all, :id, :full_name, :prompt => "Please select author") %>
+      
+    </div>
+
 
   <div class="span9 form-actions">
     <%= f.submit :class => 'btn btn-inverse'%>

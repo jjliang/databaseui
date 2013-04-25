@@ -664,3 +664,4 @@ ActiveRecord::Schema.define(:version => 201309260500054) do
   add_index "users_roles", ["user_id", "role_id"], :name => "index_users_roles_on_user_id_and_role_id"
 
 end
+>>>>>>> upstream/umass_branch

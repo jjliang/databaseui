@@ -1,5 +1,5 @@
 <legend>
-	<h3> New Non-Itis Node </h3>
+	<h3> New Non-ITIS Node </h3>
 </legend>
 
 <div class="well">
@@ -101,7 +101,7 @@
 		
 		<div class="field">
 			<%= f.check_box :parent_id_is_itis , :class => 'pull-left'%>
-			<%= f.label :parent_id_is_itis , :class => 'pull-left spacer' %><br />
+			<%= f.label :parent_id_is_itis, "Parent id is ITIS" , :class => 'pull-left spacer' %><br />
 		</div>
 	</div>
 	<!-- end: first column -->
@@ -118,7 +118,7 @@
 
 	<!-- begin: buttons -->
 	<div class="form-actions">
-		<%= f.submit :class => 'btn btn-inverse offset3'%>
+		<%= f.submit "Create Non-ITIS Node", :class => 'btn btn-inverse offset3' %>
 		<button type="reset" class="btn btn-inverse">
 			Reset
 		</button>

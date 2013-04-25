@@ -50,11 +50,13 @@
 		<%=text_field_tag 'Latin_name' %>
 		<img src="assets/ajax-loader.gif" id="latin-name-loading-indicator" style="display:none" />
 	</div>
-		<div class="span4">
-		<%= f.label :itis_id %>
+	
+	<div class="span4">
+		<%= f.label :itis_id, "ITIS" %>
 		<%= f.number_field :itis_id %>
 		<img src="assets/ajax-loader.gif" id="itis-name-loading-indicator" style="display:none" />
 	</div>
+
 	<div class="span4" hidden ="true" id="node_working_name_field">
 		<%= f.label :working_name%>
 		<%= f.text_field :working_name %>
