@@ -42,12 +42,12 @@
 	<% end %>
 	<div class="span4">
 		<%=label_tag 'Common_name' %>
-		<%=text_field_tag 'Common_name' %>
+		<%=text_field_tag 'Common_name',nil, options = {:autocomplete => "off"}  %>
 		<img src="assets/ajax-loader.gif" id="common-name-loading-indicator" style="display:none" />
 	</div>
 	<div class="span4">
 		<%=label_tag 'Latin_name' %>
-		<%=text_field_tag 'Latin_name' %>
+		<%=text_field_tag 'Latin_name' ,nil, options = {:autocomplete => "off"}%>
 		<img src="assets/ajax-loader.gif" id="latin-name-loading-indicator" style="display:none" />
 	</div>
 	

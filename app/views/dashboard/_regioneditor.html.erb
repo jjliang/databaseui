@@ -23,7 +23,7 @@
 	</div>
 </div>
 
-<%= gmaps({"polygons"=> { "data" => @polygons2}, 
+<%= gmaps({"polygons"=> { "data" => @polygons2,"options" => { "draggable" =>true,"editable" =>true }}, 
 					"map_options" => { "fillColor" => "#000",
 					"id" => "second_map","libraries" => ["drawing"] },
 					"scripts"  => :none})%>
@@ -65,3 +65,4 @@
 	</div>
 </div>
 
+z

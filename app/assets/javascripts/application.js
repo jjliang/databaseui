@@ -38,8 +38,9 @@ $(document).ready(function(){
 		Gmaps.second_map.callback();
 	 });
 	 //New region requires a different map click event
-	$('a[href="#newregion"]').on('shown', function (e) {
+	$('a[href="#regioneditor"]').on('shown', function (e) {
 		Gmaps.second_map.initialize();
+		Gmaps.second_map.create_polygons();
 		Gmaps.second_map.adjustMapToBounds();
 		google.maps.event.trigger(Gmaps.second_map, 'resize');
 		Gmaps.second_map.callback();

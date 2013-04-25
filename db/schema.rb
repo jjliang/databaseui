@@ -187,7 +187,7 @@ ActiveRecord::Schema.define(:version => 201309260500055) do
 
   create_table "nodes", :force => true do |t|
     t.integer  "itis_id",                                :null => false
-    t.integer  "non_itis_id",         :default => -1
+    t.integer  "non_itis_id",                            :null => false
     t.string   "working_name",        :default => "",    :null => false
     t.integer  "functional_group_id",                    :null => false
     t.string   "native_status"

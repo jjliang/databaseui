@@ -93,7 +93,7 @@
 					<!-- Start Regions -->
 					<% if (current_user.role == 'lead') ||
 						(current_user.role =='admin') %>
-						<li class="dropdown<%= 'active' if params[:tab] == 'newregion' %>
+						<li class="dropdown<%= 'active' if params[:tab] == 'regioneditor' %>
 					<%= 'active' if params[:tab] == 'editregion' %>">
 							<a class="dropdown-toggle"
 								data-toggle="dropdown"
@@ -104,11 +104,7 @@
 							
 							<ul class="dropdown-menu">
 								<li>
-									<a href="#newregion" data-toggle="tab">New Region</a>
-								</li>
-								
-								<li>
-									<a href="#editregion" data-toggle="tab">Edit Region </a>
+									<a href="#regioneditor" data-toggle="tab">New Region</a>
 								</li>
 							</ul>
 						</li>
@@ -276,12 +272,8 @@
 			<!-- End Users tab panes -->
 			
 			<!-- Start Regions tab-panes -->
-			<div class ="<%= if params[:tab] == 'newregion' then 'tab-pane active'  else 'tab-pane' end%>" id="newregion">
-				<%= render 'newregion' %>
-			</div>
-			
-			<div class="<%= if params[:tab] == 'editregion' then 'tab-pane active'  else 'tab-pane' end%>" id="editregion">
-				<%= render 'editregion' %>
+			<div class ="<%= if params[:tab] == 'regioneditor' then 'tab-pane active'  else 'tab-pane' end%>" id="regioneditor">
+				<%= render 'regioneditor' %>
 			</div>
 			<!-- End Region tab panes -->
 			

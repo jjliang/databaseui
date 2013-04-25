@@ -23,4 +23,46 @@
 	</div>
 </div>
 
+<%= gmaps({"polygons"=> { "data" => @polygons2}, 
+					"map_options" => { "fillColor" => "#000",
+					"id" => "second_map","libraries" => ["drawing"] },
+					"scripts"  => :none})%>
+
+<% content_for :scripts do %>
+	<script type="text/javascript" charset="utf-8">
+	Gmaps.second_map.callback = function() {
+    for (var i=0;i<Gmaps.second_map.polygons.length;i++){
+		Gmaps.second_map.polygons[i].infowindow = new google.maps.InfoWindow
+		({ content: 'you clicked on region ' + i });
+
+	function infowindow(num){
+		return function (event){
+			console.log("the click event fired");
+			infowindow =  Gmaps.second_map.polygons[num].infowindow 
+			infowindow.setPosition(event.latLng);
+			infowindow.open(Gmaps.second_map.map);};
+		}(i);
+		google.maps.event.addListener
+		(Gmaps.second_map.polygons[i].serviceObject, "click", infowindow(i));}
+		google.maps.event.addListener(Gmaps.second_map.serviceObject, "click", function(event) {
+		//alert(event.latLng);
+		});
+	}   
+</script>
+<% end %>
+<div id="newpolygon" class="modal hide fade">
+	<div class="modal-header">
+		<button type="button" 
+			class="close" data-dismiss="modal" 
+			aria-hidden="true">&times;
+		</button>
+		<h3> Region Editor </h3>
+	</div>
+	<div class="modal-body">
+		<%= render :partial => 'region_form', :location_data => @location_datum %>
+	</div>
+	<div class="modal-footer">
+	</div>
+</div>
+
 
