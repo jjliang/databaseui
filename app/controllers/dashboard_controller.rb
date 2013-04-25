@@ -59,10 +59,10 @@ class DashboardController < ApplicationController
 
 end
 
-def search
-q = params[:working]
-@nodesearch = Node.find(:all, :conditions => ['working_name LIKE ?', "#{q}%"])
-end
+	def search
+		q = params[:working]
+		@nodesearch = Node.find(:all, :conditions => ['working_name LIKE ?', "#{q}%"])
+	end
 
   
 end
