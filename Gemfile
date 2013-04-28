@@ -6,7 +6,7 @@ gem 'rails', '3.2.12'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
-gem 'pg'
+#gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -61,6 +61,13 @@ gem 'lazy_high_charts'
 
 # For autocompletion in forms
 gem 'rails3-jquery-autocomplete'
+
+
+
+# For enums
+gem 'enum_simulator'
+# For user feedback
+gem 'mail_form'
 
 
 # For user feedback

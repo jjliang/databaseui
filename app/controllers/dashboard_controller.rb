@@ -65,5 +65,45 @@ end
 		@nodesearch = Node.find(:all, :conditions => ['working_name LIKE ?', "#{q}%"])
 	end
 
+	#
+	def add_interactions
+		@p = params[:interaction]
+		if @p[:interactionname] == "trophic"
+			@interaction = TrophicInteraction.new();
+			@interaction.stage_1_id = Stage.where(:node_id => @p[:node_id1], :name => @p[:name1]).first.id
+			@interaction.stage_2_id = Stage.where(:node_id => @p[:node_id2], :name => @p[:name2]).first.id
+			newinteraction = !TrophicInteraction.where(:stage_1_id => @interaction.stage_1_id,:stage_2_id => @interaction.stage_2_id ).exists?
+		elsif @p[:interactionname] == "competition"
+			@interaction = CompetitionInteraction.new();
+			@interaction.stage_1_id = Stage.where(:node_id => @p[:node_id1], :name => @p[:name1]).first.id
+			@interaction.stage_2_id = Stage.where(:node_id => @p[:node_id2], :name => @p[:name2]).first.id
+			newinteraction = !CompetitionInteraction.where(:stage_1_id => @interaction.stage_1_id,:stage_2_id => @interaction.stage_2_id ).exists?
+		elsif @p[:interactionname] == "facilitation"
+			@interaction = FacilitationInteraction.new();
+			@interaction.stage_1_id = Stage.where(:node_id => @p[:node_id1], :name => @p[:name1]).first.id
+			@interaction.stage_2_id = Stage.where(:node_id => @p[:node_id2], :name => @p[:name2]).first.id
+			newinteraction = !FacilitationInteraction.where(:stage_1_id => @interaction.stage_1_id,:stage_2_id => @interaction.stage_2_id ).exists?
+		elsif @p[:interactionname] == "parasitic"
+			@interaction = ParasiticInteraction.new();
+			@interaction.stage_1_id = Stage.where(:node_id => @p[:node_id1], :name => @p[:name1]).first.id
+			@interaction.stage_2_id = Stage.where(:node_id => @p[:node_id2], :name => @p[:name2]).first.id
+			newinteraction = !ParasiticInteraction.where(:stage_1_id => @interaction.stage_1_id,:stage_2_id => @interaction.stage_2_id ).exists?
+		end
+		
+		if newinteraction == true
+			@interaction.project_id = current_user.project_id
+			@interaction.user_id = current_user.id
+			@interaction.approved = true
+			@interaction.mod = true
+			respond_to do |format|
+				if @interaction.save
+					format.html { redirect_to :back, notice: 'Stage was successfully created.' }
+					format.json { render json: @interaction, status: :created, location: @interaction }
+				end
+			end
+		else
+			render :json => [false]
+		end
+	end
   
 end

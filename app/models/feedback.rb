@@ -16,5 +16,5 @@ class Feedback
     @recipients = 'you@yoursite.com'
     @from = 'system@yoursite.com'
     @subject = "[Feedback for YourSite.com] #{feedback.subject}"
-
+	end
 end

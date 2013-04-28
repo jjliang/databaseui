@@ -24,6 +24,7 @@
 			<div class="span3 offset3">
 			<h4>Select interaction</h4>
 				<select id = "interactions-list">
+					<option value= "main" selected>Choose a type of interaction</option>
 					<option value="trophic" name="trophic">trophic (1 eats 2)</option>
 					<option value="competition" name="competition">competition (1 outcompetes 2)</option>
 					<option value="facilitation" name="facilitation">facilitation (1 facilitates 2)</option>
@@ -74,13 +75,24 @@
 						</select>
 					</div>			
 			</div>
-		
+			<div class ="span8" id="interaction_alert_success" hidden ="true">
+				<div class="alert alert-success">
+				<button type="button" class="close" id="alert_success_close">&times;</button>
+				<strong>Success!</strong> Interaction successfully added
+				</div>
+			</div>
+			<div class ="span8" id="interaction_alert_fail" hidden ="true">
+				<div class="alert alert-error">
+				<button type="button" class="close" id="alert_fail_close">&times;</button>
+				<strong>Warning!</strong> Interaction already exists in database
+				</div>
+			</div>
 		<div class="form-actions span5 offset2">
-			<button type="button" class="btn btn-inverse">
+			<button type="button" class="btn btn-inverse" disabled id="interaction_add_observation">
 				Add Observation
 			</button>
 			
-			<button type="button" class="btn btn-inverse">
+			<button type="button" class="btn btn-inverse" disabled  id="interaction_add_interaction">
 				Add Interaction
 			</button>
 			
@@ -92,20 +104,6 @@
 	</fieldset>
 </form>
 
-<div id="new_stage" class="modal hide fade">
-	<div class="modal-header">
-		<button type="button" 
-			class="close" data-dismiss="modal" 
-			aria-hidden="true">&times;
-		</button>
-		<h3> New Stage </h3>
-	</div>
-	<div class="modal-body">
-		<%= render :partial => 'newstage', :stage => @new_stage%>
-	</div>
-	<div class="modal-footer">
-	</div>
-</div>
-
 <input type="hidden" id="interaction_node_id1">
 <input type="hidden" id="interaction_node_id2">
+

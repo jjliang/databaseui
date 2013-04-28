@@ -1,5 +1,7 @@
 class StagesController < ApplicationController
 
+
+
 	#For creating stage in interactions
 	def create_stage
 		@stage = Stage.new(params[:stage])
@@ -16,7 +18,6 @@ class StagesController < ApplicationController
 			@stage.mod = false
 		end
 			
-		
 		respond_to do |format|
 			 if @stage.save
 				format.html { redirect_to :back, notice: 'Stage was successfully created.' }

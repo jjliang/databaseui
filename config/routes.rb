@@ -21,8 +21,11 @@ FoodWebBuilder::Application.routes.draw do
 	#For Node Search
 	
 	match 'search' => 'dashboard#search', :as => "search"
+	# for interactions
 	match 'search_stage' => 'stages#search_stage'
 	match 'create_stage' => 'stages#create_stage'
+	match 'interactions' => 'dashboard#add_interactions'
+	#For Citations
 	match 'authors/full_name' => 'authors#full_name'
 	resources :projects
  
