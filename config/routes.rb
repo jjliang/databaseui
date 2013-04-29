@@ -4,15 +4,6 @@ FoodWebBuilder::Application.routes.draw do
 
   match 'feedbacks/new' => 'feedbacks#new', :as => :new_feedback
 
-  get "contact_forms/new"
-
-  get "contact_forms/create"
-
-  resources :contact_forms
-
-  match 'contact' => 'contact_forms#new', :as => 'contact', :via => 'get'
-  match 'contact' => 'contact_forms#create', :as => 'contact', :via => 'post'
-
   resources :forums
 
 

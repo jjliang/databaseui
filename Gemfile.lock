@@ -84,8 +84,6 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mail_form (1.4.1)
-      actionmailer (~> 3.0)
     mime-types (1.22)
     multi_json (1.7.2)
     mysql2 (0.3.11)
@@ -94,6 +92,7 @@ GEM
     nokogiri (1.5.9)
     nokogiri (1.5.9-x86-mingw32)
     orm_adapter (0.4.0)
+    pg (0.15.1)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -181,8 +180,8 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   lazy_high_charts
-  mail_form
   mysql2
+  pg
   rails (= 3.2.12)
   rails3-jquery-autocomplete
   rails_admin
