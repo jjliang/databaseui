@@ -61,14 +61,16 @@ class NodesController < ApplicationController
     @node = Node.new(params[:node])
     @node.project_id = current_user.project_id
     @node.user_id = current_user.id
-
+	@node.approved = true
+	@node.mod = true
+	puts @node.inspect
     respond_to do |format|
       if @node.save
-        format.html { redirect_to root_path(tab:"newnode") }
-        flash[:notice] = ("Node " + @node.working_name + " has been added")
+        format.html { redirect_to root_path(tab:"newnode"), notice: 'Node ' + @node.working_name + ' has been added'}
         format.json { render json: @node, status: :created, location: @node }
       else
-        format.html { render action: "new" }
+		flash[:error] = @node.errors
+        format.html { redirect_to root_path(tab:"newnode")}
         format.json { render json: @node.errors, status: :unprocessable_entity }
       end
     end

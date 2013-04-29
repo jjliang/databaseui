@@ -40,11 +40,13 @@ FoodWebBuilder::Application.configure do
 	config.action_mailer.perform_deliveries = true
 	
 	ActionMailer::Base.smtp_settings = {
-  :address  => "smtp.gmail.com",
-  :port  => 587,
-  :user_name  => ENV['GMAIL_SMTP_USER'],
-  :password  =>  ENV['GMAIL_SMTP_PASSWORD'],
-  :authentication  => :login
+   :address        => 'smtp.sendgrid.net',
+  :port           => '587',
+  :authentication => :plain,
+  :user_name      => ENV['SENDGRID_USERNAME'],
+  :password       => ENV['SENDGRID_PASSWORD'],
+  :domain         => 'heroku.com',
+  :enable_starttls_auto => true
 }
 
 end

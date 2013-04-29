@@ -5,41 +5,44 @@
 </legend>
 
 <div class="span9">
-<div class="well">
-	<h3>Instructions
-		<button type="button" data-toggle="collapse" data-target="#newnodeinfo" class="btn btn-info btn-mini">
-			Collapse/Expand
-		</button>
-	</h3>
-	
-	<div id="newnodeinfo" class="collapse">
-		<p>
-			First search for a node by its latin or common name.
-			Once you have selected an Itis node by latin or common name,
-			click "Add Node" to fill out the rest of the necessary
-			information.
-		</p>
+	<div class="well">
+		<h3>Instructions
+			<button type="button" data-toggle="collapse" data-target="#newnodeinfo" class="btn btn-info btn-mini">
+				Collapse/Expand
+			</button>
+		</h3>
+		
+		<div id="newnodeinfo" class="collapse">
+			<p>
+				First search for a node by its latin or common name.
+				Once you have selected an Itis node by latin or common name,
+				click "Add Node" to fill out the rest of the necessary
+				information.
+			</p>
+		</div>
 	</div>
 </div>
-</div>
+<div class="span9">
+	<%- if flash[:error] 
+	flash[:error].messages.each {|error| @node.errors.add(error[0], error[1][0]) } end%>
+	<%= form_for(@node) do |f| %>
+		<% if @node.errors.any? %>
+			<div id="error_explanation">
+				<h2>
+					<%= pluralize(@node.errors.count, "error") %>
+					prohibited this node from being saved:
+				</h2>
 
-<%= form_for(@node) do |f| %>
-	<% if @node.errors.any? %>
-		<div id="error_explanation">
-			<h2>
-				<%= pluralize(@node.errors.count, "error") %>
-				prohibited this node from being saved:
-			</h2>
-
-			<ul>
-				<% @node.errors.full_messages.each do |msg| %>
-					<li>
-						<%= msg %>
-					</li>
-				<% end %>
-			</ul>
-		</div>
+				<ul>
+					<% @node.errors.full_messages.each do |msg| %>
+						<li>
+							<%= msg %>
+						</li>
+					<% end %>
+				</ul>
+			</div>
 	<% end %>
+</div>
 	<div class="span4">
 		<%=label_tag 'Common_name' %>
 		<%=text_field_tag 'Common_name',nil, options = {:autocomplete => "off"}  %>

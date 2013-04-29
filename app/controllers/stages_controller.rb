@@ -17,7 +17,7 @@ class StagesController < ApplicationController
 			@stage.approved = true
 			@stage.mod = false
 		end
-			
+		
 		respond_to do |format|
 			 if @stage.save
 				format.html { redirect_to :back, notice: 'Stage was successfully created.' }
@@ -30,6 +30,7 @@ class StagesController < ApplicationController
   def search_stage
 	@stage_array = ["general", "adult", "juvenile","larval","egg","sporophyte","gametophyte","dead"]
 	@result = []
+	puts params[:node]
 	@stage_array.each do |a|
 		if Stage.where(:name => a, :node_id => params[:node]).exists?
 			@result << (a)

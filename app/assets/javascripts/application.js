@@ -352,6 +352,7 @@ $(document).ready(function(){
 								alert("This node does not exist in the database")
 							else
 							{
+								$('#interaction_node_id1').val(data[1].id);
 								$('#interaction_stage1_field').show();
 								$('#interaction_working_name1').val(data[1].working_name);
 								$('#interaction_itis_working_name1').text('Working Name: ' + data[1].working_name);
@@ -437,6 +438,7 @@ $(document).ready(function(){
 								alert("This node does not exist in the database")
 							else
 							{
+								$('#interaction_node_id2').val(data[1].id);
 								$('#interaction_stage2_field').show();
 								$('#interaction_working_name2').val(data[1].working_name);
 								$('#interaction_itis_working_name2').text('Working Name: ' + data[1].working_name);
@@ -492,7 +494,7 @@ $(document).ready(function(){
 				$('<option>').val(data[1][i]).text(data[1][i]).appendTo(id);
 			}			
 				if (data[1][0] == 'general *')
-					new_stage('general',$(hidden).val(),id);
+					new_stage('general',hidden,id);
 		});
 	}
 	
@@ -504,10 +506,10 @@ $(document).ready(function(){
 			$.ajax({
 				type: "POST",
 				url: "create_stage",
-				data: {stage: {name : n,node_id : node}},
+				data: {stage: {name : n,node_id : $(node).val()}},
 				success: function(data) 
 				{
-					generate_select_box(select);
+					generate_select_box(select,node);
 				}
 			});
 		}		
@@ -613,21 +615,32 @@ $(document).ready(function(){
 	})
 	//add interaction
 	$('#interaction_add_interaction').on('click', function (e) {
-		$.ajax({
-			type: "POST",
-			url: "interactions",
-			data: {interaction: {interactionname : $("#interactions-list").val() , name1 : $('#interaction_select1').val(), name2 : $('#interaction_select2').val(),node_id1 : $('#interaction_node_id1').val(),node_id2 : $('#interaction_node_id2').val()}},
-			success: function(data) 
-			{
-				if (data[0] == false)
-					$("#interaction_alert_fail").show();
-				else
-					$("#interaction_alert_success").show();
-					
-				$('#interaction_reset_button').trigger('click');
-			}		
-			
-		});
+	
+		if ($('#interactions-list').val() !== "main")
+		{
+			$.ajax({
+				type: "POST",
+				url: "interactions",
+				data: {interaction: {interactionname : $("#interactions-list").val() , name1 : $('#interaction_select1').val(), name2 : $('#interaction_select2').val(),node_id1 : $('#interaction_node_id1').val(),node_id2 : $('#interaction_node_id2').val()}},
+				success: function(data) 
+				{
+					if (data[0] == false)
+						$("#interaction_alert_fail").show();
+					else
+						$("#interaction_alert_success").show();
+						
+							$('#interaction_working_name1').val("");
+							$('#interaction_working_name2').val("");
+							$('#interaction_stage1_field').hide();
+							$('#interaction_stage2_field').hide();
+							$('#interaction_add_interaction').attr("disabled", true);
+							$('#interaction_add_observation').attr("disabled", true);
+				}		
+				
+			});
+		}
+		else
+			alert("Choose a type of interactin");
 	});
 	
 	//For creating interactions if it does not exist
@@ -642,7 +655,7 @@ $(document).ready(function(){
 		if(s.charAt(s.length-1) == '*')
 		{
 			s = s.substring(0,s.length - 2)
-			new_stage(s,$('#interaction_node_id1').val(),'#interaction_select1');
+			new_stage(s,'#interaction_node_id1','#interaction_select1');
 		}
 	});
 	$("#interaction_select2").change(function(){
@@ -650,7 +663,7 @@ $(document).ready(function(){
 		if(s.charAt(s.length-1) == '*')
 		{
 			s = s.substring(0,s.length - 2)
-			new_stage(s,$('#interaction_node_id2').val(),'#interaction_select2');
+			new_stage(s,'#interaction_node_id2','#interaction_select2');
 		}
 	});
 	//hide fields
