@@ -31,7 +31,7 @@ class StagesController < ApplicationController
 	@stage_array = ["general", "adult", "juvenile","larval","egg","sporophyte","gametophyte","dead"]
 	@result = []
 	@stage_array.each do |a|
-		if Stage.where(:name => a).exists?
+		if Stage.where(:name => a, :node_id => params[:node]).exists?
 			@result << (a)
 		else
 			@result << (a + " *")

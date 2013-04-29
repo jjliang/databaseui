@@ -11,7 +11,7 @@ class Feedback
 	 def feedback(feedback)
     @recipients = 'foodwebbuilder@googlegroups.com'
     @from = 'foodwebb@gmail.com'
-    @subject = "FoodWebBuilder feedback" + :subject
+    @subject = 'FoodWebBuilder feedback'
 		end
   def valid?
     self.comment && !self.comment.strip.blank?

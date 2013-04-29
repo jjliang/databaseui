@@ -15,4 +15,9 @@ class Node < ActiveRecord::Base
   has_one :node_range
   has_many :stages
   #has_one :non_itis, :dependent => :destroy  
+  
+  #validations
+  validates :working_name, :presence => true
+  validates :format, :presence => true
+  validates :format, :presence => true
 end

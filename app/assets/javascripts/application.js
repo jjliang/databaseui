@@ -485,7 +485,7 @@ $(document).ready(function(){
 	function generate_select_box(id,hidden)
 	{
 		$(id).empty();
-		$.get('/search_stage',function(data)
+		$.get('/search_stage',{node : $(hidden).val()} ,function(data)
 		{
 			for (var i = 0; i < data[1].length; i++)
 			{
@@ -588,6 +588,8 @@ $(document).ready(function(){
 	$('#interaction_reset_button').on('click', function (e) {
 		$('#interaction_working_name1').val("");
 		$('#interaction_working_name2').val("");
+		$('#interaction_node_id1').val("");
+		$('#interaction_node_id2').val("");
 		$('#interaction_stage1_field').hide();
 		$('#interaction_stage2_field').hide();
 		$('#interaction_add_interaction').attr("disabled", true);
