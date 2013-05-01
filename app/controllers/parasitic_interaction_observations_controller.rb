@@ -1,4 +1,24 @@
 class ParasiticInteractionObservationsController < ApplicationController
+	
+	#Add parasitic observation
+    def add_parasitic
+	@stage1 = params[:parasitic_interaction_observation][:stage1]
+	@stage2 = params[:parasitic_interaction_observation][:stage2]
+	params[:parasitic_interaction_observation].delete(:stage1)
+	params[:parasitic_interaction_observation].delete(:stage2)
+    @parasitic_interaction_observation = ParasiticInteractionObservation.new(params[:parasitic_interaction_observation])
+	@parasitic_interaction_observation.user_id = current_user.id
+	@parasitic_interaction_observation.project_id = current_user.project_id
+	@parasitic_interaction_observation.location_id = 0
+	@parasitic_interaction_observation.parasitic_interaction_id = ParasiticInteraction.where(:stage_1_id => @stage1,
+	:stage_2_id => @stage2).first.id
+	render :json => [@parasitic_interaction_observation.save]
+	end
+
+
+
+
+
   # GET /parasitic_interaction_observations
   # GET /parasitic_interaction_observations.json
   def index

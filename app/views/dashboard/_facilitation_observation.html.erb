@@ -1,0 +1,35 @@
+	<div class="span4">
+		<label>Observation Type</label>
+		<select id = "facilitation_observation_type_select">
+		<option value="main" selected>Choose a type of observation</option>
+		 <%= options_for_select(FacilitationInteractionObservation::OBSERVATIONS,"main") %>
+	    </select>
+	</div>
+	<div class="span4">
+		<label>Competition Type</label>
+			<select id = "facilitation_type_select">
+				<option value="main" selected>Choose a type of facilitation</option>
+				<%= options_for_select(FacilitationInteractionObservation::FACILITATIONS,"main") %>
+			</select> 
+	</div>
+	<div class="span4">
+		<label>Citation Title </label>
+			<%= form_tag do %>
+				<%= autocomplete_field_tag 'facilitation_citation', '',autocomplete_citation_title_citations_path,
+				:update_elements => {:id => '#citation_id'}%>
+			<% end %>
+	</div>
+	<div class="span4">
+		<label>Datum </label>
+		<input type="text" id="facilitation_interaction_observation_datum">
+	</div>
+	<div class="span4">
+		<textarea class="span3" cols="40" id="facilitation_interaction_observation_comment" placeholder="Comment here" rows="5"></textarea>
+	</div>
+	
+	<div class="actions span4 offset2">
+	<input type="submit" id="facilitation_submit" name="commit" class="btn btn-inverse" value="Add Competition Observation">
+	</div>
+	<input type="hidden" id="citation_id">
+	<input type="hidden" id="facilitation_interaction_id">
+	

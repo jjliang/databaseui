@@ -12,6 +12,15 @@ class LocationDataController < ApplicationController
 
   # GET /location_data/1
   # GET /location_data/1.json
+  
+    #remove a polygon given a polygon id
+  def remove_polygon
+  @location = LocationDatum.find(params[:id])
+  render :json => [@location.destroy]
+  end
+
+  
+  
   def show
     @location_datum = LocationDatum.find(params[:id])
 

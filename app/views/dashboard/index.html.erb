@@ -291,7 +291,7 @@
 				
 				<div class="<%= if (params[:tab] == 'navmap' || !params[:tab])then 'tab-pane active'  else 'tab-pane' end%>" id="navmap">
 				<!-- google map -->
-					<%= gmaps({"polygons"    => { :data => @polygons} , :map_options => {:libraries => ["drawing"], :fillColor => "#000" }, :last_map => false})%>
+					<%= gmaps({"polygons"    => { :data => @polygons} , :map_options => {:libraries => ["drawing"], :fillColor => "#000", "type" => "HYBRID" }, :last_map => false})%>
     
 				<!-- Some java script for the google map being clickable -->
 					<% content_for :scripts do %>
@@ -309,8 +309,7 @@
 									infowindow.open(Gmaps.map.map);} ; }(i);
 
 				google.maps.event.addListener(Gmaps.map.polygons[i].serviceObject, "click", infowindow(i)); }
-				google.maps.event.addListener(Gmaps.map.serviceObject, "click", function(event) {
-					alert(event.latLng); }); }
+				}
 
 </script>
 <!-- end javascript -->

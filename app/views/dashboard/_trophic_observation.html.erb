@@ -1,0 +1,65 @@
+	<div class="span4">
+		<label>Lethality</label>
+		<select id = "trophic_interaction_observation_lethality">
+		<option value="main" selected>Choose a type of Lethality</option>
+		 <%= options_for_select(TrophicInteractionObservation::LETHAL,"main") %>
+	    </select>
+	</div>
+	<div class="span4">
+		<label>structures_consumed</label>
+		<select id = "trophic_interaction_observation_structures_consumed">
+		<option value="main" selected>Choose a type of Structure Consumed</option>
+		<%= options_for_select(TrophicInteractionObservation::CONSUMED,"main") %>
+	    </select>
+	</div>
+	<div class="span4">
+		<label>Percentage Consumed </label>
+		<input type="number" id="trophic_interaction_observation_percentage_consumed">
+	</div>
+	<div class="span4">
+		<label>Percentage Diet </label>
+		<input type="number" id="trophic_interaction_observation_percentage_diet">
+	</div>	
+	<div class="span4">
+		<label>Percentage Diet By</label>
+		<select id = "trophic_interaction_observation_percentage_diet_by">
+		<option value="main" selected>Choose a type of Percentage Diet unit</option>
+		<%= options_for_select(TrophicInteractionObservation::DIET,"main") %>
+	    </select>
+	</div>	
+	
+	<div class="span4">
+		<label>Preference</label>
+		<select id = "trophic_interaction_observation_preference">
+		<option value="main" selected>Choose a type of Preference</option>
+		<%= options_for_select(TrophicInteractionObservation::PREF,"main") %>
+	    </select>
+	</div>	
+	<div class="span4">
+		<label>Observation Type</label>
+		<select id = "trophic_observation_type_select">
+		<option value="main" selected>Choose a type of observation</option>
+		 <%= options_for_select(TrophicInteractionObservation::OBSERVATIONS,"main") %>
+	    </select>
+	</div>
+	<div class="span4">
+		<label>Citation Title </label>
+			<%= form_tag do %>
+				<%= autocomplete_field_tag 'trophic_citation', '',autocomplete_citation_title_citations_path,
+				:update_elements => {:id => '#citation_id'}%>
+			<% end %>
+	</div>
+	<div class="span4">
+		<label>Datum </label>
+		<input type="text" id="trophic_interaction_observation_datum">
+	</div>
+	<div class="span4">
+		<textarea class="span3" cols="40" id="trophic_interaction_observation_comment" placeholder="Comment here" rows="5"></textarea>
+	</div>
+	
+	<div class="actions span4 offset2">
+	<input type="submit" id="trophic_submit" name="commit" class="btn btn-inverse" value="Add Trophic Observation">
+	</div>
+	<input type="hidden" id="citation_id">
+	<input type="hidden" id="trophic_interaction_id">
+	

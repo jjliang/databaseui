@@ -1,4 +1,25 @@
 class TrophicInteractionObservationsController < ApplicationController
+
+    def add_trophic
+	@stage1 = params[:trophic_interaction_observation][:stage1]
+	@stage2 = params[:trophic_interaction_observation][:stage2]
+	params[:trophic_interaction_observation].delete(:stage1)
+	params[:trophic_interaction_observation].delete(:stage2)
+    @trophic_interaction_observation = TrophicInteractionObservation.new(params[:trophic_interaction_observation])
+	@trophic_interaction_observation.user_id = current_user.id
+	@trophic_interaction_observation.project_id = current_user.project_id
+	@trophic_interaction_observation.location_id = 0
+	@trophic_interaction_observation.trophic_interaction_id = TrophicInteraction.where(:stage_1_id => @stage1,
+	:stage_2_id => @stage2).first.id
+	render :json => [@trophic_interaction_observation.save]
+	end
+
+
+
+
+
+
+
   # GET /trophic_interaction_observations
   # GET /trophic_interaction_observations.json
   def index

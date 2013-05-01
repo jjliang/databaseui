@@ -1,0 +1,57 @@
+	<div class="span4">
+		<label>Endo/Ecto</label>
+		<select id = "parasitic_interaction_observation_endo_ecto">
+		<option value="main" selected>Choose Endo/Ecto</option>
+		 <%= options_for_select(ParasiticInteractionObservation::ENDOECTO,"main") %>
+	    </select>
+	</div>
+	<div class="span4">
+		<label>Lethality</label>
+		<select id = "parasitic_interaction_observation_lethality">
+		<option value="main" selected>Choose a type of Lethality</option>
+		 <%= options_for_select(ParasiticInteractionObservation::LETHAL,"main") %>
+	    </select>
+	</div>
+		<div class="span4">
+		<label>Prevalence </label>
+		<input type="number" id="parasitic_interaction_observation_prevalence">
+	</div>
+		<div class="span4">
+		<label>Intensity </label>
+		<input type="number" id="parasitic_interaction_observation_intensity">
+	</div>
+	<div class="span4">
+		<label>Observation Type</label>
+		<select id = "parasitic_observation_type_select">
+		<option value="main" selected>Choose a type of observation</option>
+		 <%= options_for_select(ParasiticInteractionObservation::OBSERVATIONS,"main") %>
+	    </select>
+	</div>
+	<div class="span4">
+		<label>Competition Type</label>
+			<select id = "parasite_type_select">
+				<option value="main" selected>Choose a type of parasite</option>
+				<%= options_for_select(ParasiticInteractionObservation::PARASITICS,"main") %>
+			</select> 
+	</div>
+	<div class="span4">
+		<label>Citation Title </label>
+			<%= form_tag do %>
+				<%= autocomplete_field_tag 'parasitic_citation', '',autocomplete_citation_title_citations_path,
+				:update_elements => {:id => '#citation_id'}%>
+			<% end %>
+	</div>
+	<div class="span4">
+		<label>Datum </label>
+		<input type="text" id="parasitic_interaction_observation_datum">
+	</div>
+	<div class="span4">
+		<textarea class="span3" cols="40" id="parasitic_interaction_observation_comment" placeholder="Comment here" rows="5"></textarea>
+	</div>
+	
+	<div class="actions span4 offset2">
+	<input type="submit" id="parasitic_submit" name="commit" class="btn btn-inverse" value="Add Parasitic Observation">
+	</div>
+	<input type="hidden" id="citation_id">
+	<input type="hidden" id="parasitic_interaction_id">
+	

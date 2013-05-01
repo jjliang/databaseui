@@ -34,8 +34,10 @@ class @Gmaps4RailsGoogle extends Gmaps4Rails
       strokeWeight: 2
       fillColor: "#000000"
       fillOpacity: 0.35
-      clickable: true
-	 
+      clickable: true 
+      draggable: true
+      editable: true
+	  
 
     #Circle Styling
     @circles_conf =           #default style for circles

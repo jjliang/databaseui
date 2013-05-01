@@ -35,7 +35,7 @@ class DashboardController < ApplicationController
 				@polygons = Array.new(LocationDatum.where(["project_id = ?",current_user.project_id]).count) { Array.new }
 				LocationDatum.where(["project_id = ?",current_user.project_id]).find_each do |location|
 				location.latitude.each_index do |index|
-					@polygons[counter] << { :lat => location.latitude[index], :lng =>location.longitude[index]}
+					@polygons[counter] << { :lat => location.latitude[index], :lng =>location.longitude[index], :id=>location.id}
 				end
 			counter += 1
 			end

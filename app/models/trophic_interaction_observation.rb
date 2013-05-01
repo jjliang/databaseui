@@ -1,4 +1,11 @@
 class TrophicInteractionObservation < ActiveRecord::Base
+
+  OBSERVATIONS= ["field observation", "laboratory observation","chemical","gut","inferred",
+  "expert opinion","fishery","nest contents","scat","forensic"]
+  LETHAL = ["lethal whole","lethal partial","nonlethal partial","nonlethal behavioural modification"]
+  CONSUMED = ["whole organism","felsh","frond"]
+  DIET = ["Volume","Mass","Count"]
+  PREF = ["none","more preferred","less preferred"]
   enum :observation_type, [:'field_observation',:'laboratory observation',:'chemical',:'gut',:'inferred',:'expert opinion',:'fishery',:'nest contents',:'scat',:'forensic']
   enum :lethality, [:'lethal whole',:'lethal partial',:'nonlethal partial',:'nonlethal behavioural modification']
   enum :structures_consumed, [:'whole organism',:'flesh',:'frond']

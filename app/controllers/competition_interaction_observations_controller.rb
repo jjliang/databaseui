@@ -1,34 +1,23 @@
 class CompetitionInteractionObservationsController < ApplicationController
-  # GET /competition_interaction_observations
-  # GET /competition_interaction_observations.json
+
     def add_competition
 	@stage1 = params[:competition_interaction_observation][:stage1]
 	@stage2 = params[:competition_interaction_observation][:stage2]
 	params[:competition_interaction_observation].delete(:stage1)
-		params[:competition_interaction_observation].delete(:stage2)
-	puts @stage1
-	puts @stage2
+	params[:competition_interaction_observation].delete(:stage2)
     @competition_interaction_observation = CompetitionInteractionObservation.new(params[:competition_interaction_observation])
 	@competition_interaction_observation.user_id = current_user.id
 	@competition_interaction_observation.project_id = current_user.project_id
 	@competition_interaction_observation.location_id = 0
 	@competition_interaction_observation.competition_interaction_id = CompetitionInteraction.where(:stage_1_id => @stage1,
 	:stage_2_id => @stage2).first.id
-    respond_to do |format|
-      if @competition_interaction_observation.save
-        format.html { redirect_to @competition_interaction_observation, notice: 'Competition interaction observation was successfully created.' }
-        format.json { render json: @competition_interaction_observation, status: :created, location: @competition_interaction_observation }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @competition_interaction_observation.errors, status: :unprocessable_entity }
-      end
-    end
+	render :json => [@competition_interaction_observation.save]
+		
+
   end
   
-  
-  
-  
-  
+  # GET /competition_interaction_observations
+  # GET /competition_interaction_observations.json  
   
   def index
     @competition_interaction_observations = CompetitionInteractionObservation.all

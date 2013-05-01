@@ -1,23 +1,15 @@
 	<div class="span4">
 		<label>Observation Type</label>
-			<select id = "competition_observation_type_select">
-				<option value= "main" selected>Choose a type of observation</option>
-				<option value="field observation" name="field observation">field observation</option>
-				<option value="laboratory observation" name="laboratory observation">laboratory observation</option>
-				<option value="gut" name="gut">gut</option>
-				<option value="expert opinion" name="expert opinion">expert opinion</option>
-				<option value="fishery" name="fishery">fishery</option>
-				<option value="nest contents" name="nest contents">nest contents</option>
-				<option value="scat" name="scat">scat</option>
-				<option value="forensic" name="forensic">forensic</option>
-			</select> 
+		<select id = "competition_observation_type_select">
+		<option value="main" selected>Choose a type of observation</option>
+		 <%= options_for_select(CompetitionInteractionObservation::OBSERVATIONS,"main") %>
+	    </select>
 	</div>
 	<div class="span4">
 		<label>Competition Type</label>
 			<select id = "competition_type_select">
 				<option value="main" selected>Choose a type of competition</option>
-				<option value="space" name="space">space</option>
-				<option value="interference" name="interference">interference</option>
+				<%= options_for_select(CompetitionInteractionObservation::COMPETITIONS,"main") %>
 			</select> 
 	</div>
 	<div class="span4">
