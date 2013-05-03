@@ -1,30 +1,50 @@
 <!-- Begin: navigation -->
-<ul class="nav nav-pills" id="ModeratorTab">
-    <li class="active"><a href="#homem">Home</a></li>
-	<li><a href="#uapprove">Approval of User</a></li>
-	<li><a href="#become">Become a Moderator</a></li>
-</ul>
+<div id="m">
+    <table style="width: 100%;">
+        <tr style="vertical-align: top;">
+            <td style="width: 33.3%;">
+                <h3>A</h3>
+                <li>
+                    <a href="#" style="color:#0c79c2;" onclick="multiview('mod1', 'm');"><u>About the Moderator Role</u></a>
+                </li>
+	            <li>
+                    <a href="#" style="color:#0c79c2;" onclick="multiview('mod2', 'm');"><u>Approval of a User</u></a>
+                </li>
+                <h3>B</h3>
+	            <li>
+                    <a href="#" style="color:#0c79c2;" onclick="multiview('mod3', 'm');"><u>Become a Moderator</u></a>
+                </li>
+            </td>
+        </tr>
+    </table>
+</div>
 <!-- End: navigation -->
 
 <!-- Begin: Content -->
 <div class="tab-content">
-    <div class="tab-pane active" id="homem">
+    <div class="tab-pane active" id="mod1" style="display:none;">
+        <h3>About the Moderator Role</h3>
         <p>
            	A moderator has all of the capabilities of a user and additionally
            	is able to approve users for an open food web project.           	
-        </p>  
+        </p><br \>
+        <a href="#" onclick="back('mod1', 'm');" class=" btn btn-inverse">Back</a>  
     </div>
-    <div class="tab-pane" id="uapprove">
+    <div class="tab-pane" id="mod2" style="display:none;">
+        <h3>Approval of a User</h3>
     	<p>
     		To approve a user to a project, navigate to your home page with the "Home" tab in navigation bar at the top of the screen. When the new page renders in the browser, choose the "Users" tab on the lefthand side of the screen. More options will appear in the window. Choose the "Awaiting Approval" tab from the new options. If any exist, a list of them will appear. Choose the edit option in the row associated with the user you wish to approve. When the new screen renders in the browser, choose the project to which you will assign the user from the "Project" field. Then click the check box under the "Approved" field. Finally, click the "Update User" button.
 
     		If you do not wish to approve the user, simply click the destroy option in the row associated with the user you do not want to approve. Confirm the dialog box pop-up.
-    	</p>
+    	</p><br \>
+        <a href="#" onclick="back('mod2', 'm');" class=" btn btn-inverse">Back</a>
     </div>
-    <div class="tab-pane" id="become">
+    <div class="tab-pane" id="mod3" style="display:none;">
+        <h3>Become a Moderator</h3>
     	<p>
     		In order to become a moderator, first you must be approved by a project leader as a user of a food web project. Then that project leader can assign the moderator role to you if it has been agreed upon that you will be assigned that role.
-    	</p>
+    	</p><br \>
+        <a href="#" onclick="back('mod3', 'm');" class=" btn btn-inverse">Back</a>
     </div>    
 </div>
 <!-- End: Content -->

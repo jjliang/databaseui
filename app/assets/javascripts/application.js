@@ -907,3 +907,14 @@ $(document).ready(function(){
 
 
 
+function multiview(topic, header)
+{
+	$("#" + topic).css("display", "block");
+	$("#" + header).css("display","none");
+}
+
+function back(topic, header)
+{
+    $("#" + topic).css("display", "none");
+    $("#" + header).css("display","block");
+}

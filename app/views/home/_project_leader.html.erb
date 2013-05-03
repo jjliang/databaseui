@@ -1,22 +1,39 @@
 <!-- Begin: navigation -->
-<ul class="nav nav-pills" id="ProjectLeaderTab">
-    <li class="active"><a href="#homep">Home</a></li>
-	<li><a href="#newproj">Open a New Project</a></li>
-</ul>
+<div id="proj-lead">
+    <table style="width: 100%;">
+        <tr style="vertical-align: top;">
+            <td style="width: 33.3%;">
+                <h3>A</h3>
+                <li>
+                    <a href="#" style="color:#0c79c2;" onclick="multiview('plead1', 'proj-lead');"><u>About the Project Leader Role</u></a>
+                </li>
+                <h3>O</h3>
+	            <li>
+                    <a href="#" style="color:#0c79c2;" onclick="multiview('plead2', 'proj-lead');"><u>Open a New Project</u></a>
+                </li>
+            </td>
+        </tr>
+    </table>
+</div>
+
 <!-- End: navigation -->
 
 <!-- Begin: Content -->
 <div class="tab-content">
-    <div class="tab-pane active" id="homep">
+    <div class="tab-pane active" id="plead1" style="display:none;">
+        <h3>About the Project Leader Role</h3>
         <p>
            	A project leader has all of the capabilities of a moderator and is additionally able to 
            	create new projects.
-        </p>  
+        </p><br \>
+        <a href="#" onclick="back('plead1', 'proj-lead');" class=" btn btn-inverse">Back</a>          
     </div>
-    <div class="tab-pane" id="newproj">
+    <div class="tab-pane" id="plead2" style="display:none;">
+        <h3>Open a New Project</h3>
     	<p>
     		This capability is under construction.
-    	</p>
+    	</p><br \>
+        <a href="#" onclick="back('plead2', 'proj-lead');" class=" btn btn-inverse">Back</a>
     </div>
 </div>
 <!-- End: Content -->
