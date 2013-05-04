@@ -14,7 +14,7 @@
 				<ul class="nav nav-pills nav-stacked">
 					
 					<li class="<%= 'active' if params[:tab] == 'navmap' || !params[:tab] %>">
-						<a href="#navmap" data-toggle="tab"><b>Map</B></a>
+						<a href="#navmap" data-toggle="tab" title="Interact with the Region map"><b>Map</B></a>
 					</li>
 					
 					<!-- Drop down for Nodes -->
@@ -24,7 +24,8 @@
 					<%= 'active' if params[:tab] == 'searchnode' %>
 					<%= 'active' if params[:tab] == 'nodelist' %>">
 						<a class="dropdown-toggle"
-							data-toggle="dropdown"
+							data-toggle="dropdown""
+							title="Create, search, or list Nodes"
 							href="dashboard"><b>
 							Nodes</b>
 							<b class="caret"></b>
@@ -58,6 +59,7 @@
 					<%= 'active' if params[:tab] == 'citelist' %>">
 						<a class="dropdown-toggle"
 							data-toggle="dropdown"
+							title="Add new authors or citations or list citations"
 							href="dashboard"><b>
 							Citations</b>
 							<b class="caret"></b>
@@ -84,7 +86,9 @@
 					<!-- End Dropdown for citations -->
 					
 					<li class= "<%= 'active' if params[:tab] =='inters'%>">
-						<a href="#inters" data-toggle="tab">Interactions</a>
+						<a href="#inters"
+						title="Create a new interaction" 
+						data-toggle="tab">Interactions</a>
 					</li>
 					
 					<!-- Tabs by user roles -->

@@ -5,19 +5,19 @@
 </legend>
 
 <div class="span9">
-	<div class="well">
+	<div class="well instructions">
 		<h3>Instructions
 			<button type="button" data-toggle="collapse" data-target="#newnodeinfo" class="btn btn-info btn-mini">
-				Collapse/Expand
+				<span class="caret"></span><!-- Collapse/Expand -->
 			</button>
 		</h3>
 		
 		<div id="newnodeinfo" class="collapse">
 			<p>
-				First search for a node by its latin or common name.
-				Once you have selected an Itis node by latin or common name,
-				click "Add Node" to fill out the rest of the necessary
-				information.
+				First search for a node by entering its latin or common name in the corresponding field below.
+				Once you have selected an Itis node by latin or common name enter the remaining information and
+				click "Add Node" to create the new node. The 'Reset' button may be clicked at any time to clear 
+				the form.
 			</p>
 		</div>
 	</div>
@@ -45,47 +45,52 @@
 </div>
 	<div class="span4">
 		<%=label_tag 'Common_name' %>
-		<%=text_field_tag 'Common_name',nil, options = {:autocomplete => "off"}  %>
+		<%=text_field_tag 'Common_name',nil, options = {:autocomplete => "off", 
+														:title => "Enter the common name of the new node"} %>
 		<img src="assets/ajax-loader.gif" id="common-name-loading-indicator" style="display:none" />
 	</div>
 	<div class="span4">
 		<%=label_tag 'Latin_name' %>
-		<%=text_field_tag 'Latin_name' ,nil, options = {:autocomplete => "off"}%>
+		<%=text_field_tag 'Latin_name' ,nil, options = {:autocomplete => "off", 
+														:title => "Enter the latin/scientific name of the new node"}%>
 		<img src="assets/ajax-loader.gif" id="latin-name-loading-indicator" style="display:none" />
 	</div>
 	
 	<div class="span4">
 		<%= f.label :itis_id, "ITIS" %>
-		<%= f.number_field :itis_id %>
+		<%= f.number_field :itis_id, options = {:title => "The ITIS id number if node is cataloged in ITIS. Field is autofilled"}%>
 		<img src="assets/ajax-loader.gif" id="itis-name-loading-indicator" style="display:none" />
 	</div>
 
 	<div class="span4" hidden ="true" id="node_working_name_field">
 		<%= f.label :working_name%>
-		<%= f.text_field :working_name %>
+		<%= f.text_field :working_name, options = {:title => "The working name of the new node. This is usually the same as the common name"} %>
 	</div>
 	
 	<div class="span4" hidden="true" id="node_functional_group_id_field">
 		<%= f.label :functional_group_id%>
 		<%= collection_select(:node, :functional_group_id,
-			FunctionalGroup.all, :id, :name, :prompt => "Select Functional Group") %>
+			FunctionalGroup.all, :id, :name, options = {:prompt => "Select Functional Group"},
+				                                        {:title  => "Choose the functional group the new node belongs to"}) %>
 	</div>
 	<div class="span4" hidden="true" id="node_native_status_field">
 		<%= f.label :native_status%>
 		<%= f.collection_select :native_status, 
-      	Node::STATUS, :to_s, :humanize,{:prompt => "Select Native Status"} %>
+      	Node::STATUS, :to_s, :humanize,{:prompt => "Select Native Status"},
+      	                               {:title => "Select the native status of the new node" } %>
 	</div>
 
 	<div class="span4" hidden= "true" id="node_is_assemblage_field">
-		<%= f.label :is_assemblage%>
-		<%= f.check_box :is_assemblage %>
+		<%= f.label :is_assemblage, :class => "pull left" %>
+		<%= f.check_box :is_assemblage, :title => "Indicate whether the new represents an assemblage",
+									    :class => "pull-left spacer" %>
 	</div>
 	
 	<div class="span9">
 		<div class="well">
 			<div class="actions">
-				<%= f.submit :class=>"btn btn-inverse offset2", :id=>"node_submit_button" %>
-				<button type="reset" class="btn btn-inverse" id = "reset_new_node">Reset</button>
+				<%= f.submit :class=>"btn btn-inverse", :id=>"node_submit_button", :title => "Create the new node" %>
+				<button type="reset" class="btn btn-inverse" id = "reset_new_node" title="Reset the form">Reset</button>
 			</div>
 		</div>
 	</div>

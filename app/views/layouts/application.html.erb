@@ -7,7 +7,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<%= stylesheet_link_tag "application", :media => "all" %>
-		
+
 		<%= javascript_include_tag "application" %>
 		<%= feedback_includes %>
 		<%= csrf_meta_tags %>
@@ -16,12 +16,11 @@
 
 	<body>
 		<div id="navbar wrapper">
-			
+
 			<header class="navbar navbar-inverse navbar-fixed-top">
 				<nav class="navbar-inner">
-					<div class="container offset3">
+					<div class="container offset2">
 						<%= render 'layouts/navigation' %>
-						</ul>
 					</div>
 				</nav>
 				<%= feedback_tab(:position => 'right') %>
@@ -35,25 +34,31 @@
 							<div class="span12">
 								<%= render 'layouts/messages' %>
 								<%= yield %>
-							</div> <!-- end span12 -->
-						</div> <!-- end row -->
-					</div> <!-- end content -->
-				</div> <!-- end of container -->
+							</div>
+							<!-- end span12 -->
+						</div>
+						<!-- end row -->
+					</div>
+					<!-- end content -->
+				</div>
+				<!-- end of container -->
 				<div id="push"></div>
-			</div> <!-- end main -->
-		</div> <!-- end wrap -->
+			</div>
+			<!-- end main -->
+		</div>
+		<!-- end wrap -->
 
 		<%= yield :scripts %>
 	</body>
 	<!-- start footer -->
 	<div class="navbar navbar-fixed-bottom">
-	<div id="footer">
-		<div class="container">
-			<p class="text-info credit text-center">
-				This website is under development. We would greatly appreciate any feedback through the "feedback" tab in
-				the upper right corner of the browser window. 
-			</p>
+		<div id="footer">
+			<div class="container">
+				<p class="text-info credit text-center">
+					This website is under development. We would greatly appreciate any feedback through the "feedback" tab in
+					the upper right corner of the browser window.
+				</p>
+			</div>
 		</div>
-	</div>
 	</div>
 </html>
