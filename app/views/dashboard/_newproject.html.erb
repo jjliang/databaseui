@@ -4,11 +4,11 @@
 	</h3>
 </legend>
 
-<div class="well">
+<div class="well instructions">
 	<h3>Instructions
 		<button type="button" data-toggle="collapse" 
 			data-target="#projectinfo" class="btn btn-info btn-mini">
-			Collapse/Expand
+			<!-- Collapse/Expand --><span class="caret"></span>
 		</button>
 	</h3>
 		
@@ -38,34 +38,37 @@
 
   <div class="span4">
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, :title => "Enter the name of the new project" %>
   </div>
   
   <div class="span4">
     <%= f.label :creator %>
-    <%= f.select "creator", User.find(:all).collect{|p| [p.username, p.username]} ,:prompt => "Please Select Creator" %>
+    <%= f.select "creator", User.find(:all).collect{|p| [p.username, p.username]} ,{:prompt => "Please Select Creator"}, {:title => "Select the user who is the creator of this project"} %>
   </div>
   
   <div class="span4">
     <%= f.label :user_id %>
     <%= options_from_collection_for_select(User.all, :id, :username) %>
-		<%= collection_select(:project, :user_id, User.all, :id, :username, :prompt => "Please Select User") %>
+		<%= collection_select(:project, :user_id, User.all, :id, :username, {:prompt => "Please Select User"},
+		{:title => "Select the user associated with this project"}) %>
   </div>
   
   
   <div class="span4">
-    <%= f.label :public %>
-    <%= f.check_box :public %>
+    <%= f.check_box :public, :title => "Indicates if the project will be publicly viewable",
+    	:class => "pull-left" %>
+    <%= f.label :public, :class => "pull-left spacer" %>
   </div>
  
   <div class="span4">
-    <%= f.label :approved %>
-    <%= f.check_box :approved %>
+    <%= f.check_box :approved, :title => "Indicates whether the project has been approved",
+    	:class => "pull-left" %>
+    <%= f.label :approved, :class => "pull-left spacer" %>
   </div>
   <div class="row">
   <div class="form-actions span9">
-    <%= f.submit :class=>"btn btn-inverse offset3"%>
-    		<button type="reset" class="btn btn-inverse">
+    <%= f.submit :class=>"btn btn-inverse", :title => "Create the new project"%>
+    		<button type="reset" class="btn btn-inverse" title="Reset the form">
 			Reset
 		</button>
   </div>

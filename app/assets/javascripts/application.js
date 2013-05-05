@@ -26,7 +26,7 @@
 
 //begin Jquery
 $(document).ready(function(){
-	$('a, input, select, button').tooltip({delay: { show: 350, hide: 200 }, placement: 'right', trigger: 'hover'});
+	$('a, input, select, button, textarea').tooltip({delay: { show: 350, hide: 200 }, placement: 'right', trigger: 'hover'});
 	// $('input').tooltip({delay: { show: 200, hide: 200 }, placement: 'top'});
 	// $('select').tooltip({delay: { show: 200, hide: 200 }, placement: 'top'});
 	$('a[href="#regions"]').on('shown', function (e) {

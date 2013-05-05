@@ -2,12 +2,11 @@
 	<h3>Add New Citation</h3>
 </legend>
 
-<div class="well">
+<div class="well instructions">
 	<h3>Instructions
-		<button type="button" data-toggle="collapse" data-target="#newciteinfo" class="btn btn-info btn-mini">
-			Collapse/Expand
-		</button>
-	</h3>
+	<button type="button" data-toggle="collapse" data-target="#newciteinfo" class="btn btn-info btn-mini">
+		<span class="caret"></span><!-- Collapse/Expand -->
+	</button></h3>
 
 	<div id="newciteinfo" class="collapse">
 		<p>
@@ -15,211 +14,205 @@
 			information. If the author you are citing is not listed
 			please enter them into the database.
 		</p>
-
-		<p>
-			Acceptable formats of publications are; Journal, Books,
-			Book Sections, Reports, Thesis, Websites, Personal
-			Observations, and Unpublished Data. There is also an
-			<em>other</em> option for sources not listed.
-		</p>
 	</div>
 </div>
 
 <%= form_for(@citation) do |f| %>
-  <% if @citation.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@citation.errors.count, "error") %> prohibited this citation from being saved:</h2>
+<% if @citation.errors.any? %>
+<div id="error_explanation">
+	<h2><%= pluralize(@citation.errors.count, "error") %> prohibited this citation from being saved:</h2>
 
-      <ul>
-      <% @citation.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+	<ul>
+		<% @citation.errors.full_messages.each do |msg| %>
+		<li>
+			<%= msg %>
+		</li>
+		<% end %>
+	</ul>
+</div>
+<% end %>
 <fieldset>
 
-		<%= f.fields_for :author_cites do |a| %>
-			<div class="field">
-				<div class="span4 offset1">
-					<%= a.label :author %>
-					<%= collection_select :author_cites, :author_id, @authorlist, :id, :listing_name.to_s, {:prompt => "Last First"},{:class => "span3"} %>
-					<br \>
-					<script>
-						var myAuthors = new Array();
-					</script>
-					<%= button_tag "Add Author",:type => 'button',:class => "btn btn-inverse", :onclick => "addAuthor()", :yield => authorcitations %>
-				
-				</div>
-			</div>
-			<% end %>
-			
-			<div class="field">
-				<div class="span4">
-					<%= f.label :current_authors %>
-					<div id="current">
-					</div>
-				</div>
+	<%= f.fields_for :author_cites do |a| %>
+	<div class="field">
+		<div class="span4 offset1">
+			<%= a.label :author %>
+			<%= collection_select :author_cites, :author_id, @authorlist, :id, :listing_name.to_s,
+			{:prompt => "Last First"},
+			{:class => "span3", :title => "Choose an author from those in the database"} %>
+			<script>
+				var myAuthors = new Array();
+			</script>
+			<%= button_tag "Add Author",:type => 'button',:class => "btn btn-inverse",
+			:onclick => "addAuthor()", :yield => "authorcitations", :title => "Add an author" %>
+
+		</div>
+	</div>
+	<% end %>
+
+	<div class="field">
+		<div class="span4">
+			<%= f.label :current_authors %>
+			<div id="current"></div>
+		</div>
 
 	</div>
-  <div class="span4 offset1">
-  	
-  	<div class="field" id="ab">
-  		<br \>
-  	  <%= f.label :abstract %>
-     </div>
-     
-     <div class="field" id="com" hidden=true>
-  	  <%= f.label :comment %>
-     </div>
-     
-     <div class="field" id="abstract_area">
-    	<%= f.text_area :abstract, :class=>"span3" , :rows => "5", :placeholder => "Brief description of the citation" %>
-    </div>
+	<div class="span4 offset1">
 
-  </div>
+		<div class="field" id="ab">
+			<br \>
+			<%= f.label :abstract %>
+		</div>
 
-    <div class="span4">
-    	<br \>
-        <%= f.label :title %>
-        <%= f.text_field :title ,:class =>"span3", :placeholder => "Title of Citation" %>
-        
-    </div>
-    
-    <div class="span4">
-      
-      	<div class="field" id="doc">
-      	<br \>
-        	<%= f.label :document %>
-      	</div>
-      	
-      	<div class="field" id="inst_doc" hidden=true>
-      	<br \>
-        	<%= f.label :Institution %>
-      	</div>
-      	
-      	<div class="field" id="document_text">
-      		<%= f.text_field :document ,:class =>"span3"%>
-      	</div>
-      </div>
-      
-      <div class="span4 offset1">         
-        <%= f.label :year %>
-        <%= f.number_field :year , :min => 1800, :max => @current_year, :class =>"span3" , :placeholder => "Year of citation"%>
-      </div>
-      
+		<div class="field" id="com" hidden=true>
+			<%= f.label :comment %>
+		</div>
 
-    	  <div class="span4">
-    	  	<div class="field" id="format_selector">
-    	  	<%=f.label :format %>
-      		<%= f.collection_select :format, 
-      			Citation::FORMATS, :to_s, :humanize,{:prompt => "Select Format"} ,:class =>"span3"%>
-  	    </div>
-				</div>
-      <div class="span4 offset1">
-      	
-      	<div class="field" id="journal_title" hidden=true >
-      		<%= f.label :journal_title %>
-      	</div>
-      	
-      	<div class="field" id="book_title" hidden=true >
-      		<%= f.label :book_title %>
-      	</div>
-      	
-      	<div class="field" id="book_select_title" hidden=true >
-      		<%= f.label :Book_Section_Title %>
-      	</div>
-      	
-      	<div class="field" id="report_title" hidden=true >
-      		<%= f.label :report_title %>
-      	</div>
-      	
-      	<div class="field" id="thesis_title" hidden=true >
-      		<%= f.label :thesis_title %>
-      	</div>
-      	
-      	<div class="field" id="website_title" hidden=true>
-      		<%= f.label :website %>
-      	</div>
-      	
-      	<div class="field" id="other_title" hidden=true >
-      		<%= f.label :other_title %>
-      	</div>
-      	
-      	<div class="field" id="personal_title" hidden=true >
-      		<label> URL </label>
-      	</div>
-      	
-      	<div class="field" id="unpublished_title" hidden=true >
-      		<label> URL </label>
-      	</div>
-				
-				<div class="field" id="format_area" hidden=true>
-					<%= f.text_field :format_title ,:class =>"span3"%>
-				</div>
-        
-      </div>
-      
-      <div class="span4">
-      	<div class="field" id="pages" hidden=true>
-      		<%= f.label :page_numbers %>
-        </div>
-        
-        <div class="field" id="address" hidden=true>
-      		<%= f.label :address %>
-        </div>
-        
-        <div class="field" id="pages_area" hidden=true>
-        	<%= f.text_field :pages ,:class =>"span3"%>
-        </div>
-       </div>
-       
-       
-        <div class="span4 offset1">
-        	<div class="field" id="pub" hidden=true>
-       		 <%= f.label :publisher %>
-        	</div>
-        	
-        	<div class="field" id="email" hidden=true>
-        		<%= f.label :Email %>
-        	</div>
-        	
-        	<div class="field" id="vol" hidden=true>
-        	 <%= f.label :volume %>
-      		</div>
-      		
-      		<div class="field" id="pub_area" hidden=true>
-      			<%= f.text_field :volume ,:class =>"span3"%>
-      		</div>
-      		
-      		<div class="field" id="vol_area" hidden=true>
-      			<%= f.number_field :volume ,:class =>"span3"%>
-      		</div>
-      		
- 		     </div>      
+		<div class="field" id="abstract_area">
+			<%= f.text_area :abstract, :class=>"span3" , :rows => "5", :placeholder => "Brief description of the article abstract (it any)." %>
+		</div>
 
-      
-    <div class="span4">
-    	<div class="field" id="num" hidden=true>
-        <%= f.label :number %>
-    	</div>
-    	
-    	<div class="field" id="phonenum" hidden=true>
-    		<%= f.label :phone_number %>
-    	</div>
-    	
-    	<div class="field" id="num_area" hidden=true>
-    		<%= f.number_field :number ,:class =>"span3"%>
-    	</div>
-    </div>
+	</div>
 
+	<div class="span4">
+		<br \>
+		<%= f.label :title %>
+		<%= f.text_field :title, :class =>"span3", :placeholder => "Title of publication of citation source" %>
 
-  <div class="span9 form-actions">
-    <%= f.submit :class => 'btn btn-inverse offset3'%>
-    <button type="reset" class="btn btn-inverse" id="reset_new_cite">
-      Reset
-    </button>
-  </div> 
-  </fieldset>
-  <% end %>
+	</div>
+
+	<div class="span4">
+
+		<div class="field" id="doc">
+			<br \>
+			<%= f.label :document %>
+		</div>
+
+		<div class="field" id="inst_doc" hidden=true>
+			<br \>
+			<%= f.label :Institution, :title => "Enter a valid document URL or DOI" %>
+		</div>
+
+		<div class="field" id="document_text">
+			<%= f.text_field :document ,:class =>"span3", :title => "Enter a valid document URL or DOI" %>
+		</div>
+	</div>
+
+	<div class="span4 offset1">
+		<%= f.label :year %>
+		<%= f.number_field :year , :min => 1800, :max => @current_year, :class =>"span3" ,
+      :placeholder => "Year of publication of citation source"%>
+	</div>
+
+	<div class="span4">
+		<div class="field" id="format_selector">
+			<%= f.label :format %>
+			<%= f.collection_select :format,
+        Citation::FORMATS, :to_s, :humanize,{:prompt => "Select Format"} ,
+        {:class =>"span3", :title => "Select a publishing format. The rest of the fields will depend on the format selected"}%>
+		</div>
+	</div>
+	<div class="span4 offset1">
+
+		<div class="field" id="journal_title" hidden=true >
+			<%= f.label :journal_title %>
+		</div>
+
+		<div class="field" id="book_title" hidden=true >
+			<%= f.label :book_title %>
+		</div>
+
+		<div class="field" id="book_select_title" hidden=true >
+			<%= f.label :Book_Section_Title %>
+		</div>
+
+		<div class="field" id="report_title" hidden=true >
+			<%= f.label :report_title %>
+		</div>
+
+		<div class="field" id="thesis_title" hidden=true >
+			<%= f.label :thesis_title %>
+		</div>
+
+		<div class="field" id="website_title" hidden=true>
+			<%= f.label :website %>
+		</div>
+
+		<div class="field" id="other_title" hidden=true >
+			<%= f.label :other_title %>
+		</div>
+
+		<div class="field" id="personal_title" hidden=true >
+			<label> URL </label>
+		</div>
+
+		<div class="field" id="unpublished_title" hidden=true >
+			<label> URL </label>
+		</div>
+
+		<div class="field" id="format_area" hidden=true>
+			<%= f.text_field :format_title ,:class =>"span3", :title => "Enter the title of the journal, book, report, etc"%>
+		</div>
+
+	</div>
+
+	<div class="span4">
+		<div class="field" id="pages" hidden=true>
+			<%= f.label :page_numbers %>
+		</div>
+
+		<div class="field" id="address" hidden=true>
+			<%= f.label :address %>
+		</div>
+
+		<div class="field" id="pages_area" hidden=true>
+			<%= f.text_field :pages ,:class =>"span3", :title => "Please enter the page number(s) or address"%>
+		</div>
+	</div>
+
+	<div class="span4 offset1">
+		<div class="field" id="pub" hidden=true>
+			<%= f.label :publisher %>
+		</div>
+
+		<div class="field" id="email" hidden=true>
+			<%= f.label :Email %>
+		</div>
+
+		<div class="field" id="vol" hidden=true>
+			<%= f.label :volume %>
+		</div>
+
+		<div class="field" id="pub_area" hidden=true>
+			<%= f.text_field :volume ,:class =>"span3", :title => "Enter the publisher or email address"%>
+		</div>
+
+		<div class="field" id="vol_area" hidden=true>
+			<%= f.number_field :volume ,:class =>"span3", :title => "Enter the volume number"%>
+		</div>
+
+	</div>
+
+	<div class="span4">
+		<div class="field" id="num" hidden=true>
+			<%= f.label :number %>
+		</div>
+
+		<div class="field" id="phonenum" hidden=true>
+			<%= f.label :phone_number %>
+		</div>
+
+		<div class="field" id="num_area" hidden=true>
+			<%= f.number_field :number ,:class =>"span3", :title => "Enter the issue number or phone-number"%>
+		</div>
+	</div>
+
+	<div class="span9 form-actions">
+		<%= f.submit :class => 'btn btn-inverse', :title => "Add the new citation to the database"%>
+		<button type="reset" class="btn btn-inverse" id="reset_new_cite" title="Reset the form">
+			Reset
+		</button>
+	</div>
+</fieldset>
+<% end %>
 

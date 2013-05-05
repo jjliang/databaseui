@@ -100,9 +100,9 @@
 		</div>
 		
 		<div class="field">
-			<%= f.check_box :parent_id_is_itis , :class => 'pull-left'%>
-			<%= f.label :parent_id_is_itis, "Parent id is ITIS" , :class => 'pull-left spacer',
-			            :title => "Add any addition information about this non-ITIS node here" %>
+			<%= f.check_box :parent_id_is_itis , :class => 'pull-left',
+			            :title => "Indicate whether or not the new node's immediate parent's ID is an ITIS ID" %>
+			<%= f.label :parent_id_is_itis, "Parent id is ITIS" , :class => 'pull-left spacer' %>
 		</div>
 	</div>
 	<!-- end: first column -->
@@ -111,7 +111,8 @@
 	<div class="span4"> 
 		<div class="field">
 			<%= f.label :info %>
-			<%= f.text_area :info ,:class=>"span4", :rows => 9%>
+			<%= f.text_area :info ,:class=>"span4", :rows => 9,
+			            :title => "Add any addition information about this non-ITIS node here"%>
 		</div>
 	</div>
 	<!-- end: second column -->
@@ -119,8 +120,9 @@
 
 	<!-- begin: buttons -->
 	<div class="form-actions">
-		<%= f.submit "Create Non-ITIS Node", :class => 'btn btn-inverse offset3' %>
-		<button type="reset" class="btn btn-inverse">
+		<%= f.submit "Create Non-ITIS Node", :class => 'btn btn-inverse',
+			:title => "Add new non-ITIS node to the database" %>
+		<button type="reset" class="btn btn-inverse" title="Reset the form">
 			Reset
 		</button>
 	</div>

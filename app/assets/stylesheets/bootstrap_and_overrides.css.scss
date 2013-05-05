@@ -16,6 +16,12 @@
     // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
 // }
 
+.direct-menus {
+  a {
+    font-weight: bold;
+  }
+}
+
 .container > .nav > li { 
   a {
     display: block;
@@ -71,6 +77,10 @@
 
 .tooltip-inner {
   background-color: #313131;
+}
+
+.tooltip.right .tooltip-arrow {
+  border-right-color: #313131;
 }
 
 body {
