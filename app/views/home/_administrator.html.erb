@@ -1,27 +1,47 @@
 <!-- Begin: navigation -->
-<ul class="nav nav-pills" id="AdministratorTab">
-    <li class="active"><a href="#homea">Home</a></li>
-	<li><a href="#approval">Approval of an Account</a></li>
-</ul>
+<!--<ul class="nav nav-pills" id="AdministratorTab">-->
+<div id="administrator">
+	<table style="width: 100%;">
+		<tr style="vertical-align: top;">
+			<td style="width: 33.3%;">
+				<h3>A</h3>
+	    		<li>
+	    			<a href="#" style="color:#0c79c2;" onclick="multiview('admin1', 'administrator');"><u>About the Administrator Role</u></a>
+	    		</li>
+				<li>
+					<a href="#" style="color:#0c79c2;" onclick="multiview('admin2', 'administrator');"><u>Approval of an Account</u></a>
+				</li>
+			</td>
+		</tr>
+	</table>
+</div>
+<!--</ul>-->
 <!-- End: navigation -->
 
 <!-- Begin: Content -->
 <div class="tab-content">
-	    <div class="tab-pane active" id="homea">
-	        <p>
-	           	The administrator has all of the capabilities of a project leader and additionally
-	           	is able to approve new accounts.           	
-	        </p>  
+	    <div class="tab-pane" id="admin1" style="display:none;">
+	    	<h3>About the Administrator Role</h3>
+	    	<p>
+   				The administrator has all of the capabilities of a project leader and additionally
+    			is able to approve new accounts.           	
+			</p><br \>
+			<a href="#" onclick="back('admin1', 'administrator');" class=" btn btn-inverse">Back</a>
 	    </div>
-	    <div class="tab-pane" id="approval">
+
+	    <div class="tab-pane" id="admin2" style="display:none;">
+	    	<h3>Approval of an Account</h3>
 	    	<p>
 	    		In order to approve an account, first sign in as the administrator. When browser renders the new screen, click the "Users" tab on the left hand side of the screen. More options will appear. Choose the "Awaiting Approval" tab. If any exist, you will see a list of users awaiting approval with the approved field defaulted to "false". Click the edit option in the row associated with the user you wish to approve. A new screen will render in the browser window. Here you will see an option for approval. Click the checkbox to indicate that you are approving the user. Then click the "update" button. The user is now approved.<br \><br \>
 
 	    		If you wish to not approve a user, navigate to the "Awaiting Approval" tab as above. Click the "destroy" option in the row associated with the user you wish to not approve. Confirm the dialog box that appears. The user is now unapproved.
-	    	</p>
+	    	</p><br \>
+
+	    	<a href="#" onclick="back('admin2', 'administrator');" class=" btn btn-inverse">Back</a>
 	    </div>
 </div>
 <!-- End: Content -->
+
 
 <script>
     $(function () {

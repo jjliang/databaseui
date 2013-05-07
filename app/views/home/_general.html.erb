@@ -1,40 +1,64 @@
 <!-- Begin: navigation -->
-<ul class="nav nav-pills" id="GeneralTab">
-    <li class="active"><a href="#homeg">Home</a></li>
-	<li><a href="#fpass">Forgot Password</a></li>
-    <li><a href="#navmap">Navigate Map</a></li>
-    <li><a href="#signin">Signing In</a></li>
-    <li><a href="#signup">Signing Up</a></li>
-	<li><a href="#updateprof">Update Profile</a></li>
-    <li><a href="#viewweb">View a Food Web</a></li>
-</ul>
+<div id="g">
+<table style="width: 100%;">
+        <tr style="vertical-align: top;">
+            <td style="width: 33.3%;">
+                <h3>F</h3>
+                    <li>
+                        <a href="#" style="color:#0c79c2;" onclick="multiview('gen1', 'g');"><u>Forgot Password</u></a>
+                    </li>
+                <h3>N</h3>
+                    <li>
+                        <a href="#" style="color:#0c79c2;" onclick="multiview('gen2', 'g');"><u>Navigate Map</u></a>
+                    </li>
+                <h3>S</h3>
+                    <li>
+                        <a href="#" style="color:#0c79c2;" onclick="multiview('gen3', 'g');"><u>Signing In</u></a>
+                    </li>
+                    <li>
+                        <a href="#" style="color:#0c79c2;" onclick="multiview('gen4', 'g');"><u>Signing Up</u></a>
+                    </li>
+                <h3>U</h3>
+                    <li>
+                        <a href="#" style="color:#0c79c2;" onclick="multiview('gen5', 'g');"><u>Update Profile</u></a>
+                    </li>
+                <h3>V</h3>
+                    <li>
+                        <a href="#" style="color:#0c79c2;" onclick="multiview('gen6', 'g');"><u>View a Food Web</u></a>
+                    </li>   
+            </td>
+        </tr>
+    </table>
+</div>
 <!-- End: navigation -->
      
 <!-- Begin: Content -->
-<div class="tab-content">
-    <div class="tab-pane active" id="homeg">
-        <p>
-           	Here you will find general help information unspecific to role functions.
-        </p>  
-    </div>    
-    <div class="tab-pane" id="fpass">
+<div class="tab-content">    
+    <div class="tab-pane" id="gen1" style="display:none;">
+        <h3>Forgot Password</h3>
         <p>
             If you have forgotten your password, navigate to the login page by clicking the "login" tab on the navigation bar at the top of the screen. You will see a "Forgot Password" link underneath the password field. Click on the link. Enter your e-mail address in the given field and click the "Send me reset password instructions" button. An e-mail will be sent to you through which you can reset your password.
-        </p>
+        </p><br \>
+        <a href="#" onclick="back('gen1', 'g');" class=" btn btn-inverse">Back</a>
     </div>
-    <div class="tab-pane" id="navmap">
+    <div class="tab-pane" id="gen2" style="display:none;">
+        <h3>Navigate Map</h3>
         <p>
           You can zoom into and out of the map using the scroll bar on the lefthand side of the map window, by moving your cursor over the map and using the scroll wheel on your mouse if it has one one, or by double clicking on a spot into which you want to zoom.<br \><br \>
 
           To scroll up, down, left, or right on the map, click and hold a point with your mouse on the map. While holding that point, move your mouse in the desired direction to change your focal point.
-        </p>
+        </p><br />
+        <a href="#" onclick="back('gen2', 'g');" class=" btn btn-inverse">Back</a>
     </div>
-    <div class="tab-pane" id="signin">
+    <div class="tab-pane" id="gen3" style="display:none;">
+        <h3>Signing In</h3>
         <p>
             To sign in, click the "login" tab in the navigation bar at the top of the screen. The login screen will be rendered in the browser window. Enter your user name and password into their respective fields and click the "sign in" button.
-        </p>        
+        </p><br />        
+        <a href="#" onclick="back('gen3', 'g');" class=" btn btn-inverse">Back</a>
     </div>
-    <div class="tab-pane" id="signup">
+    <div class="tab-pane" id="gen4" style="display:none;">
+        <h3>Signing Up</h3>
         <p>
             Accounts for Food Web Builder are meant for those who are looking to either start their own food web project or for those who are looking to contribute to one. All visitors of the website are welcome to explore the active food webs that users have already been contributed to the website by clicking one of the designated regions on the home page.<br \><br \>
 
@@ -47,19 +71,24 @@
              Click the sign up button. You will receieve an e-mail confirmation within 24 hours whether or not your account has been approved.<br \><br \>
 
              Note: The moderator role is assigned to users by a project leader after the user has already signed up for that project leader's project. One does not sign up for a moderator role.
-        </p>        
+        </p><br />   
+        <a href="#" onclick="back('gen4', 'g');" class=" btn btn-inverse">Back</a>     
     </div>  
-    <div class="tab-pane" id="updateprof">
-      <p>
-        If you would like to update your profile, click on the "Edit Account" tab in the navigation bar at the top of the screen. The edit account screen will be rendered in the browser window. All of your profile fields will be displayed. In the field(s) that you wish to change, delete the old information and enter the new. Click the "update" button at the bottom of the screen. Your profile is now updated.
-      </p>
+    <div class="tab-pane" id="gen5" style="display:none;">
+        <h3>Update Profile</h3>
+        <p>
+            If you would like to update your profile, click on the "Edit Account" tab in the navigation bar at the top of the screen. The edit account screen will be rendered in the browser window. All of your profile fields will be displayed. In the field(s) that you wish to change, delete the old information and enter the new. Click the "update" button at the bottom of the screen. Your profile is now updated.
+        </p><br />
+        <a href="#" onclick="back('gen5', 'g');" class=" btn btn-inverse">Back</a>
     </div>
-    <div class="tab-pane" id="viewweb">
+    <div class="tab-pane" id="gen6" style="display:none;">
+        <h3>View a Food Web</h3>
         <p>
           To view a food web, navigate to the home page by clicking the "Home" tab in the navigation bar at the top of the screen. The home page will render in the browser. Here you will see an interactive map from which you can choose a food web to explore.<br \><br \>
 
           Active food webs will be indicated by shaded polygons which you can click to access the information associated with that food web. Navigate the map until you find a food web which you would like to explore. Click the shaded polygon indicating that food web.
-        </p>
+        </p><br />
+        <a href="#" onclick="back('gen6', 'g');" class=" btn btn-inverse">Back</a>
     </div>
 </div>
 <!-- End: Content -->

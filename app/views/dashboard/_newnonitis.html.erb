@@ -2,10 +2,10 @@
 	<h3> New Non-ITIS Node </h3>
 </legend>
 
-<div class="well">
+<div class="well instructions">
 	<h3>Instructions
 		<button type="button" data-toggle="collapse" data-target="#nonitisinfo" class="btn btn-info btn-mini">
-			Collapse/Expand
+			<span class="caret"></span><!-- Collapse/Expand -->
 		</button>
 	</h3>
 	
@@ -86,22 +86,23 @@
 	<div class="span4 offset1">  
 		<div class="field">
 			<%= f.label :parent_id %>
-			<%= f.number_field :parent_id %>
+			<%= f.number_field :parent_id, :title => "The ITIS id of the parent node. Each non-ITIS node must have and ITIS parent" %>
 		</div>
 		
 		<div class="field">
 			<%= f.label :latin_name %>
-			<%= f.text_field :latin_name %>
+			<%= f.text_field :latin_name, :title => "The latin/scientific name of the new non-ITIS node" %>
 		</div>
 		
 		<div class="field">
 			<%= f.label :taxonomy_level %>
-			<%= f.text_field :taxonomy_level %>
+			<%= f.text_field :taxonomy_level, :title => "taxonomic level"%>
 		</div>
 		
 		<div class="field">
-			<%= f.check_box :parent_id_is_itis , :class => 'pull-left'%>
-			<%= f.label :parent_id_is_itis, "Parent id is ITIS" , :class => 'pull-left spacer' %><br />
+			<%= f.check_box :parent_id_is_itis , :class => 'pull-left',
+			            :title => "Indicate whether or not the new node's immediate parent's ID is an ITIS ID" %>
+			<%= f.label :parent_id_is_itis, "Parent id is ITIS" , :class => 'pull-left spacer' %>
 		</div>
 	</div>
 	<!-- end: first column -->
@@ -110,7 +111,8 @@
 	<div class="span4"> 
 		<div class="field">
 			<%= f.label :info %>
-			<%= f.text_area :info ,:class=>"span4", :rows => 9%>
+			<%= f.text_area :info ,:class=>"span4", :rows => 9,
+			            :title => "Add any addition information about this non-ITIS node here"%>
 		</div>
 	</div>
 	<!-- end: second column -->
@@ -118,8 +120,9 @@
 
 	<!-- begin: buttons -->
 	<div class="form-actions">
-		<%= f.submit "Create Non-ITIS Node", :class => 'btn btn-inverse offset3' %>
-		<button type="reset" class="btn btn-inverse">
+		<%= f.submit "Create Non-ITIS Node", :class => 'btn btn-inverse',
+			:title => "Add new non-ITIS node to the database" %>
+		<button type="reset" class="btn btn-inverse" title="Reset the form">
 			Reset
 		</button>
 	</div>

@@ -23,7 +23,6 @@ class Citation < ActiveRecord::Base
   has_many :stage_durations
   has_many :stage_fecundities
   has_many :stage_habitats
-  has_many :stage_habitat_descriptors
   has_many :stage_lengths
   has_many :stage_length_fecundities
   has_many :stage_length_weights

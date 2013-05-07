@@ -2,11 +2,11 @@
 	<h3> Search Nodes </h3>
 </legend>
 
-<div class="well">
+<div class="well instructions">
 	<h3>Instructions
 		<button type="button" data-toggle="collapse" 
 			data-target="#searchinfo" class="btn btn-info btn-mini">
-			Collapse/Expand
+			<span class="caret"></span><!-- Collapse/Expand -->
 		</button>
 	</h3>
 	
@@ -26,29 +26,27 @@
 <form action="/search" method="get">
 	<div class="span4">
 		<label>Working Name: </label>
-		<input type="text" name = "working">
+		<input type="text" name = "working", title="Search for a node by working name">
 	</div>
 		
 	<div class="span4">
 		<label>ITIS Latin Name: </label>
-		<input type="text">
+		<input type="text" title="Search for a node by latin/scientific name">
 	</div>
 		
 	<div class="span4">
 		<label>ITIS ID: </label>
-		<input type="number">
+		<input type="number" title="Search for a node by its ITIS id number">
 	</div>
 
 	<div class="span9">
 		<div class="form-actions">
 
-			<button type="submit" class="btn btn-inverse offset 3">
-
-
+			<button type="submit" class="btn btn-inverse offset 3" title="Submit search">
 				Search
 			</button>
 			    
-			<button type="reset" class="btn btn-inverse">
+			<button type="reset" class="btn btn-inverse" title="Reset the form">
 				Reset
 			</button>
 		</div>

@@ -25,7 +25,8 @@ class AuthorCitesController < ApplicationController
   # GET /author_cites/new.json
   def new
     @author_cite = AuthorCite.new
-
+		@author_cite.user_id = current_user.id
+    @author_cite.project_id = current_user.project_id
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @author_cite }
@@ -41,7 +42,8 @@ class AuthorCitesController < ApplicationController
   # POST /author_cites.json
   def create
     @author_cite = AuthorCite.new(params[:author_cite])
-
+		@author_cite.user_id = current_user.id
+    @author_cite.project_id = current_user.project_id
     respond_to do |format|
       if @author_cite.save
         format.html { redirect_to @author_cite, notice: 'Author cite was successfully created.' }

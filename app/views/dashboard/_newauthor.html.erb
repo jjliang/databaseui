@@ -2,10 +2,10 @@
 	<h2>Add New Author</h2>
 </legend>
 
-<div class="well">
+<div class="well instructions">
 	<h3>Instructions
 		<button type="button" data-toggle="collapse" data-target="#newauthorinfo" class="btn btn-info btn-mini">
-			Collapse/Expand
+			<span class="caret"></span><!-- Collapse/Expand -->
 		</button>
 	</h3>
 
@@ -37,16 +37,16 @@
 		<!-- Start form fields -->
 		<div>
 			<%= f.label :first_name %>
-			<%= f.text_field :first_name %>
+			<%= f.text_field :first_name, :title => "Enter the first name of the new author" %>
 		</div>
 
 		<div>
 			<%= f.label :last_name %>
-			<%= f.text_field :last_name %>
+			<%= f.text_field :last_name, :title => "Enter the last name of the new author" %>
 		</div>
 
 		<div>
-			<%= f.submit  :class => "btn btn-inverse"%>
+			<%= f.submit  :class => "btn btn-inverse", :title => "Add the new author to the database" %>
 		</div>
 		
 	<% end %> <!-- End Form -->

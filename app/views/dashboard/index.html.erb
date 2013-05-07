@@ -14,7 +14,7 @@
 				<ul class="nav nav-pills nav-stacked">
 					
 					<li class="<%= 'active' if params[:tab] == 'navmap' || !params[:tab] %>">
-						<a href="#navmap" data-toggle="tab"><b>Map</B></a>
+						<a href="#navmap" data-toggle="tab" title="Interact with the Region map"><b>Map</B></a>
 					</li>
 					
 					<!-- Drop down for Nodes -->
@@ -25,6 +25,7 @@
 					<%= 'active' if params[:tab] == 'nodelist' %>">
 						<a class="dropdown-toggle"
 							data-toggle="dropdown"
+							title="Create, search, or list Nodes"
 							href="dashboard"><b>
 							Nodes</b>
 							<b class="caret"></b>
@@ -58,6 +59,7 @@
 					<%= 'active' if params[:tab] == 'citelist' %>">
 						<a class="dropdown-toggle"
 							data-toggle="dropdown"
+							title="Add new authors or citations or list citations"
 							href="dashboard"><b>
 							Citations</b>
 							<b class="caret"></b>
@@ -83,8 +85,10 @@
 					</li>
 					<!-- End Dropdown for citations -->
 					
-					<li class= "<%= 'active' if params[:tab] =='inters'%>">
-						<a href="#inters" data-toggle="tab">Interactions</a>
+					<li class= "<%= 'active' if params[:tab] =='inters'%> direct-menus">
+						<a href="#inters"
+						title="Create a new interaction" 
+						data-toggle="tab">Interactions</a>
 					</li>
 					
 					<!-- Tabs by user roles -->
@@ -94,9 +98,10 @@
 					<% if (current_user.role == 'lead') ||
 						(current_user.role =='admin') %>
 						<li class="dropdown<%= 'active' if params[:tab] == 'regioneditor' %>
-					<%= 'active' if params[:tab] == 'editregion' %>">
+							<%= 'active' if params[:tab] == 'editregion' %>">
 							<a class="dropdown-toggle"
 								data-toggle="dropdown"
+								title="Create or delete regions"
 								href="dashboard"><b>
 								Regions</b>
 								<b class="caret"></b>
@@ -117,6 +122,7 @@
 					<%= 'active' if params[:tab] == 'listprojects' %>">
 							<a class="dropdown-toggle"
 								data-toggle="dropdown"
+								title="Create a new project or list existing projects"
 								href="dashboard"><b>
 								Projects</b>
 								<b class="caret"></b>
@@ -140,6 +146,7 @@
 					<%= 'active' if params[:tab] == 'waitingusers' %>">
 								<a class="dropdown-toggle"
 									data-toggle="dropdown"
+									title="List all users or just those awaiting approval"
 									href="dashboard"><b>
 									Users</b>
 								<b class="caret"></b>
@@ -157,8 +164,8 @@
 						</li>
 						<!-- End users lists -->
 						
-						<li>
-							<a href="admin">Database</a>
+						<li class="direct-menus">
+							<a href="admin" title="Manage the Database">Database</a>
 						</li>
 					<% end %>
 				</ul>
@@ -223,13 +230,13 @@
 				<legend>
 					<h3> Listing all users </h3>
 				</legend>
-				<div class="well">
+				<div class="well instructions">
 					<h3>Instructions
 						<button type="button" 
 							data-toggle="collapse" 
 							data-target="#userlistinfo" 
 							class="btn btn-info btn-mini">
-							Collapse/Expand
+							<!-- Collapse/Expand --><span class="caret"></span>
 						</button>
 					</h3>
 					<div id="userlistinfo" class="collapse"
@@ -249,13 +256,13 @@
 				<legend>
 					<h3> Unapproved Users </h3>
 				</legend>
-				<div class="well">
+				<div class="well instructions">
 					<h3>Instructions
 						<button type="button" 
 							data-toggle="collapse" 
 							data-target="#userlistinfo" 
 							class="btn btn-info btn-mini">
-							Collapse/Expand
+							<!-- Collapse/Expand --><span class="caret"></span>
 						</button>
 					</h3>
 					<div id="userlistinfo" class="collapse"

@@ -3,11 +3,11 @@
 		Interactions Editor
 	</h3>
 </legend>
-<div class="well">
+<div class="well instructions">
 	<h3>Instructions
 		<button type="button" data-toggle="collapse" 
 			data-target="#interactionsinfo" class="btn btn-info btn-mini">
-			Collapse/Expand
+			<!-- Collapse/Expand --><span class="caret"></span>
 		</button>
 	</h3>
 	
@@ -23,7 +23,7 @@
 		
 			<div class="span3 offset3">
 			<h4>Select interaction</h4>
-				<select id = "interactions-list">
+				<select id = "interactions-list" title="Select the type of species interaction">
 					<option value= "main" selected>Choose a type of interaction</option>
 					<option value="trophic" name="trophic">trophic (1 eats 2)</option>
 					<option value="competition" name="competition">competition (1 outcompetes 2)</option>
@@ -37,7 +37,7 @@
 					<label>Working Name: </label>
 					<%= form_tag do %>
 						<%= autocomplete_field_tag 'interaction_working_name1', '',autocomplete_node_working_name_nodes_path,
-						:update_elements => {:itis_data => '#stage1_itis_id'} %>
+						:update_elements => {:itis_data => '#stage1_itis_id'}, :title => "Enter the common/working name of node 1" %>
 					<% end %>
 					
 					<label>Latin Name: </label>
@@ -59,7 +59,7 @@
 					<label>Working Name: </label>
 					<%= form_tag do %>
 						<%= autocomplete_field_tag 'interaction_working_name2', '',autocomplete_node_working_name_nodes_path,
-						:update_elements => {:itis_id => '#stage2_itis_id'}%>
+						:update_elements => {:itis_id => '#stage2_itis_id'}, :title => "Enter the common/working name of node 2"%>
 					<% end %>
 						
 				<label>Latin Name: </label>

@@ -1,18 +1,44 @@
 <h1>Listing citations</h1>
 
-<table>
+<table class="table table-striped">
   <tr>
+    <th>Abstract</th>
+    <th>Closed</th>
+    <th>Document</th>
+    <th>Format</th>
+    <th>Format title</th>
+    <th>Number</th>
+    <th>Pages</th>
+    <th>Publisher</th>
+    <th>Title</th>
+    <th>User</th>
+    <th>Volume</th>
+    <th>Year</th>
     <th></th>
     <th></th>
     <th></th>
   </tr>
 
+
 <% @citations.each do |citation| %>
-  <tr>
-    <td><%= link_to 'Show', citation %></td>
-    <td><%= link_to 'Edit', edit_citation_path(citation) %></td>
-    <td><%= link_to 'Destroy', citation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+<tr>
+  <td><%= citation.abstract %></td>
+  <td><%= citation.closed %></td>
+  <td><%= citation.document %></td>
+  <td><%= citation.format %></td>
+  <td><%= citation.format_title %></td>
+  <td><%= citation.number %></td>
+  <td><%= citation.pages %></td>
+  <td><%= citation.publisher %></td>
+  <td><%= citation.title %></td>
+  <td><%= owner_user(citation.user_id).username %></td>
+  <td><%= citation.volume %></td>
+  <td><%= citation.year %></td>
+  <td><%= link_to 'Show', citation %></td>
+  <td><%= link_to 'Edit', edit_citation_path(citation) %></td>
+  <td><%= link_to 'Destroy', citation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>
+
 <% end %>
 </table>
 

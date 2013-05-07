@@ -16,6 +16,7 @@ class DashboardController < ApplicationController
 		@citationlist = Citation.where(["project_id = ?",current_user.project_id]).all
 		@current_year = Time.now.year
 		@citation.author_cites.build
+
 		
 	## For Node tab objects can be reused by other partials also
 		@node = Node.new
@@ -133,21 +134,5 @@ end
 		end
 	end
 end
-  def create_author
-  	@author = Author.new(params[:author])
-    @author.project_id = current_user.project_id
-    @author.user_id = current_user.id
-    
-    respond_to do |format|
-      if @author.save
-      	
-        format.html { redirect_to root_path(tab:"newaut",:author => @author) }
-        flash[:notice] = ("Author " + @author.first_name + " " + @author.last_name + " has been added")
-        format.json { render json: @author, status: :created, location: @author }
-      else
-        format.html { redirect_to root_path(tab:"newaut", :author => @author) }
-        format.json { render json: @author.errors, status: :unprocessable_entity }
-      end
-	end
-end
+
 

@@ -1,12 +1,13 @@
 $(document).ready(function(){
 	// For author_cites creating new citations	
+	
+	var myAuthors = new Array();
 		
 	 addAuthor = function(){
 		var myString="";
 		var names = new Array();
 		var flag = 0;
 		value = ($('#author_cites_author_id').val());
-	
 		jQuery.each(myAuthors, function(i) {
 			if(myAuthors[i]==value){
 		  flag = 1;
@@ -40,6 +41,7 @@ $(document).ready(function(){
 					}
 				});
 			});
+			document.getElementById('auts').value = myAuthors.join();
 		myString="";}
 		
 	}// End function addAuthor
