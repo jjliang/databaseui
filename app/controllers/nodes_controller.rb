@@ -18,6 +18,8 @@ class NodesController < ApplicationController
 	
 	render :json =>[success,workingname]
   end
+skip_before_filter :authenticate_user!, :only => [:index]
+#prepend_before_filter :authenticate_scope!, :only => [:edit, :update, :destroy]
 
   def index
     @nodes = Node.all
@@ -25,6 +27,7 @@ class NodesController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @nodes }
+      format.csv {render :text=>Node.to_csv}
     end
   end
 
