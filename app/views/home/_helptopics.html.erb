@@ -1,0 +1,189 @@
+<div id="h">
+    <table>
+        <tbody>
+        <tr style="vertical-align: top;">
+            <td style="width: 25%;">
+
+
+                <h3>A</h3>          <!-- Help topics beginning with A -->              
+                
+                
+                <li>
+                    <a href="#" style="color:#0c79c2;" onclick="multiview('admin1', 'h');"><u>About the Administrator Role</u></a>
+                </li>
+                <li>
+                    <a href="#" style="color:#0c79c2;" onclick="multiview('mod1', 'h');"><u>About the Moderator Role</u></a>
+                </li>
+                <li>
+                    <a href="#" style="color:#0c79c2;" onclick="multiview('plead1', 'h');"><u>About the Project Leader Role</u></a>
+                </li>
+                <li>
+                    <a href="#" style="color:#0c79c2;" onclick="multiview('user1', 'h');"><u>About the User Role</u></a>
+                </li>
+                <li>
+                    <a href="#" style="color:#0c79c2;" onclick="multiview('user2', 'h');"><u>Add New Author</u></a>
+                </li>
+                <li>
+                    <a href="#" style="color:#0c79c2;" onclick="multiview('user3', 'h');"><u>Add New Citation</u></a>
+                </li>
+                <li>
+                    <a href="#" style="color:#0c79c2;" onclick="multiview('user4', 'h');"><u>Add New Taxon</u></a>
+                </li>
+                <li>
+                    <a href="#" style="color:#0c79c2;" onclick="multiview('user5', 'h');"><u>Add Non-ITIS Taxon</u></a>
+                </li> 
+                <li>
+                    <a href="#" style="color:#0c79c2;" onclick="multiview('admin2', 'h');"><u>Approval of an Account</u></a>
+                </li>
+                <li>
+                    <a href="#" style="color:#0c79c2;" onclick="multiview('mod2', 'h');"><u>Approval of a User</u></a>
+                </li>
+                               
+
+                               
+            </td>
+
+            <td style="width: 25%;">
+
+                <h3>B</h3>          <!-- Help topics beginning with B -->
+                <li>
+                    <a href="#" style="color:#0c79c2;" onclick="multiview('mod3', 'h');"><u>Become a Moderator</u></a>
+                </li>
+
+
+                <h3>C</h3>          <!-- Help topics beginning with C -->
+
+                <li>
+                    <a href="#" style="color:#0c79c2;" onclick="multiview('user6', 'h');"><u>Cancel Account</u></a>
+                </li>
+                <li>
+                    <a href="#" style="color:#0c79c2;" onclick="multiview('plead2', 'h');"><u>Create a New Project</u></a>
+                </li>
+
+                <h3>E</h3>          <!-- Help topics beginning with E -->
+
+                <li>
+                    <a href="#" style="color:#0c79c2;" onclick="multiview('user7', 'h');"><u>Edit Account</u></a>
+                </li>
+
+                
+
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+
+<div class="tab-content span8">
+    <div class="tab-pane" id="user1" style="display:none;">
+        <h3>About the User Role</h3>
+        <p>
+            The user role is meant for those who are only entering data into a food web project.
+        </p><br \>
+        <a href="#" onclick="back('user1', 'h');" class=" btn btn-inverse">Back</a>  
+    </div>
+    <div class="tab-pane" id="user2" style="display:none;">
+        <h3>Add New Author</h3>
+        <p>
+            To add an author of a citation, click on the "Data Entry" tab in the navigation bar at the top of the screen. When the new screen renders in the browser choose the "Citations" tab on the lefthand side of the screen. More options will appear. Choose the "New Author" option. Fill in the required fields and click the "Create Author" button.
+        </p><br \>
+        <a href="#" onclick="back('user2', 'h');" class=" btn btn-inverse">Back</a>
+    </div>
+    <div class="tab-pane" id="user3" style="display:none;">
+        <h3>Add New Citation</h3>
+        <p>
+            To add a new citation, click on the "Data Entry" tab in the navigation bar at the top of the screen. When the new screen renders in the browser choose the "Citations" tab on the lefthand side of the screen. More options will appear. Choose the "New Citation" option. Fill in the required fields and click the "Create Citation" button.
+        </p><br \>
+        <a href="#" onclick="back('user3', 'h');" class=" btn btn-inverse">Back</a>
+    </div>
+    <div class="tab-pane" id="user4" style="display:none;">
+        <h3>Add New Taxon</h3>
+        <p>
+            To enter a new taxon into the food web, after you have signed in, click on the "Data Entry" tab in the navigation bar at the top of the screen. When the new page renders in the browser window, choose the "Nodes" tab on the lefthand side of the screen. More options will appear in the window. Choose the "New Node" option. Begin entering the ITIS name into the respective field. If the ITIS name you are entering is in the ITIS database, then a matching name should appear in a drop down box from the field that you can choose. If no such option appears, then you may have a non-ITIS entry. Otherwise, choose the name that matches your intended entry and continue to fill in the required fields. When you are finished, click the "Create Node" button. You have now created a new node in the food web.
+        </p><br \>
+        <a href="#" onclick="back('user4', 'h');" class=" btn btn-inverse">Back</a>
+    </div>
+    <div class="tab-pane" id="user5" style="display:none;">
+        <h3>Add Non-ITIS Taxon</h3>
+        <p>
+            To enter a non-ITIS taxon into the food web, after you have signed in, click on the "Data Entry" tab in the navigation bar at the top of the screen. When the new page renders in the browser window, choose the "Nodes" tab on the lefthand side of the screen. More options will appear in the window. Choose the "New non-ITIS Node" option. Fill in the required fields. When you are finished, click the "Create Non-ITIS" button. You have now created a new non-ITIS node in the food web.
+        </p><br \>
+        <a href="#" onclick="back('user5', 'h');" class=" btn btn-inverse">Back</a>
+    </div> 
+    <div class="tab-pane" id="user6" style="display:none;">
+        <h3>Cancel Account</h3>
+        <p>
+            To cancel your account, click the "Edit Account" tab in the navigation bar at the top of the browser window.
+            You will see a button located at the bottom of the browser window labeled "Cancel My Account". Click this button. Confirm the pop-up dialog box. Your account will be immediately removed from Food Web Builder.
+        </p>
+        <a href="#" onclick="back('user6', 'h');" class=" btn btn-inverse">Back</a>
+    </div>
+    <div class="tab-pane" id="user7" style="display:none;">
+        <h3>Edit Account</h3>
+        <p>
+            To edit your existing account, click on the "Edit Account" tab in the navigation bar at the top of the browser window. You will see a form appear. Change the desired fields, then click the "Update" button located
+            at the bottom of the browser window.
+        </p> 
+        <a href="#" onclick="back('user7', 'h');" class=" btn btn-inverse">Back</a>
+    </div>
+    <div class="tab-pane" id="admin1" style="display:none;">
+        <h3>About the Administrator Role</h3>
+        <p>
+            The administrator has all of the capabilities of a project leader and additionally
+            is able to approve new accounts.            
+        </p><br \>
+        <a href="#" onclick="back('admin1', 'h');" class=" btn btn-inverse">Back</a>
+    </div>
+
+    <div class="tab-pane" id="admin2" style="display:none;">
+        <h3>Approval of an Account</h3>
+        <p>
+            In order to approve an account, first sign in as the administrator. When browser renders the new screen, click the "Users" tab on the left hand side of the screen. More options will appear. Choose the "Awaiting Approval" tab. If any exist, you will see a list of users awaiting approval with the approved field defaulted to "false". Click the edit option in the row associated with the user you wish to approve. A new screen will render in the browser window. Here you will see an option for approval. Click the checkbox to indicate that you are approving the user. Then click the "update" button. The user is now approved.
+            <br \><br \>
+
+            If you wish to not approve a user, navigate to the "Awaiting Approval" tab as above. Click the "destroy" option in the row associated with the user you wish to not approve. Confirm the dialog box that appears. The user is now unapproved.
+        </p><br \>
+        <a href="#" onclick="back('admin2', 'h');" class=" btn btn-inverse">Back</a>
+
+    </div>
+
+    <div class="tab-pane" id="plead1" style="display:none;">
+        <h3>About the Project Leader Role</h3>
+        <p>
+            A project leader has all of the capabilities of a moderator and is additionally able to 
+            create new projects.
+        </p><br \>
+        <a href="#" onclick="back('plead1', 'h');" class=" btn btn-inverse">Back</a>          
+    </div>
+    <div class="tab-pane" id="plead2" style="display:none;">
+        <h3>Open a New Project</h3>
+        <p>
+            This capability is under construction.
+        </p><br \>
+        <a href="#" onclick="back('plead2', 'h');" class=" btn btn-inverse">Back</a>
+    </div>
+    <div class="tab-pane" id="mod1" style="display:none;">
+        <h3>About the Moderator Role</h3>
+        <p>
+            A moderator has all of the capabilities of a user and additionally
+            is able to approve users for an open food web project.              
+        </p><br \>
+        <a href="#" onclick="back('mod1', 'h');" class=" btn btn-inverse">Back</a>  
+    </div>
+    <div class="tab-pane" id="mod2" style="display:none;">
+        <h3>Approval of a User</h3>
+        <p>
+            To approve a user to a project, navigate to your home page with the "Home" tab in navigation bar at the top of the screen. When the new page renders in the browser, choose the "Users" tab on the lefthand side of the screen. More options will appear in the window. Choose the "Awaiting Approval" tab from the new options. If any exist, a list of them will appear. Choose the edit option in the row associated with the user you wish to approve. When the new screen renders in the browser, choose the project to which you will assign the user from the "Project" field. Then click the check box under the "Approved" field. Finally, click the "Update User" button.
+
+            If you do not wish to approve the user, simply click the destroy option in the row associated with the user you do not want to approve. Confirm the dialog box pop-up.
+        </p><br \>
+        <a href="#" onclick="back('mod2', 'h');" class=" btn btn-inverse">Back</a>
+    </div>
+    <div class="tab-pane" id="mod3" style="display:none;">
+        <h3>Become a Moderator</h3>
+        <p>
+            In order to become a moderator, first you must be approved by a project leader as a user of a food web project. Then that project leader can assign the moderator role to you if it has been agreed upon that you will be assigned that role.
+        </p><br \>
+        <a href="#" onclick="back('mod3', 'h');" class=" btn btn-inverse">Back</a>
+    </div>
+</div>

@@ -42,7 +42,7 @@
 			{:class => "span3", :title => "Choose an author from those in the database"} %>
 			<%= button_tag "Add Author",:type => 'button',:class => "btn btn-inverse",
 			:onclick => "addAuthor()", :title => "Add an author" %>
-			<%= button_tag "Create Author", :type => 'button', :class => 'btn btn-inverse', :onclick => %>
+			<%= button_tag "Create Author", :type => 'button', :class => 'btn btn-inverse', :onclick => "addAuthor()" %>
 
 
 		</div>
@@ -68,7 +68,7 @@
 		</div>
 
 		<div class="field" id="abstract_area">
-			<%= f.text_area :abstract, :class=>"span3" , :rows => "5", :placeholder => "Brief description of the article abstract (it any)." %>
+			<%= f.text_area :abstract, :class=>"span3" , :rows => "5", :placeholder => "Brief description of the article abstract (if any)." %>
 		</div>
 
 	</div>

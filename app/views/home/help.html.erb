@@ -2,49 +2,8 @@
     <h1>Help</h1>
 </div>
 
-<div class="row-fluid" >
-    <ul class="nav nav-pills nav-stacked span2">
-        <li class="active">
-            <a href="#navhome" data-toggle="tab"><strong>Home</strong></a>
-        </li>
-        <li>
-            <a href="#general" data-toggle="tab"><strong>General</strong></a>            
-        </li>
-        <li>
-            <a href="#admin" data-toggle="tab"><strong>Administrator</strong></a>
-        </li>
-        <li>
-            <a href="#projlead" data-toggle="tab"><strong>Project Leader</strong></a>
-        </li>
-        <li>
-            <a href="#mod" data-toggle="tab"><strong>Moderator</strong></a>
-        </li>
-        <li>
-            <a href="#user" data-toggle="tab"><strong>User</strong></a>
-        </li>
-    </ul>
-	
-	<!--Begin: content -->
-    <div class="tab-content"> 
-    	<div class="tab-pane active offset1" id="navhome">
-            <h4>
-                Click on one of the tabs to the left to navigate to your help topic.
-            </h4>
-        </div>
-       	<div class="tab-pane offset1" id="general">
-        	<%= render 'home/general' %>
-       	</div>
-       	<div class="tab-pane offset1" id="admin">
-        	<%= render 'home/administrator' %>
-       	</div>
-       	<div class="tab-pane offset1" id="projlead">
-        	<%= render 'home/project_leader' %>
-       	</div>
-        <div class="tab-pane offset1" id="mod">
-            <%= render 'home/moderator' %>
-        </div>
-       	<div class="tab-pane offset1" id="user">
-        	<%= render 'home/user' %>
-       	</div>
-	</div>       
+<div>         
+    <div class="tab-pane active offset1">
+        <%= render 'home/helptopics' %>
+    </div>
 </div>
