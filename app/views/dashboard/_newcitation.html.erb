@@ -38,7 +38,7 @@
 		<div class="span4 offset1">
 			<%= a.label :author %>
 			<%= collection_select :author_cites, :author_id, @authorlist, :id, :listing_name.to_s,
-			{:prompt => "Last First"},
+			{:prompt => "Last, First"},
 			{:class => "span3", :title => "Choose an author from those in the database"} %>
 			<%= button_tag "Add Author",:type => 'button',:class => "btn btn-inverse",
 			:onclick => "addAuthor()", :title => "Add an author to the citation" %>

@@ -167,6 +167,13 @@
 						<li class="direct-menus">
 							<a href="admin" title="Manage the Database">Database</a>
 						</li>
+						
+						<% if (current_user.role == 'lead') %>
+							<li class="direct-menus">
+								<a href="export" title="Export Nodes in Food Web">Export</a>
+							</li>
+						<% end %>
+
 					<% end %>
 				</ul>
 			</div>
